@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LeanVid — サポート</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="site">
+    <div class="mark">L</div><div class="name">LeanVid</div>
+    <nav><a href="index.html">ホーム</a><a href="support.html">サポート</a><a href="privacy.html">プライバシー</a></nav>
+  </header>
+  <div class="langs"><a href="../support.html">English</a> <a href="../ko/support.html">한국어</a> <span class="cur">日本語</span> <a href="../zh-Hans/support.html">简体中文</a> <a href="../zh-Hant/support.html">繁體中文</a> <a href="../es-ES/support.html">Español</a> <a href="../de-DE/support.html">Deutsch</a> <a href="../fr-FR/support.html">Français</a> <a href="../it/support.html">Italiano</a> <a href="../pt-BR/support.html">Português</a> <a href="../ru/support.html">Русский</a></div>
+
+  <h1>サポート</h1>
+  <p class="lede">iPhone・iPad 向けの画質を保つ動画圧縮アプリ LeanVid に関する、よくある質問と回答です。</p>
+
+  <h2>圧縮と画質</h2>
+  <details class="card"><summary>圧縮すると画質は落ちますか？</summary>
+    <p>解像度・フレームレート・色（HDR を含む）はそのままに、過剰なビットレートだけを下げるため、通常の視聴では違いにほとんど気づきません。置き換える前に、比較プレーヤー（並べて・上下・スライダー）でご自身の目で確かめられます。</p>
+  </details>
+  <details class="card"><summary>動画はどのくらい小さくなりますか？</summary>
+    <p>動画によって異なります。最近の iPhone の 4K/60fps のように高いビットレートで撮影した動画が最も小さくなり、すでに効率的な動画は削減幅が小さくなります。LeanVid は開始前に予想される削減幅の目安を表示するので、効果の大きい動画から選べます。</p>
+  </details>
+  <details class="card"><summary>どんなファイルができますか？何が保持されますか？</summary>
+    <p>結果は HEVC (H.265) の .mov ファイルとして保存され、オリジナルの名前の末尾にアンダースコアを付けた名前になります（例: IMG_1234_.mov）。撮影日・場所・お気に入りの状態・アルバムへの所属は保持され、写真アプリで行ったトリミングも可能な限り維持されます。</p>
+  </details>
+  <details class="card"><summary>一部の動画がほとんど、あるいはまったく小さくならないのはなぜですか？</summary>
+    <p>すでに低いビットレートでエンコードされた動画は、小さくできる余地がほとんどありません。LeanVid は結果がオリジナルより小さいときだけ置き換えを許可するため、置き換えによって動画が大きくなることはありません。</p>
+  </details>
+
+  <h2>オリジナルと安全性</h2>
+  <details class="card"><summary>オリジナルはいつ削除されますか？</summary>
+    <p>アプリが自動的に何かを削除することはありません。結果は整合性の検証に通過して初めて置き換えの対象となり、実際の削除は iOS のシステム確認ダイアログを承認したときにのみ行われます。その場合でも、削除されたオリジナルは写真アプリの<b>最近削除した項目</b>に 30 日間残ります。</p>
+  </details>
+  <details class="card"><summary>置き換えたオリジナルは復元できますか？</summary>
+    <p>はい。置き換えによって削除されたオリジナルは、写真 → アルバム → 最近削除した項目に 30 日間保管され、いつでも復元できます。30 日を過ぎると、システムが完全に削除します。</p>
+  </details>
+  <details class="card"><summary>検証では実際に何を確認しますか？</summary>
+    <p>置き換えの前に、5 つの独立したチェックを実行します — ① 結果が正しく再生されるか ② トラック構成（映像・音声など）がオリジナルと一致するか ③ 色情報が保持されているか ④ 長さがオリジナルと同じか ⑤ ファイルが実際に小さくなったか。いずれか一つでも失敗すると、置き換えは行われません。</p>
+  </details>
+  <details class="card"><summary>圧縮の途中でアプリが終了したらどうなりますか？</summary>
+    <p>オリジナルは安全です。置き換えはすべての結果が完全に作成された後にのみ始まり、復旧ジャーナルが中断された作業を安全に巻き戻すか再開します。アプリを開き直すと、処理を続行するか、きれいに巻き戻され、完了した項目は履歴に残ります。</p>
+  </details>
+
+  <h2>ストレージと iCloud</h2>
+  <details class="card"><summary>動画を置き換えたのに、ストレージが変わりません。</summary>
+    <p>置き換えたオリジナルが最近削除した項目に 30 日間残っている間は、空き容量がすぐには戻らないことがあります。すぐに空けるには、写真 → アルバム → 最近削除した項目でその動画を完全に削除してください。</p>
+  </details>
+  <details class="card"><summary>iCloud 写真を使っています。どのように動作しますか？</summary>
+    <p>オリジナルが iCloud にしかない場合、LeanVid が圧縮前に自動でダウンロードします。モバイルデータ通信を使うかどうかは、設定 → ダウンロードのネットワークで選べます。置き換えると、小さくなった容量は iCloud のストレージ使用量にも反映されます。</p>
+  </details>
+  <details class="card"><summary>写真も圧縮できますか？</summary>
+    <p>いいえ — LeanVid は動画専用です。通常、動画がライブラリ容量の大部分を占めるため、動画に絞ることでストレージの節約効果が最も大きくなります。</p>
+  </details>
+
+  <h2>権限とプライバシー</h2>
+  <details class="card"><summary>なぜ写真へのフルアクセスが必要なのですか？</summary>
+    <p>理由は 2 つあります — ① ライブラリを容量順に並べ替えるにはライブラリ全体をスキャンする必要があり、② 検証済みの結果でオリジナルを置き換えるにはライブラリへの書き込み権限が必要だからです。「選択した写真」の権限では、どちらもできません。</p>
+  </details>
+  <details class="card"><summary>動画はどこかに送信されますか？</summary>
+    <p>いいえ。圧縮・検証・置き換えはすべてお使いのデバイス内で行われ、動画が当社や第三者にアップロードされることはありません。メディアに関わる唯一のネットワーク利用は、お客様の求めに応じて iOS がご自身の iCloud 動画をダウンロードすることだけです。アプリは改善を続けるために広告を表示し、分析を利用します — 詳しくはプライバシーポリシーをご覧ください。</p>
+  </details>
+
+  <h2>使い方</h2>
+  <details class="card"><summary>アプリを離れると圧縮は止まりますか？</summary>
+    <p>「バックグラウンドで圧縮を続ける」がオン（初期設定）の場合、アプリを離れてもシステムが圧縮を続け、システムの進捗カードを表示します。発熱などデバイスの状態によってシステムが一時停止した場合は、その時点で安全に止まります — アプリに戻って「続ける」をタップすると、中断した箇所からそのまま再開します。</p>
+  </details>
+  <details class="card"><summary>バッテリーや発熱はどうですか？</summary>
+    <p>LeanVid は効率のためにデバイスのハードウェアエンコーダーを使用しますが、大きな動画を連続して処理すると熱が発生することがあります。iOS がデバイスの状態に応じて処理量を調整します。充電しながら実行するのが最も快適です。</p>
+  </details>
+  <details class="card"><summary>アプリは無料ですか？</summary>
+    <p>はい — 現在、すべての機能を制限なく無料でお使いいただけます。アプリは広告によって支えられています。</p>
+  </details>
+
+  <h2>お問い合わせ</h2>
+  <div class="card">
+    <p>不具合を見つけたり、お困りのことがあれば、メールでご連絡ください — すべて目を通しています。</p>
+    <p><a class="btn" href="mailto:creamhelp@gmail.com?subject=LeanVid%20Support">メールで問い合わせる</a></p>
+  </div>
+
+  <h2>動作環境</h2>
+  <p>iOS 18 以降 · iPhone および iPad（Apple silicon 搭載の Mac では iPad アプリとして動作）。</p>
+
+  <footer>© 2026 Cream · <a href="privacy.html">プライバシー</a></footer>
+</div>
+</body>
+</html>

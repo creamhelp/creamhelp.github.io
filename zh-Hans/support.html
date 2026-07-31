@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LeanVid — 支持</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="site">
+    <div class="mark">L</div><div class="name">LeanVid</div>
+    <nav><a href="index.html">首页</a><a href="support.html">支持</a><a href="privacy.html">隐私</a></nav>
+  </header>
+  <div class="langs"><a href="../support.html">English</a> <a href="../ko/support.html">한국어</a> <a href="../ja/support.html">日本語</a> <span class="cur">简体中文</span> <a href="../zh-Hant/support.html">繁體中文</a> <a href="../es-ES/support.html">Español</a> <a href="../de-DE/support.html">Deutsch</a> <a href="../fr-FR/support.html">Français</a> <a href="../it/support.html">Italiano</a> <a href="../pt-BR/support.html">Português</a> <a href="../ru/support.html">Русский</a></div>
+
+  <h1>支持</h1>
+  <p class="lede">关于 LeanVid 常见问题的解答——一款适用于 iPhone 和 iPad、保留画质的视频压缩工具。</p>
+
+  <h2>压缩与画质</h2>
+  <details class="card"><summary>压缩会损害画质吗？</summary>
+    <p>分辨率、帧率和色彩（包括 HDR）都保持不变——只降低过高的比特率，因此在日常观看中很难察觉出差异。替换之前，你可以在对比播放器中（并排、上下或滑块）亲自判断。</p>
+  </details>
+  <details class="card"><summary>我的视频能缩小多少？</summary>
+    <p>视情况而定。以高比特率录制的视频（如近期 iPhone 的 4K/60fps）缩小得最多，而本已高效的视频则节省较少。LeanVid 会在开始前显示预计的节省范围，让你可以优先挑选效果最明显的视频。</p>
+  </details>
+  <details class="card"><summary>我会得到什么文件？哪些内容会被保留？</summary>
+    <p>结果会保存为 HEVC (H.265) .mov 文件，以原文件名加上尾部下划线命名（例如 IMG_1234_.mov）。拍摄日期、位置、收藏状态和所属相簿都会保留，在照片 App 中所做的修剪也会尽可能保留。</p>
+  </details>
+  <details class="card"><summary>为什么有些视频几乎压缩不了？</summary>
+    <p>以低比特率编码的视频几乎没有可压缩的空间。LeanVid 只有在结果小于原视频时才允许替换，因此替换绝不会让视频变得更大。</p>
+  </details>
+
+  <h2>原视频与安全</h2>
+  <details class="card"><summary>原视频什么时候会被删除？</summary>
+    <p>应用绝不会自行删除任何内容。结果只有在通过完整性校验后才有资格用于替换，而真正的删除只有在你同意 iOS 系统确认对话框时才会发生。即便如此，被删除的原视频仍会在照片 App 的<b>最近删除</b>中保留 30 天。</p>
+  </details>
+  <details class="card"><summary>我可以恢复被替换的原视频吗？</summary>
+    <p>可以。因替换而删除的原视频会在照片 → 相簿 → 最近删除中保留 30 天，你可以随时恢复。30 天后，系统会将其永久删除。</p>
+  </details>
+  <details class="card"><summary>校验实际上会检查什么？</summary>
+    <p>每次替换前都会执行五项独立检查——① 结果能否正常播放 ② 轨道结构（视频、音频等）是否与原视频一致 ③ 色彩信息是否得到保留 ④ 时长是否与原视频相同 ⑤ 文件是否确实变小。只要有一项未通过，就不会进行替换。</p>
+  </details>
+  <details class="card"><summary>如果应用在压缩过程中退出了怎么办？</summary>
+    <p>你的原视频是安全的。只有在所有结果都完全生成之后才会开始替换，恢复日志会安全地回滚或继续被中断的工作。重新打开应用，它会接着进行，或干净利落地回滚；已完成的项目会保留在历史记录中。</p>
+  </details>
+
+  <h2>存储空间与 iCloud</h2>
+  <details class="card"><summary>我替换了视频，但存储空间没有变化。</summary>
+    <p>被替换的原视频会在最近删除中保留 30 天，在此期间空间可能不会立即释放。若要立即腾出空间，请在照片 → 相簿 → 最近删除中永久删除这些视频。</p>
+  </details>
+  <details class="card"><summary>我使用 iCloud 照片，它是怎么工作的？</summary>
+    <p>如果原视频只存在于 iCloud 中，LeanVid 会在压缩前自动将其下载。你可以在设置 → 下载网络中选择是否使用蜂窝数据。替换完成后，缩减后的大小也会反映在你的 iCloud 存储用量中。</p>
+  </details>
+  <details class="card"><summary>它也能压缩照片吗？</summary>
+    <p>不能——LeanVid 仅支持视频。视频通常占据图库中的大部分空间，因此专注于视频能带来最大的存储节省。</p>
+  </details>
+
+  <h2>权限与隐私</h2>
+  <details class="card"><summary>为什么它需要照片的完全访问权限？</summary>
+    <p>有两个原因：① 按大小对图库排序需要扫描整个图库；② 用经过校验的结果替换原视频需要对图库的写入权限。“选择的照片”权限两者都做不到。</p>
+  </details>
+  <details class="card"><summary>我的视频会被发送到别处吗？</summary>
+    <p>不会。压缩、校验和替换都在你的设备上完成，你的视频绝不会上传给我们或任何第三方。与你的媒体相关的唯一网络使用，是 iOS 应你的请求下载你自己的 iCloud 视频。应用确实会展示广告并使用分析服务以持续改进——详情请参阅隐私政策。</p>
+  </details>
+
+  <h2>使用</h2>
+  <details class="card"><summary>离开应用后压缩会停止吗？</summary>
+    <p>开启“后台继续压缩”（默认开启）后，离开应用后系统也会继续压缩，并显示系统进度卡片。如果系统因发热或其他设备状况将其暂停，它会在该处安全停止——回到应用并轻点“继续”，即可从中断处接着进行。</p>
+  </details>
+  <details class="card"><summary>电量和发热方面呢？</summary>
+    <p>为提高效率，LeanVid 使用设备的硬件编码器，但连续处理大型视频可能会产生热量。iOS 会根据设备状况调节工作负荷；在充电时运行最为舒适。</p>
+  </details>
+  <details class="card"><summary>这款应用是免费的吗？</summary>
+    <p>是的——目前所有功能均免费，且无任何限制。应用通过广告获得支持。</p>
+  </details>
+
+  <h2>联系我们</h2>
+  <div class="card">
+    <p>发现问题或需要帮助？给我们发邮件——我们会阅读每一封。</p>
+    <p><a class="btn" href="mailto:creamhelp@gmail.com?subject=LeanVid%20Support">发送支持邮件</a></p>
+  </div>
+
+  <h2>系统要求</h2>
+  <p>iOS 18 或更高版本 · iPhone 和 iPad（也能作为 iPad App 在 Apple silicon Mac 上运行）。</p>
+
+  <footer>© 2026 Cream · <a href="privacy.html">隐私</a></footer>
+</div>
+</body>
+</html>

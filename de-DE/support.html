@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LeanVid — Support</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="site">
+    <div class="mark">L</div><div class="name">LeanVid</div>
+    <nav><a href="index.html">Start</a><a href="support.html">Support</a><a href="privacy.html">Datenschutz</a></nav>
+  </header>
+  <div class="langs"><a href="../support.html">English</a> <a href="../ko/support.html">한국어</a> <a href="../ja/support.html">日本語</a> <a href="../zh-Hans/support.html">简体中文</a> <a href="../zh-Hant/support.html">繁體中文</a> <a href="../es-ES/support.html">Español</a> <span class="cur">Deutsch</span> <a href="../fr-FR/support.html">Français</a> <a href="../it/support.html">Italiano</a> <a href="../pt-BR/support.html">Português</a> <a href="../ru/support.html">Русский</a></div>
+
+  <h1>Support</h1>
+  <p class="lede">Antworten auf häufige Fragen zu LeanVid, dem qualitätserhaltenden Video-Kompressor für iPhone und iPad.</p>
+
+  <h2>Komprimierung &amp; Qualität</h2>
+  <details class="card"><summary>Leidet die Qualität unter der Komprimierung?</summary>
+    <p>Auflösung, Bildrate und Farbe (einschließlich HDR) bleiben unangetastet — nur die überhöhte Bitrate wird reduziert, sodass der Unterschied bei normaler Betrachtung kaum auffällt. Vor dem Ersetzen können Sie sich im Vergleichsplayer (nebeneinander, übereinander oder Schieberegler) selbst ein Bild machen.</p>
+  </details>
+  <details class="card"><summary>Wie viel kleiner werden meine Videos?</summary>
+    <p>Das ist unterschiedlich. Videos, die mit hoher Bitrate aufgenommen wurden (etwa 4K/60fps auf neueren iPhones), schrumpfen am stärksten, während bereits effiziente Videos weniger einsparen. LeanVid zeigt vor dem Start einen geschätzten Einsparungsbereich an, damit Sie zuerst die Videos mit der größten Wirkung auswählen können.</p>
+  </details>
+  <details class="card"><summary>Welche Datei erhalte ich? Was bleibt erhalten?</summary>
+    <p>Die Ergebnisse werden als HEVC (H.265) .mov-Dateien gespeichert, benannt nach dem Original mit einem angehängten Unterstrich (z. B. IMG_1234_.mov). Aufnahmedatum, Ort, Favoritenstatus und Albumzugehörigkeit bleiben erhalten, und in der App „Fotos“ vorgenommene Kürzungen werden nach Möglichkeit beibehalten.</p>
+  </details>
+  <details class="card"><summary>Warum sparen manche Videos wenig oder gar nichts?</summary>
+    <p>Videos, die bereits mit niedriger Bitrate codiert sind, bieten wenig Spielraum zum Verkleinern. LeanVid lässt eine Ersetzung nur zu, wenn das Ergebnis kleiner als das Original ist — eine Ersetzung macht ein Video also niemals größer.</p>
+  </details>
+
+  <h2>Originale &amp; Sicherheit</h2>
+  <details class="card"><summary>Wann wird das Original gelöscht?</summary>
+    <p>Die App löscht niemals etwas von selbst. Ein Ergebnis kommt erst dann für eine Ersetzung infrage, wenn es die Integritätsprüfung bestanden hat, und die eigentliche Löschung erfolgt nur, wenn Sie den iOS-Systembestätigungsdialog bestätigen. Selbst dann bleiben gelöschte Originale 30 Tage lang in <b>Zuletzt gelöscht</b> der App „Fotos“.</p>
+  </details>
+  <details class="card"><summary>Kann ich ein ersetztes Original wiederherstellen?</summary>
+    <p>Ja. Durch eine Ersetzung gelöschte Originale werden 30 Tage lang unter Fotos → Alben → Zuletzt gelöscht aufbewahrt, wo Sie sie jederzeit wiederherstellen können. Nach 30 Tagen entfernt das System sie endgültig.</p>
+  </details>
+  <details class="card"><summary>Was prüft die Überprüfung eigentlich?</summary>
+    <p>Vor jeder Ersetzung laufen fünf unabhängige Prüfungen — ① das Ergebnis wird korrekt wiedergegeben ② das Spurlayout (Video, Audio und mehr) stimmt mit dem Original überein ③ die Farbinformationen bleiben erhalten ④ die Dauer stimmt mit dem Original überein ⑤ die Datei ist tatsächlich kleiner geworden. Schlägt auch nur eine Prüfung fehl, findet keine Ersetzung statt.</p>
+  </details>
+  <details class="card"><summary>Was passiert, wenn die App mitten in der Komprimierung beendet wird?</summary>
+    <p>Ihre Originale sind sicher. Die Ersetzung beginnt erst, wenn jedes Ergebnis vollständig erstellt wurde, und ein Wiederherstellungsjournal setzt unterbrochene Arbeiten sicher zurück oder nimmt sie wieder auf. Öffnen Sie die App erneut, wird der Vorgang entweder fortgesetzt oder sauber zurückgesetzt; abgeschlossene Objekte bleiben im Verlauf.</p>
+  </details>
+
+  <h2>Speicher &amp; iCloud</h2>
+  <details class="card"><summary>Ich habe Videos ersetzt, aber der Speicher hat sich nicht verändert.</summary>
+    <p>Solange ersetzte Originale 30 Tage lang in „Zuletzt gelöscht“ liegen, wird der Speicherplatz möglicherweise nicht sofort freigegeben. Um ihn sofort freizugeben, löschen Sie diese Videos endgültig unter Fotos → Alben → Zuletzt gelöscht.</p>
+  </details>
+  <details class="card"><summary>Ich nutze iCloud-Fotos. Wie funktioniert das?</summary>
+    <p>Wenn das Original nur in iCloud vorhanden ist, lädt LeanVid es vor dem Komprimieren automatisch herunter. Ob dabei mobile Daten verwendet werden, können Sie unter Einstellungen → Download-Netzwerk festlegen. Nach der Ersetzung wird die reduzierte Größe auch in Ihrer iCloud-Speichernutzung berücksichtigt.</p>
+  </details>
+  <details class="card"><summary>Kann es auch Fotos komprimieren?</summary>
+    <p>Nein — LeanVid ist ausschließlich für Videos. Videos beanspruchen meist den größten Teil des Speicherplatzes einer Mediathek, daher bringt die Konzentration auf sie die größten Speichereinsparungen.</p>
+  </details>
+
+  <h2>Berechtigungen &amp; Datenschutz</h2>
+  <details class="card"><summary>Warum benötigt die App vollen Zugriff auf „Fotos“?</summary>
+    <p>Zwei Gründe: ① um Ihre Mediathek nach Größe zu sortieren, muss die gesamte Mediathek durchsucht werden, und ② um Originale durch geprüfte Ergebnisse zu ersetzen, ist Schreibzugriff auf die Mediathek erforderlich. Die Berechtigung „Ausgewählte Fotos“ kann beides nicht leisten.</p>
+  </details>
+  <details class="card"><summary>Werden meine Videos irgendwohin gesendet?</summary>
+    <p>Nein. Komprimierung, Überprüfung und Ersetzung finden alle auf Ihrem Gerät statt, und Ihre Videos werden niemals an uns oder an Dritte hochgeladen. Die einzige Netzwerknutzung für Ihre Medien besteht darin, dass iOS auf Ihre Anfrage hin Ihre eigenen iCloud-Videos herunterlädt. Die App zeigt allerdings Werbung an und verwendet Analysefunktionen, um sich stetig zu verbessern — Einzelheiten finden Sie in der Datenschutzerklärung.</p>
+  </details>
+
+  <h2>Nutzung</h2>
+  <details class="card"><summary>Stoppt die Komprimierung, wenn ich die App verlasse?</summary>
+    <p>Wenn „Im Hintergrund weiter komprimieren“ aktiviert ist (Standard), komprimiert das System auch nach dem Verlassen weiter und zeigt eine System-Fortschrittskarte an. Pausiert das System den Vorgang wegen Wärmeentwicklung oder anderer Gerätebedingungen, stoppt er an dieser Stelle sicher — kehren Sie zur App zurück und tippen Sie auf „Fortfahren“, um genau dort weiterzumachen, wo es unterbrochen wurde.</p>
+  </details>
+  <details class="card"><summary>Was ist mit Akku und Wärmeentwicklung?</summary>
+    <p>LeanVid nutzt aus Effizienzgründen den Hardware-Encoder des Geräts, aber das Verarbeiten großer Videos in Folge kann Wärme erzeugen. iOS reguliert die Arbeitslast je nach Gerätezustand; am angenehmsten läuft es während des Ladens.</p>
+  </details>
+  <details class="card"><summary>Ist die App kostenlos?</summary>
+    <p>Ja — derzeit sind alle Funktionen ohne Einschränkungen kostenlos. Die App finanziert sich über Werbung.</p>
+  </details>
+
+  <h2>Kontakt</h2>
+  <div class="card">
+    <p>Einen Fehler gefunden oder Hilfe benötigt? Schreiben Sie uns eine E-Mail — wir lesen jede Nachricht.</p>
+    <p><a class="btn" href="mailto:creamhelp@gmail.com?subject=LeanVid%20Support">Support per E-Mail</a></p>
+  </div>
+
+  <h2>Voraussetzungen</h2>
+  <p>iOS 18 oder neuer · iPhone und iPad (läuft auch auf Macs mit Apple silicon als iPad-App).</p>
+
+  <footer>© 2026 Cream · <a href="privacy.html">Datenschutz</a></footer>
+</div>
+</body>
+</html>

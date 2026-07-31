@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LeanVid — Assistance</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="site">
+    <div class="mark">L</div><div class="name">LeanVid</div>
+    <nav><a href="index.html">Accueil</a><a href="support.html">Assistance</a><a href="privacy.html">Confidentialité</a></nav>
+  </header>
+  <div class="langs"><a href="../support.html">English</a> <a href="../ko/support.html">한국어</a> <a href="../ja/support.html">日本語</a> <a href="../zh-Hans/support.html">简体中文</a> <a href="../zh-Hant/support.html">繁體中文</a> <a href="../es-ES/support.html">Español</a> <a href="../de-DE/support.html">Deutsch</a> <span class="cur">Français</span> <a href="../it/support.html">Italiano</a> <a href="../pt-BR/support.html">Português</a> <a href="../ru/support.html">Русский</a></div>
+
+  <h1>Assistance</h1>
+  <p class="lede">Réponses aux questions fréquentes sur LeanVid, le compresseur vidéo qui préserve la qualité pour iPhone et iPad.</p>
+
+  <h2>Compression et qualité</h2>
+  <details class="card"><summary>La compression dégrade-t-elle la qualité ?</summary>
+    <p>La résolution, la fréquence d’images et les couleurs (y compris le HDR) restent intactes — seul le débit binaire excédentaire est réduit, si bien que la différence est difficile à percevoir en visionnage normal. Avant tout remplacement, vous pouvez en juger par vous-même dans le lecteur de comparaison (côte à côte, haut-bas ou curseur).</p>
+  </details>
+  <details class="card"><summary>De combien mes vidéos seront-elles réduites ?</summary>
+    <p>Cela varie. Les vidéos enregistrées à des débits élevés (comme la 4K/60 fps sur les iPhone récents) diminuent le plus, tandis que les vidéos déjà efficaces génèrent moins d’économies. LeanVid affiche une fourchette d’économies estimée avant que vous ne commenciez, afin que vous puissiez traiter en priorité les vidéos ayant le plus d’impact.</p>
+  </details>
+  <details class="card"><summary>Quel fichier est-ce que j’obtiens ? Qu’est-ce qui est préservé ?</summary>
+    <p>Les résultats sont enregistrés sous forme de fichiers HEVC (H.265) .mov, nommés d’après l’original avec un tiret bas final (par ex. IMG_1234_.mov). La date de prise de vue, le lieu, le statut de favori et l’appartenance aux albums sont conservés, et les découpes effectuées dans l’app Photos sont préservées dans la mesure du possible.</p>
+  </details>
+  <details class="card"><summary>Pourquoi certaines vidéos ne diminuent-elles que peu, voire pas du tout ?</summary>
+    <p>Les vidéos déjà encodées à un faible débit binaire n’ont plus beaucoup de marge de réduction. LeanVid n’autorise un remplacement que si le résultat est plus petit que l’original ; un remplacement n’agrandit donc jamais une vidéo.</p>
+  </details>
+
+  <h2>Originaux et sécurité</h2>
+  <details class="card"><summary>Quand l’original est-il supprimé ?</summary>
+    <p>L’application ne supprime jamais rien d’elle-même. Un résultat ne devient éligible au remplacement qu’après avoir réussi la vérification d’intégrité, et la suppression effective n’a lieu que lorsque vous approuvez la boîte de dialogue de confirmation du système iOS. Même dans ce cas, les originaux supprimés restent dans <b>Supprimés récemment</b> de l’app Photos pendant 30 jours.</p>
+  </details>
+  <details class="card"><summary>Puis-je restaurer un original remplacé ?</summary>
+    <p>Oui. Les originaux supprimés lors d’un remplacement sont conservés pendant 30 jours dans Photos → Albums → Supprimés récemment, où vous pouvez les restaurer à tout moment. Après 30 jours, le système les supprime définitivement.</p>
+  </details>
+  <details class="card"><summary>Que contrôle réellement la vérification ?</summary>
+    <p>Cinq contrôles indépendants s’exécutent avant tout remplacement — ① le résultat se lit correctement ② la structure des pistes (vidéo, audio, etc.) correspond à l’original ③ les informations de couleur sont préservées ④ la durée correspond à l’original ⑤ le fichier a effectivement diminué. Si l’un de ces contrôles échoue, aucun remplacement n’a lieu.</p>
+  </details>
+  <details class="card"><summary>Que se passe-t-il si l’application se ferme en pleine compression ?</summary>
+    <p>Vos originaux sont en sécurité. Le remplacement ne commence qu’une fois tous les résultats entièrement créés, et un journal de récupération annule ou reprend en toute sécurité le travail interrompu. Rouvrez l’application : elle poursuit ou revient proprement en arrière ; les éléments terminés restent dans l’historique.</p>
+  </details>
+
+  <h2>Stockage et iCloud</h2>
+  <details class="card"><summary>J’ai remplacé des vidéos, mais le stockage n’a pas changé.</summary>
+    <p>Tant que les originaux remplacés restent dans Supprimés récemment pendant 30 jours, l’espace peut ne pas être libéré immédiatement. Pour le libérer tout de suite, supprimez définitivement ces vidéos dans Photos → Albums → Supprimés récemment.</p>
+  </details>
+  <details class="card"><summary>J’utilise Photos iCloud. Comment cela fonctionne-t-il ?</summary>
+    <p>Si l’original n’existe que dans iCloud, LeanVid le télécharge automatiquement avant la compression. Vous pouvez choisir si les données cellulaires sont utilisées dans Réglages → Réseau de téléchargement. Une fois le remplacement effectué, la taille réduite se répercute également sur votre utilisation du stockage iCloud.</p>
+  </details>
+  <details class="card"><summary>Peut-elle aussi compresser des photos ?</summary>
+    <p>Non — LeanVid ne traite que les vidéos. Les vidéos occupent généralement la majeure partie de l’espace d’une photothèque ; se concentrer sur elles offre donc les plus grandes économies de stockage.</p>
+  </details>
+
+  <h2>Autorisations et confidentialité</h2>
+  <details class="card"><summary>Pourquoi l’application a-t-elle besoin d’un accès complet à Photos ?</summary>
+    <p>Deux raisons : ① trier votre photothèque par taille nécessite d’analyser l’ensemble de la photothèque, et ② remplacer les originaux par des résultats vérifiés nécessite un accès en écriture à la photothèque. L’autorisation « Photos sélectionnées » ne permet ni l’un ni l’autre.</p>
+  </details>
+  <details class="card"><summary>Mes vidéos sont-elles envoyées quelque part ?</summary>
+    <p>Non. La compression, la vérification et le remplacement ont tous lieu sur votre appareil, et vos vidéos ne sont jamais téléversées, ni vers nous ni vers un tiers. La seule utilisation du réseau pour vos médias est le téléchargement par iOS de vos propres vidéos iCloud, à votre demande. L’application affiche bel et bien des publicités et utilise des outils d’analyse pour continuer à s’améliorer — consultez la politique de confidentialité pour plus de détails.</p>
+  </details>
+
+  <h2>Utilisation</h2>
+  <details class="card"><summary>La compression s’arrête-t-elle quand je quitte l’application ?</summary>
+    <p>Lorsque l’option « Continuer à compresser en arrière-plan » est activée (par défaut), le système poursuit la compression après votre départ et affiche une carte de progression système. Si le système la met en pause en raison de la chaleur ou d’autres conditions de l’appareil, elle s’arrête en toute sécurité à ce stade — revenez dans l’application et touchez « Continuer » pour reprendre exactement là où elle s’était arrêtée.</p>
+  </details>
+  <details class="card"><summary>Qu’en est-il de la batterie et de la chaleur ?</summary>
+    <p>LeanVid utilise l’encodeur matériel de l’appareil pour plus d’efficacité, mais traiter de grandes vidéos les unes après les autres peut générer de la chaleur. iOS régule le travail en fonction de l’état de l’appareil ; l’utiliser pendant la charge est le plus confortable.</p>
+  </details>
+  <details class="card"><summary>L’application est-elle gratuite ?</summary>
+    <p>Oui — toutes les fonctionnalités sont actuellement gratuites, sans aucune limite. L’application est financée par la publicité.</p>
+  </details>
+
+  <h2>Contact</h2>
+  <div class="card">
+    <p>Vous avez trouvé un bug ou besoin d’aide ? Écrivez-nous — nous lisons tout.</p>
+    <p><a class="btn" href="mailto:creamhelp@gmail.com?subject=LeanVid%20Support">Écrire à l’assistance</a></p>
+  </div>
+
+  <h2>Configuration requise</h2>
+  <p>iOS 18 ou version ultérieure · iPhone et iPad (fonctionne aussi sur les Mac Apple silicon en tant qu’app iPad).</p>
+
+  <footer>© 2026 Cream · <a href="privacy.html">Confidentialité</a></footer>
+</div>
+</body>
+</html>

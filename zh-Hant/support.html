@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LeanVid — 支援</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="site">
+    <div class="mark">L</div><div class="name">LeanVid</div>
+    <nav><a href="index.html">首頁</a><a href="support.html">支援</a><a href="privacy.html">隱私權</a></nav>
+  </header>
+  <div class="langs"><a href="../support.html">English</a> <a href="../ko/support.html">한국어</a> <a href="../ja/support.html">日本語</a> <a href="../zh-Hans/support.html">简体中文</a> <span class="cur">繁體中文</span> <a href="../es-ES/support.html">Español</a> <a href="../de-DE/support.html">Deutsch</a> <a href="../fr-FR/support.html">Français</a> <a href="../it/support.html">Italiano</a> <a href="../pt-BR/support.html">Português</a> <a href="../ru/support.html">Русский</a></div>
+
+  <h1>支援</h1>
+  <p class="lede">關於 LeanVid — 專為 iPhone 與 iPad 打造、保留畫質的影片壓縮工具 — 的常見問題解答。</p>
+
+  <h2>壓縮與畫質</h2>
+  <details class="card"><summary>壓縮會損害畫質嗎？</summary>
+    <p>解析度、影格率與色彩（包括 HDR）都維持不變 — 只降低過高的位元率，因此在一般觀看下很難察覺差異。取代之前，您可以在比較播放器中親自判斷（並排、上下或滑桿）。</p>
+  </details>
+  <details class="card"><summary>我的影片會縮小多少？</summary>
+    <p>視情況而定。以高位元率錄製的影片（例如近期 iPhone 的 4K/60fps）縮小得最多，而原本就已經很有效率的影片則節省得較少。LeanVid 會在開始前顯示預估的節省範圍，讓您可以優先挑選效果最大的影片。</p>
+  </details>
+  <details class="card"><summary>我會得到什麼檔案？有哪些會被保留？</summary>
+    <p>結果會儲存為 HEVC (H.265) .mov 檔案，並沿用原始檔的名稱、在結尾加上一個底線（例如 IMG_1234_.mov）。拍攝日期、位置、喜好項目狀態與所屬相簿都會保留，在「照片」App 中所做的修剪編輯也會盡可能保留。</p>
+  </details>
+  <details class="card"><summary>為什麼有些影片幾乎沒有縮小？</summary>
+    <p>已經以低位元率編碼的影片，能再縮小的空間很有限。LeanVid 只有在結果比原始檔更小時才允許取代，因此取代絕不會讓影片變得更大。</p>
+  </details>
+
+  <h2>原始檔與安全</h2>
+  <details class="card"><summary>原始檔何時會被刪除？</summary>
+    <p>App 絕不會自行刪除任何東西。結果必須先通過完整性驗證，才會成為取代的候選；而實際的刪除只有在您核准 iOS 系統確認對話框時才會發生。即便如此，被刪除的原始檔仍會在「照片」App 的<b>最近刪除</b>中保留 30 天。</p>
+  </details>
+  <details class="card"><summary>我可以復原被取代的原始檔嗎？</summary>
+    <p>可以。因取代而被刪除的原始檔會在照片 → 相簿 → 最近刪除中保留 30 天，您可以隨時復原它們。30 天後，系統會將它們永久刪除。</p>
+  </details>
+  <details class="card"><summary>驗證實際上會檢查什麼？</summary>
+    <p>任何取代之前都會執行五項獨立檢查 — ① 結果能否正常播放 ② 軌道結構（影像、音訊等）是否與原始檔相符 ③ 色彩資訊是否保留 ④ 時間長度是否與原始檔相同 ⑤ 檔案是否確實變小。只要有任何一項檢查未通過，就不會進行取代。</p>
+  </details>
+  <details class="card"><summary>如果 App 在壓縮途中結束了怎麼辦？</summary>
+    <p>您的原始檔是安全的。取代只會在每個結果都完整產生後才開始，而復原日誌會安全地將中斷的作業還原或繼續。重新開啟 App 後，它會接續進行，或乾淨俐落地還原；已完成的項目會保留在歷史記錄中。</p>
+  </details>
+
+  <h2>儲存空間與 iCloud</h2>
+  <details class="card"><summary>我取代了影片，但儲存空間沒有變化。</summary>
+    <p>被取代的原始檔在最近刪除中停留的 30 天內，空間可能不會立即被回收。若要立即釋出空間，請在照片 → 相簿 → 最近刪除中永久刪除那些影片。</p>
+  </details>
+  <details class="card"><summary>我使用 iCloud 照片。這是如何運作的？</summary>
+    <p>如果原始檔只存在於 iCloud 中，LeanVid 會在壓縮前自動下載它。您可以在設定 → 下載網路中選擇是否使用行動數據。取代之後，縮減後的容量也會反映在您的 iCloud 儲存空間用量中。</p>
+  </details>
+  <details class="card"><summary>它也能壓縮照片嗎？</summary>
+    <p>不行 — LeanVid 只處理影片。影片通常佔用了照片圖庫大部分的空間，因此專注於影片能帶來最大的儲存空間節省。</p>
+  </details>
+
+  <h2>權限與隱私</h2>
+  <details class="card"><summary>為什麼需要照片的完整取用權？</summary>
+    <p>有兩個原因：① 要將您的圖庫依容量大小排序，必須掃描整個圖庫；② 要以驗證過的結果取代原始檔，需要圖庫的寫入權限。「選取的照片」權限這兩者都做不到。</p>
+  </details>
+  <details class="card"><summary>我的影片會被傳送到任何地方嗎？</summary>
+    <p>不會。壓縮、驗證與取代全都在您的裝置上進行，您的影片絕不會被上傳給我們或任何第三方。與您媒體相關的唯一網路用途，是 iOS 依您的要求下載您自己的 iCloud 影片。App 確實會顯示廣告並使用分析工具以持續改善 — 詳情請參閱隱私權政策。</p>
+  </details>
+
+  <h2>使用</h2>
+  <details class="card"><summary>離開 App 後壓縮會停止嗎？</summary>
+    <p>在開啟「在背景繼續壓縮」（預設值）的情況下，即使您離開，系統仍會繼續壓縮並顯示系統進度卡片。若系統因發熱或其他裝置狀況而暫停，它會在該處安全地停下 — 回到 App 並點一下「繼續」，即可從中斷處接續進行。</p>
+  </details>
+  <details class="card"><summary>電池與發熱方面呢？</summary>
+    <p>LeanVid 為了效率會使用裝置的硬體編碼器，但連續處理大型影片可能會產生熱量。iOS 會根據裝置狀況調節工作量；在充電時執行是最為理想的。</p>
+  </details>
+  <details class="card"><summary>這款 App 是免費的嗎？</summary>
+    <p>是的 — 目前所有功能都可免費使用，沒有任何限制。這款 App 透過廣告來維持營運。</p>
+  </details>
+
+  <h2>聯絡我們</h2>
+  <div class="card">
+    <p>發現錯誤或需要協助嗎？寄電子郵件給我們 — 我們每一封都會看。</p>
+    <p><a class="btn" href="mailto:creamhelp@gmail.com?subject=LeanVid%20Support">寄送支援郵件</a></p>
+  </div>
+
+  <h2>系統需求</h2>
+  <p>iOS 18 或以上版本 · iPhone 與 iPad（在搭載 Apple silicon 的 Mac 上也能以 iPad App 形式執行）。</p>
+
+  <footer>© 2026 Cream · <a href="privacy.html">隱私權</a></footer>
+</div>
+</body>
+</html>
