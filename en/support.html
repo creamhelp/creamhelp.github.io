@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LeanVid — Support</title>
+<link rel="canonical" href="https://creamhelp.github.io/support.html">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="site">
+    <div class="mark">L</div><div class="name">LeanVid</div>
+    <nav><a href="index.html">Home</a><a href="support.html">Support</a><a href="privacy.html">Privacy</a></nav>
+  </header>
+  <div class="langs"><span class="cur">English</span> <a href="../ko/support.html">한국어</a> <a href="../ja/support.html">日本語</a> <a href="../zh-Hans/support.html">简体中文</a> <a href="../zh-Hant/support.html">繁體中文</a> <a href="../es-ES/support.html">Español</a> <a href="../de-DE/support.html">Deutsch</a> <a href="../fr-FR/support.html">Français</a> <a href="../it/support.html">Italiano</a> <a href="../pt-BR/support.html">Português</a> <a href="../ru/support.html">Русский</a></div>
+
+  <h1>Support</h1>
+  <p class="lede">Answers to common questions about LeanVid, the quality-preserving video compressor for iPhone and iPad.</p>
+
+  <h2>Compression &amp; Quality</h2>
+  <details class="card"><summary>Does compression hurt quality?</summary>
+    <p>Resolution, frame rate, and color (including HDR) stay untouched — only the excessive bitrate is reduced, so the difference is hard to notice in normal viewing. Before replacing, you can judge for yourself in the comparison player (side-by-side, top-bottom, or slider).</p>
+  </details>
+  <details class="card"><summary>How much smaller will my videos get?</summary>
+    <p>It varies. Videos recorded at high bitrates (like 4K/60fps on recent iPhones) shrink the most, while already efficient videos save less. LeanVid shows an estimated savings range before you start, so you can pick the videos with the biggest impact first.</p>
+  </details>
+  <details class="card"><summary>What file do I get? What is preserved?</summary>
+    <p>Results are saved as HEVC (H.265) .mov files, named after the original with a trailing underscore (e.g. IMG_1234_.mov). Capture date, location, favorite status, and album membership are kept, and trims made in the Photos app are preserved whenever possible.</p>
+  </details>
+  <details class="card"><summary>Why do some videos save little or nothing?</summary>
+    <p>Videos already encoded at a low bitrate have little room left to shrink. LeanVid only allows a replacement when the result is smaller than the original, so a replacement never makes a video larger.</p>
+  </details>
+
+  <h2>Originals &amp; Safety</h2>
+  <details class="card"><summary>When is the original deleted?</summary>
+    <p>The app never deletes anything on its own. A result becomes eligible for replacement only after passing integrity verification, and the actual deletion happens only when you approve the iOS system confirmation dialog. Even then, deleted originals stay in the Photos app's <b>Recently Deleted</b> for 30 days.</p>
+  </details>
+  <details class="card"><summary>Can I restore a replaced original?</summary>
+    <p>Yes. Originals deleted by a replacement are kept for 30 days in Photos → Albums → Recently Deleted, where you can restore them anytime. After 30 days the system removes them permanently.</p>
+  </details>
+  <details class="card"><summary>What does verification actually check?</summary>
+    <p>Five independent checks run before any replacement — ① the result plays back correctly ② the track layout (video, audio, and more) matches the original ③ color information is preserved ④ the duration matches the original ⑤ the file actually got smaller. If any check fails, no replacement happens.</p>
+  </details>
+  <details class="card"><summary>What if the app quits mid-compression?</summary>
+    <p>Your originals are safe. Replacement only begins after every result is fully created, and a recovery journal safely rolls back or resumes interrupted work. Reopen the app and it either continues or rolls back cleanly; completed items remain in History.</p>
+  </details>
+
+  <h2>Storage &amp; iCloud</h2>
+  <details class="card"><summary>I replaced videos but storage didn't change.</summary>
+    <p>While replaced originals sit in Recently Deleted for 30 days, the space may not be reclaimed right away. To free it immediately, permanently delete those videos in Photos → Albums → Recently Deleted.</p>
+  </details>
+  <details class="card"><summary>I use iCloud Photos. How does that work?</summary>
+    <p>If the original only exists in iCloud, LeanVid downloads it automatically before compressing. You can choose whether cellular data is used under Settings → Download network. Once replaced, the reduced size is reflected in your iCloud storage usage as well.</p>
+  </details>
+  <details class="card"><summary>Can it compress photos too?</summary>
+    <p>No — LeanVid is video-only. Videos usually take up most of a library's space, so focusing on them delivers the biggest storage savings.</p>
+  </details>
+
+  <h2>Permissions &amp; Privacy</h2>
+  <details class="card"><summary>Why does it need full access to Photos?</summary>
+    <p>Two reasons: ① sorting your library by size requires scanning the whole library, and ② replacing originals with verified results requires write access to the library. The 'Selected Photos' permission can do neither.</p>
+  </details>
+  <details class="card"><summary>Are my videos sent anywhere?</summary>
+    <p>No. Compression, verification, and replacement all happen on your device, and your videos are never uploaded to us or any third party. The only network use for your media is iOS downloading your own iCloud videos at your request. The app does show ads and use analytics to keep improving — see the Privacy Policy for details.</p>
+  </details>
+
+  <h2>Usage</h2>
+  <details class="card"><summary>Does compression stop when I leave the app?</summary>
+    <p>On iOS 26 and later, with 'Keep Compressing in Background' on (the default), the system keeps compressing after you leave and shows a system progress card. On earlier versions, compression pauses when you leave and resumes automatically when you return. In either case, if the system pauses the work due to heat or other device conditions, it stops safely at that point — return to the app and tap 'Continue' to pick up right where it left off.</p>
+  </details>
+  <details class="card"><summary>What about battery and heat?</summary>
+    <p>LeanVid uses the device's hardware encoder for efficiency, but processing large videos back-to-back can generate heat. iOS regulates the work based on device conditions; running it while charging is the most comfortable.</p>
+  </details>
+  <details class="card"><summary>Is the app free?</summary>
+    <p>Yes — every feature is currently free, with no limits. The app is supported by ads.</p>
+  </details>
+
+  <h2>Contact</h2>
+  <div class="card">
+    <p>Found a bug or need help? Email us — we read everything.</p>
+    <p><a class="btn" href="mailto:creamhelp@gmail.com?subject=LeanVid%20Support">Email support</a></p>
+  </div>
+
+  <h2>Requirements</h2>
+  <p>iOS 18 or later · iPhone and iPad (also runs on Apple silicon Macs as an iPad app).</p>
+
+  <footer>© 2026 Cream · <a href="privacy.html">Privacy</a></footer>
+</div>
+</body>
+</html>
