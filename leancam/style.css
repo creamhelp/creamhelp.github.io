@@ -1,0 +1,39 @@
+/* ursusshock-site 공통 스타일 — GitHub Pages 배포용 (P4) */
+:root{
+  --bg:#F5FAF7; --surface:#FFFFFF; --ink:#122019; --ink-2:#41564C; --ink-3:#6B7F75;
+  --accent:#0A5C3E; --accent-2:#2E9C77; --border:#DCE8E2;
+  --radius:14px;
+}
+@media (prefers-color-scheme: dark){
+  :root{ --bg:#0B120F; --surface:#131C17; --ink:#E9F4EF; --ink-2:#A9BDB3; --ink-3:#7C9187;
+    --accent:#3FBE8C; --accent-2:#2E9C77; --border:#22302A; }
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font:16px/1.65 -apple-system,BlinkMacSystemFont,"SF Pro Text","Apple SD Gothic Neo",system-ui,sans-serif;
+  -webkit-text-size-adjust:100%}
+.wrap{max-width:760px;margin:0 auto;padding:48px 24px 96px}
+header.site{display:flex;align-items:center;gap:14px;margin-bottom:40px}
+.mark{width:44px;height:44px;border-radius:11px;background:linear-gradient(150deg,var(--accent),var(--accent-2));
+  display:flex;align-items:center;justify-content:center;color:#fff;font-weight:800;font-size:20px}
+header.site .name{font-weight:700;font-size:18px}
+header.site nav{margin-left:auto;display:flex;gap:16px;font-size:14px}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+h1{font-size:32px;line-height:1.25;letter-spacing:-.015em;margin:0 0 8px}
+.lede{color:var(--ink-2);margin:0 0 32px}
+h2{font-size:20px;margin:36px 0 10px}
+p{margin:10px 0}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:20px 22px;margin:14px 0}
+details.card{padding:14px 22px}
+details.card summary{cursor:pointer;font-weight:600;padding:6px 0}
+details.card p{color:var(--ink-2)}
+.btn{display:inline-block;background:var(--accent);color:#fff;border-radius:999px;padding:10px 22px;font-weight:600}
+.btn:hover{text-decoration:none;opacity:.92}
+footer{margin-top:64px;color:var(--ink-3);font-size:13px;border-top:1px solid var(--border);padding-top:18px}
+.lang{font-size:13px;color:var(--ink-3)}
+.langs{margin:-26px 0 34px;display:flex;flex-wrap:wrap;gap:6px 14px;font-size:13px;color:var(--ink-3)}
+.langs a{color:var(--ink-3)}
+.langs .cur{color:var(--ink);font-weight:600}
+ul{padding-left:22px}
+li{margin:6px 0}
