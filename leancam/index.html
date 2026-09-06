@@ -24,10 +24,10 @@
   var pick = null;
   for (var i = 0; i < wanted.length && !pick; i++) pick = fold(wanted[i]);
   if (LOCALES.indexOf(pick) < 0) pick = "en";
-  location.replace(pick + "/");
+  try { location.replace(pick + "/"); } catch (e) { /* 본문의 언어 목록으로 남는다 */ }
 })();
 </script>
-<meta http-equiv="refresh" content="0; url=en/">
+<noscript><meta http-equiv="refresh" content="0; url=en/"></noscript>
 <link rel="canonical" href="https://creamhelp.github.io/leancam/en/">
 <link rel="alternate" hreflang="x-default" href="https://creamhelp.github.io/leancam/en/">
 <link rel="alternate" hreflang="en" href="https://creamhelp.github.io/leancam/en/">
