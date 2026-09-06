@@ -3,33 +3,67 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>LeanVid — Shrink videos, keep quality</title>
+<title>Cream — Small apps that save space</title>
+<meta name="description" content="Cream makes small iOS apps that save storage: LeanVid compresses videos without visible quality loss, GramCamera shoots smaller photos and videos from the start.">
+<link rel="canonical" href="https://creamhelp.github.io/">
 <link rel="stylesheet" href="style.css">
+<style>
+  .apps { display: grid; gap: 18px; margin: 28px 0; }
+  .app { border: 1px solid #e3e7ec; border-radius: 14px; padding: 18px 20px; background: #fff; }
+  .app h2 { margin: 0 0 6px; font-size: 20px; }
+  .app .tag { color: #5b6470; font-size: 14px; margin: 0 0 10px; }
+  .app p { margin: 6px 0; }
+  .app .links a { margin-right: 14px; }
+  .lang-block { margin-top: 36px; padding-top: 18px; border-top: 1px solid #e3e7ec; }
+  .muted { color: #5b6470; font-size: 14px; }
+</style>
 </head>
 <body>
 <div class="wrap">
   <header class="site">
-    <div class="mark">L</div><div class="name">LeanVid</div>
-    <nav><a href="index.html">Home</a><a href="support.html">Support</a><a href="privacy.html">Privacy</a></nav>
+    <div class="mark">C</div><div class="name">Cream</div>
+    <nav><a href="leanvid/index.html">LeanVid</a><a href="gramcamera/">GramCamera</a><a href="mailto:creamhelp@gmail.com">Contact</a></nav>
   </header>
-  <div class="langs"><span class="cur">English</span> <a href="ko/index.html">한국어</a> <a href="ja/index.html">日本語</a> <a href="zh-Hans/index.html">简体中文</a> <a href="zh-Hant/index.html">繁體中文</a> <a href="es-ES/index.html">Español</a> <a href="de-DE/index.html">Deutsch</a> <a href="fr-FR/index.html">Français</a> <a href="it/index.html">Italiano</a> <a href="pt-BR/index.html">Português</a> <a href="ru/index.html">Русский</a></div>
 
-  <h1>Shrink videos, keep the quality.</h1>
-  <p class="lede">LeanVid compresses the videos in your photo library by lowering only the bitrate — resolution, frame rate, color, and HDR stay intact. Every result is verified before it replaces the original, and your originals stay recoverable for 30 days.</p>
+  <h1>Small apps that save space.</h1>
+  <p class="lede">Cream builds small, focused iOS apps around one idea: keep your photos and videos, use less storage. Nothing is uploaded — everything runs on your device.</p>
 
-  <div class="card">
-    <ul>
-      <li><b>Quality-preserving compression</b> — bitrate-only, HDR and every track preserved</li>
-      <li><b>Verified, safe replacement</b> — integrity checks, recovery journal, system confirmation</li>
-      <li><b>See it yourself</b> — side-by-side and slider comparison, full spec table</li>
-      <li><b>No waiting</b> — background compression with Live Activity progress (iOS 26+); on earlier versions it resumes automatically when you return</li>
-      <li><b>On-device processing</b> — your videos are compressed on your iPhone and are never uploaded; no account required</li>
-    </ul>
+  <div class="apps">
+    <section class="app" id="leanvid">
+      <h2>LeanVid</h2>
+      <p class="tag">Shrink videos, keep the quality.</p>
+      <p>Compresses videos from your photo library and the Files app by lowering only the bitrate. Resolution, frame rate, color and HDR stay intact, and every result is verified before it replaces the original. Files your iPhone can't play (MKV, WebM, AVI, VP9, AV1) are converted by the built-in converter.</p>
+      <p class="links"><a href="leanvid/index.html">Website</a><a href="leanvid/support.html">Support</a><a href="leanvid/privacy.html">Privacy</a></p>
+    </section>
+
+    <section class="app" id="gramcamera">
+      <h2>GramCamera <span class="muted">(formerly LeanCam)</span></h2>
+      <p class="tag">Shoot like the stock camera, save smaller files.</p>
+      <p>A camera that captures the same way your built-in camera does but stores smaller photos and videos. Pick Saver, Standard, Max or Original, keep shooting into your Photos app, and see how much space you saved.</p>
+      <p class="links"><a href="gramcamera/">Website</a><a href="gramcamera/en/support.html">Support</a><a href="gramcamera/en/privacy.html">Privacy</a></p>
+    </section>
   </div>
 
-  <p><i>Coming soon to the App Store.</i></p>
+  <div class="lang-block" lang="ko">
+    <h1>용량을 아끼는 작은 앱들.</h1>
+    <p class="lede">Cream은 한 가지 생각으로 작은 iOS 앱을 만듭니다. 사진과 동영상은 그대로 두고, 저장 공간은 덜 쓰기. 어떤 것도 업로드하지 않고 모두 기기 안에서 처리합니다.</p>
+    <div class="apps">
+      <section class="app">
+        <h2>LeanVid</h2>
+        <p class="tag">화질은 그대로, 동영상 용량은 줄이기.</p>
+        <p>사진 보관함과 파일 앱의 동영상을 비트레이트만 낮춰 압축합니다. 해상도·프레임레이트·색·HDR은 그대로이고, 모든 결과는 원본을 교체하기 전에 검증합니다. iPhone이 재생하지 못하는 파일(MKV, WebM, AVI, VP9, AV1)도 내장 변환기로 바꿉니다.</p>
+        <p class="links"><a href="leanvid/ko/index.html">웹사이트</a><a href="leanvid/ko/support.html">지원</a><a href="leanvid/ko/privacy.html">개인정보</a></p>
+      </section>
+      <section class="app">
+        <h2>GramCamera <span class="muted">(구 LeanCam)</span></h2>
+        <p class="tag">기본 카메라처럼 찍고, 파일은 더 작게.</p>
+        <p>기본 카메라와 같은 방식으로 촬영하되 저장할 때 용량을 아끼는 카메라입니다. 절약·표준·최대·원본 중에서 고르고, 사진은 그대로 기본 사진 앱에 저장되며, 얼마나 아꼈는지 앱에서 확인할 수 있습니다.</p>
+        <p class="links"><a href="gramcamera/ko/">웹사이트</a><a href="gramcamera/ko/support.html">지원</a><a href="gramcamera/ko/privacy.html">개인정보</a></p>
+      </section>
+    </div>
+  </div>
 
-  <footer>© 2026 Cream · <a href="support.html">Support</a> · <a href="privacy.html">Privacy</a></footer>
+  <footer>© 2026 Cream · <a href="mailto:creamhelp@gmail.com">creamhelp@gmail.com</a></footer>
 </div>
 </body>
 </html>
