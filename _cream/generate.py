@@ -44,7 +44,7 @@ T = {
     lv_desc="Compresses videos from your photo library and the Files app by lowering only the bitrate. Resolution, frame rate, color and HDR stay intact, and every result is verified before it replaces the original. Files your iPhone can't play (MKV, WebM, AVI, WMV, FLV, MPG, VP9, AV1) are converted by the built-in converter.",
     gc_tag="Same shot, smaller file.",
     gc_desc="A camera that shoots the same way your stock camera does but saves smaller photos and videos. Choose Saver, Standard or Max, keep shooting straight into the Photos app, and see how much space you saved on every capture.",
-    formerly="(formerly LeanCam)", website="Website", support="Support", privacy="Privacy", contact="Contact",
+    website="Website", support="Support", privacy="Privacy", contact="Contact",
 ),
 "ko": dict(
     title="Cream — 용량을 아끼는 작은 앱들",
@@ -55,7 +55,7 @@ T = {
     lv_desc="사진 보관함과 파일 앱의 동영상을 비트레이트만 낮춰 압축합니다. 해상도·프레임레이트·색·HDR은 그대로이고, 모든 결과는 원본을 교체하기 전에 검증합니다. iPhone이 재생하지 못하는 파일(MKV, WebM, AVI, WMV, FLV, MPG, VP9, AV1)도 내장 변환기로 바꿉니다.",
     gc_tag="같은 장면, 더 작은 파일.",
     gc_desc="기본 카메라와 같은 방식으로 찍되, 저장할 때 용량을 아끼는 카메라입니다. 절약·표준·최대 중에서 고르고, 사진과 동영상은 그대로 기본 사진 앱에 저장되며, 매 촬영마다 얼마나 아꼈는지 확인할 수 있습니다.",
-    formerly="(구 LeanCam)", website="웹사이트", support="지원", privacy="개인정보", contact="문의",
+    website="웹사이트", support="지원", privacy="개인정보", contact="문의",
 ),
 "ja": dict(
     title="Cream — 容量を節約する小さなアプリ",
@@ -66,7 +66,7 @@ T = {
     lv_desc="写真ライブラリとファイルアプリの動画を、ビットレートだけ下げて圧縮します。解像度・フレームレート・色・HDR はそのままで、すべての結果は元の動画を置き換える前に検証されます。iPhone で再生できないファイル(MKV、WebM、AVI、WMV、FLV、MPG、VP9、AV1)も内蔵コンバーターで変換します。",
     gc_tag="同じ一枚を、もっと軽く。",
     gc_desc="標準カメラと同じように撮りながら、保存するときの容量を抑えるカメラです。節約・標準・最大から選び、写真と動画はそのまま標準の写真アプリに保存され、一枚ごとにどれだけ節約できたかを確認できます。",
-    formerly="(旧 LeanCam)", website="ウェブサイト", support="サポート", privacy="プライバシー", contact="お問い合わせ",
+    website="ウェブサイト", support="サポート", privacy="プライバシー", contact="お問い合わせ",
 ),
 "zh-Hans": dict(
     title="Cream — 节省空间的小应用",
@@ -77,7 +77,7 @@ T = {
     lv_desc="只降低比特率来压缩照片图库和“文件”应用中的视频。分辨率、帧率、色彩和 HDR 保持不变,每个结果在替换原片之前都会经过验证。iPhone 无法播放的文件(MKV、WebM、AVI、WMV、FLV、MPG、VP9、AV1)也可由内置转换器转换。",
     gc_tag="同样的画面,更小的文件。",
     gc_desc="以与系统相机相同的方式拍摄、但保存时更省容量的相机。在省容量、标准、最高之间选择,照片和视频照常存入系统“照片”应用,每次拍摄都能看到节省了多少。",
-    formerly="(原 LeanCam)", website="网站", support="支持", privacy="隐私", contact="联系我们",
+    website="网站", support="支持", privacy="隐私", contact="联系我们",
 ),
 "zh-Hant": dict(
     title="Cream — 節省空間的小應用程式",
@@ -88,7 +88,7 @@ T = {
     lv_desc="只降低位元率來壓縮照片圖庫和「檔案」App 中的影片。解析度、影格率、色彩和 HDR 保持不變,每個結果在取代原始檔之前都會經過驗證。iPhone 無法播放的檔案(MKV、WebM、AVI、WMV、FLV、MPG、VP9、AV1)也可由內建轉換器轉換。",
     gc_tag="同樣的畫面,更小的檔案。",
     gc_desc="以與系統相機相同的方式拍攝、但儲存時更省容量的相機。在省容量、標準、最高之間選擇,照片和影片照常存入系統「照片」App,每次拍攝都能看到節省了多少。",
-    formerly="(原 LeanCam)", website="網站", support="支援", privacy="隱私", contact="聯絡我們",
+    website="網站", support="支援", privacy="隱私", contact="聯絡我們",
 ),
 "es-ES": dict(
     title="Cream — Apps pequeñas que ahorran espacio",
@@ -99,7 +99,7 @@ T = {
     lv_desc="Comprime los vídeos de tu fototeca y de la app Archivos bajando solo la tasa de bits. La resolución, la frecuencia de fotogramas, el color y el HDR se mantienen intactos, y cada resultado se verifica antes de sustituir el original. Los archivos que tu iPhone no puede reproducir (MKV, WebM, AVI, WMV, FLV, MPG, VP9, AV1) se convierten con el conversor integrado.",
     gc_tag="La misma escena, un archivo menor.",
     gc_desc="Una cámara que captura igual que la cámara del sistema pero guarda fotos y vídeos más pequeños. Elige Ahorro, Estándar o Máximo, sigue disparando directamente a la app Fotos y comprueba cuánto espacio has ahorrado en cada captura.",
-    formerly="(antes LeanCam)", website="Sitio web", support="Soporte", privacy="Privacidad", contact="Contacto",
+    website="Sitio web", support="Soporte", privacy="Privacidad", contact="Contacto",
 ),
 "de-DE": dict(
     title="Cream — Kleine Apps, die Speicherplatz sparen",
@@ -110,7 +110,7 @@ T = {
     lv_desc="Komprimiert Videos aus deiner Fotomediathek und der Dateien-App, indem nur die Bitrate gesenkt wird. Auflösung, Bildrate, Farbe und HDR bleiben erhalten, und jedes Ergebnis wird geprüft, bevor es das Original ersetzt. Dateien, die dein iPhone nicht abspielen kann (MKV, WebM, AVI, WMV, FLV, MPG, VP9, AV1), wandelt der eingebaute Konverter um.",
     gc_tag="Gleiches Motiv, kleinere Datei.",
     gc_desc="Eine Kamera, die genauso fotografiert wie die System-Kamera, aber kleinere Fotos und Videos speichert. Wähle Sparsam, Standard oder Maximum, fotografiere weiter direkt in die Fotos-App und sieh bei jeder Aufnahme, wie viel Platz du gespart hast.",
-    formerly="(ehemals LeanCam)", website="Website", support="Support", privacy="Datenschutz", contact="Kontakt",
+    website="Website", support="Support", privacy="Datenschutz", contact="Kontakt",
 ),
 "fr-FR": dict(
     title="Cream — De petites apps qui économisent de l'espace",
@@ -121,7 +121,7 @@ T = {
     lv_desc="Compresse les vidéos de votre photothèque et de l'app Fichiers en ne réduisant que le débit. Résolution, cadence, couleurs et HDR restent intacts, et chaque résultat est vérifié avant de remplacer l'original. Les fichiers que votre iPhone ne peut pas lire (MKV, WebM, AVI, WMV, FLV, MPG, VP9, AV1) sont convertis par le convertisseur intégré.",
     gc_tag="Même scène, fichier plus léger.",
     gc_desc="Un appareil photo qui prend vos photos comme l'appareil d'origine, mais enregistre des photos et vidéos plus légères. Choisissez Économe, Standard ou Maximum, continuez à photographier directement dans l'app Photos et voyez à chaque prise combien d'espace vous avez gagné.",
-    formerly="(anciennement LeanCam)", website="Site web", support="Assistance", privacy="Confidentialité", contact="Contact",
+    website="Site web", support="Assistance", privacy="Confidentialité", contact="Contact",
 ),
 "it": dict(
     title="Cream — Piccole app che fanno risparmiare spazio",
@@ -132,7 +132,7 @@ T = {
     lv_desc="Comprime i video della libreria foto e dell'app File abbassando solo il bitrate. Risoluzione, frequenza dei fotogrammi, colore e HDR restano intatti, e ogni risultato viene verificato prima di sostituire l'originale. I file che il tuo iPhone non riproduce (MKV, WebM, AVI, WMV, FLV, MPG, VP9, AV1) vengono convertiti dal convertitore integrato.",
     gc_tag="Stessa scena, file più piccolo.",
     gc_desc="Una fotocamera che scatta come quella di sistema, ma salva foto e video più leggeri. Scegli Risparmio, Standard o Massimo, continua a scattare direttamente nell'app Foto e vedi a ogni scatto quanto spazio hai risparmiato.",
-    formerly="(in precedenza LeanCam)", website="Sito web", support="Assistenza", privacy="Privacy", contact="Contatti",
+    website="Sito web", support="Assistenza", privacy="Privacy", contact="Contatti",
 ),
 "pt-BR": dict(
     title="Cream — Apps pequenos que economizam espaço",
@@ -143,7 +143,7 @@ T = {
     lv_desc="Comprime os vídeos da sua fototeca e do app Arquivos reduzindo apenas a taxa de bits. Resolução, taxa de quadros, cor e HDR permanecem intactos, e cada resultado é verificado antes de substituir o original. Arquivos que o seu iPhone não reproduz (MKV, WebM, AVI, WMV, FLV, MPG, VP9, AV1) são convertidos pelo conversor integrado.",
     gc_tag="A mesma cena, arquivo menor.",
     gc_desc="Uma câmera que fotografa como a câmera do sistema, mas salva fotos e vídeos menores. Escolha Economia, Padrão ou Máximo, continue fotografando direto para o app Fotos e veja em cada captura quanto espaço você economizou.",
-    formerly="(antes LeanCam)", website="Site", support="Suporte", privacy="Privacidade", contact="Contato",
+    website="Site", support="Suporte", privacy="Privacidade", contact="Contato",
 ),
 "ru": dict(
     title="Cream — Небольшие приложения, экономящие место",
@@ -154,7 +154,7 @@ T = {
     lv_desc="Сжимает видео из медиатеки и приложения «Файлы», снижая только битрейт. Разрешение, частота кадров, цвет и HDR остаются без изменений, а каждый результат проверяется перед заменой оригинала. Файлы, которые iPhone не воспроизводит (MKV, WebM, AVI, WMV, FLV, MPG, VP9, AV1), преобразует встроенный конвертер.",
     gc_tag="Тот же кадр, меньше файл.",
     gc_desc="Камера, которая снимает так же, как обычная камера, но сохраняет фото и видео меньшего размера. Выберите Экономия, Стандарт или Максимум, продолжайте снимать прямо в приложение «Фото» и смотрите при каждом снимке, сколько места сэкономили.",
-    formerly="(ранее LeanCam)", website="Сайт", support="Поддержка", privacy="Конфиденциальность", contact="Контакты",
+    website="Сайт", support="Поддержка", privacy="Конфиденциальность", contact="Контакты",
 ),
 }
 
@@ -197,7 +197,7 @@ PAGE = """<!DOCTYPE html>
     </section>
 
     <section class="card" id="gramcamera">
-      <h2>GramCamera <span class="muted">{formerly}</span></h2>
+      <h2>GramCamera</h2>
       <p class="tag">{gc_tag}</p>
       <p>{gc_desc}</p>
       <p class="links"><a href="{gc}index.html">{website}</a><a href="{gc}support.html">{support}</a><a href="{gc}privacy.html">{privacy}</a></p>
