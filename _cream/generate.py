@@ -12,6 +12,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
 BASE = "https://creamhelp.github.io/"
 APP_STORE_LEANVID = "https://apps.apple.com/app/id6796710561"
+APP_STORE_GRAMCAMERA = "https://apps.apple.com/app/id6804235227"
 STORE_LABEL = {
     "": "Download on the App Store", "ko": "App Store에서 다운로드하기", "ja": "App Storeからダウンロード",
     "zh-Hans": "在 App Store 下载", "zh-Hant": "在 App Store 下載", "es-ES": "Descárgalo en el App Store",
@@ -193,14 +194,14 @@ PAGE = """<!DOCTYPE html>
       <h2>LeanVid</h2>
       <p class="tag">{lv_tag}</p>
       <p>{lv_desc}</p>
-      <p class="links"><a href="{app_store}"><b>{store}</b></a><a href="{lv}index.html">{website}</a><a href="{lv}support.html">{support}</a><a href="{lv}privacy.html">{privacy}</a></p>
+      <p class="links"><a href="{app_store_lv}"><b>{store}</b></a><a href="{lv}index.html">{website}</a><a href="{lv}support.html">{support}</a><a href="{lv}privacy.html">{privacy}</a></p>
     </section>
 
     <section class="card" id="gramcamera">
       <h2>GramCamera</h2>
       <p class="tag">{gc_tag}</p>
       <p>{gc_desc}</p>
-      <p class="links"><a href="{gc}index.html">{website}</a><a href="{gc}support.html">{support}</a><a href="{gc}privacy.html">{privacy}</a></p>
+      <p class="links"><a href="{app_store_gc}"><b>{store}</b></a><a href="{gc}index.html">{website}</a><a href="{gc}support.html">{support}</a><a href="{gc}privacy.html">{privacy}</a></p>
     </section>
   </div>
 
@@ -248,7 +249,7 @@ def main():
         html = PAGE.format(
             lang=lang, canonical=page_url(d), alternates=alternates, pfx=pfx,
             langs=" ".join(langs), lv=lv, gc=f"{pfx}gramcamera/{gc_dir}/",
-            app_store=APP_STORE_LEANVID, store=STORE_LABEL[d], **t,
+            app_store_lv=APP_STORE_LEANVID, app_store_gc=APP_STORE_GRAMCAMERA, store=STORE_LABEL[d], **t,
         )
         outdir = ROOT if d == "" else os.path.join(ROOT, d)
         os.makedirs(outdir, exist_ok=True)
