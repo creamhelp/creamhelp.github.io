@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EnhanceVid — なめらかに、くっきりと</title>
+<meta name="description" content="30fpsを60fpsに、フルHDを4Kに。iPhoneの中で動画をなめらか・くっきりに。元動画はそのままです。">
+<link rel="icon" href="../assets/icon.png">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<div class="wrap wide">
+  <header class="site">
+    <img class="appicon" src="../assets/icon.png" alt=""><div class="name">EnhanceVid</div>
+    <nav><a href="index.html">ホーム</a><a href="support.html">サポート</a><a href="privacy.html">プライバシー</a></nav>
+  </header>
+  <div class="langs"><a href="../index.html">English</a> <a href="../ko/index.html">한국어</a> <span class="cur">日本語</span> <a href="../zh-Hans/index.html">简体中文</a> <a href="../zh-Hant/index.html">繁體中文</a> <a href="../es-ES/index.html">Español</a> <a href="../de-DE/index.html">Deutsch</a> <a href="../fr-FR/index.html">Français</a> <a href="../it/index.html">Italiano</a> <a href="../pt-BR/index.html">Português</a> <a href="../ru/index.html">Русский</a></div>
+
+  <section class="hero">
+    <div>
+      <h1>カクつく動画は<em>なめらかに</em>、<br>ぼやけた動画は<em>くっきりと</em>。</h1>
+      <p class="lede">30fpsを60fpsに、フルHDを4Kに。フレームの間に新しいフレームを作って挟み、解像度を上げてくっきりと。処理はすべてiPhoneの中で行い、元動画はそのままに新しい動画として保存します。</p>
+      <a class="store" href="https://apps.apple.com/app/id6816116747"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.37 12.64c-.02-2.2 1.8-3.26 1.88-3.31-1.02-1.5-2.61-1.7-3.18-1.72-1.35-.14-2.64.8-3.33.8-.69 0-1.74-.78-2.87-.76-1.47.02-2.83.86-3.59 2.18-1.53 2.66-.39 6.59 1.1 8.75.73 1.05 1.6 2.24 2.73 2.2 1.1-.04 1.51-.71 2.84-.71 1.32 0 1.7.71 2.86.69 1.18-.02 1.93-1.07 2.65-2.13.83-1.22 1.18-2.4 1.2-2.46-.03-.01-2.3-.88-2.33-3.5zM14.2 6.17c.6-.73 1.01-1.75.9-2.76-.87.04-1.92.58-2.54 1.31-.56.65-1.05 1.69-.92 2.68.97.08 1.96-.49 2.56-1.23z"/></svg>App Storeからダウンロード</a>
+      <p class="fine">無料 · iOS 26以降 · iPhone · iPad · Apple シリコン搭載 Mac</p>
+    </div>
+    <div class="hero-shot"><div class="phone"><img src="../assets/ja/shot-select.jpg" alt="動画を選ぶと「フルHD · 30fps → 4K · 60fps」が提案される画面"></div></div>
+  </section>
+
+  <section class="block">
+    <span class="kicker">よりくっきり · HD→フルHD · フルHD→4K</span>
+    <h2>ぼやけを抑えて、くっきりと。</h2>
+    <p>Apple MetalFX のアップスケールで解像度を上げます。中央の線を左右に動かして比べてみてください。</p>
+    <div class="compare" id="compare" style="--pos:50%">
+      <img src="../assets/after.jpg" alt="エンハンスされたくっきりした海の写真">
+      <img class="before" src="../assets/before.jpg" alt="解像度が低くぼやけた同じ写真">
+      <span class="tag l">元動画</span><span class="tag r">エンハンス</span>
+      <div class="line"></div><div class="knob">⇆</div>
+      <input type="range" min="0" max="100" value="50" aria-label="元動画とエンハンス後の比較位置">
+    </div>
+    <p class="caption-note">サンプル画像 — 低解像度の元画像を拡大したものと、エンハンスしたものを並べています。</p>
+  </section>
+
+  <section class="block">
+    <span class="kicker">よりなめらか · 24→30fps · 30→60fps</span>
+    <h2>カクついた動きが、なめらかに。</h2>
+    <p>元のフレームの間に新しいフレームを計算して挟みます。シーンが切り替わる部分は無理に混ぜないので、不自然な残像が出ません。</p>
+    <div class="fps">
+      <div class="track low"><span class="label">30fps</span><div class="ball"></div></div>
+      <div class="track up"><span class="label">60fps</span><div class="ball"></div></div>
+    </div>
+    <div class="frames" aria-hidden="true">
+      <div class="frame"><div class="pane"><div class="dot" style="left:18%"></div></div><b>元のフレーム A</b><span>撮影したコマ</span></div>
+      <div class="frame new"><div class="pane"><div class="dot" style="left:44%"></div></div><b>新しいフレーム</b><span>AとBの間を計算して作成</span></div>
+      <div class="frame"><div class="pane"><div class="dot" style="left:70%"></div></div><b>元のフレーム B</b><span>撮影したコマ</span></div>
+    </div>
+    <p class="caption-note">違いがわかりやすいよう、動きを誇張しています。</p>
+  </section>
+
+  <section class="block">
+    <span class="kicker">使い方</span>
+    <h2>選んで、始めて、比べて、保存。</h2>
+    <div class="shots">
+      <figure><div class="phone"><img src="../assets/ja/shot-select.jpg" alt="動画を選ぶと「フルHD · 30fps → 4K · 60fps」が提案される画面" loading="lazy"></div><figcaption>選ぶ<span>最適なエンハンスを提案</span></figcaption></figure>
+      <figure><div class="phone"><img src="../assets/ja/shot-progress.jpg" alt="新しいフレームと拡大の段階が表示される進行画面" loading="lazy"></div><figcaption>エンハンス<span>新しいフレーム › 拡大</span></figcaption></figure>
+      <figure><div class="phone"><img src="../assets/ja/shot-info.jpg" alt="元動画と結果の仕様を比べる表" loading="lazy"></div><figcaption>比べる<span>再生 · 仕様表 · 画質スコア</span></figcaption></figure>
+      <figure><div class="phone"><img src="../assets/ja/shot-done.jpg" alt="フルHD 30fpsが4K 60fpsになったことを示す完了画面" loading="lazy"></div><figcaption>保存<span>元動画のとなりに新しく</span></figcaption></figure>
+    </div>
+  </section>
+
+  <section class="block">
+    <span class="kicker">さらに</span>
+    <h2>必要なものは、ぜんぶ入り。</h2>
+    <div class="grid">
+      <div class="feat"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 3v2M12 19v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M3 12h2M19 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4"/><circle cx="12" cy="12" r="4"/></svg></div><b>ノイズ除去</b><p>暗い場所で撮ったザラつきをきれいに。対応機種で使えます。</p></div>
+      <div class="feat"><div class="ic"><svg viewBox="0 0 24 24"><path d="M7 4v16M7 4l-3 3M7 4l3 3M17 20V4M17 20l-3-3M17 20l3-3"/></svg></div><b>上げても下げても</b><p>4K 60fpsを30fpsに、4KをフルHDに。下げることもできます。</p></div>
+      <div class="feat"><div class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="8" height="16" rx="2"/><rect x="13" y="4" width="8" height="16" rx="2"/></svg></div><b>目で比べる</b><p>並べて再生、仕様表、画質スコア(PSNR・SSIM、必要ならVMAF)。</p></div>
+      <div class="feat"><div class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 1 0 18z" fill="currentColor"/></svg></div><b>HDRはそのまま</b><p>iPhoneで撮ったHDR・Dolby Visionの動画は結果もHDRです。</p></div>
+      <div class="feat"><div class="ic"><svg viewBox="0 0 24 24"><path d="M4 4h10l6 6v10H4z"/><path d="M14 4v6h6"/></svg></div><b>さまざまなファイル</b><p>写真ライブラリとファイルアプリの動画、MKV・WebM・AVIにも対応。</p></div>
+      <div class="feat"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg></div><b>元動画はそのまま</b><p>結果は元動画のとなりに新しい動画として保存。元動画は変更も削除もしません。</p></div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="privacy-band">
+      <div class="ic"><svg viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg></div>
+      <div><b>動画はあなたのデバイスの中だけに</b><p>どこにもアップロードされず、アカウントも不要です。無料で、広告で運営しています — <a href="privacy.html">プライバシー</a></p></div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <img src="../assets/icon.png" alt="EnhanceVid">
+    <h2>さっそく1本、エンハンスしてみましょう。</h2>
+    <a class="store" href="https://apps.apple.com/app/id6816116747">App Storeからダウンロード</a>
+  </section>
+
+  <footer>© 2026 Cream · <a href="support.html">サポート</a> · <a href="privacy.html">プライバシー</a> · サンプル写真: CC0(パブリックドメイン)</footer>
+</div>
+<script>
+(function () {
+  var box = document.getElementById('compare'); if (!box) return;
+  var input = box.querySelector('input'), auto = true, t0 = null;
+  function set(v) { box.style.setProperty('--pos', v + '%'); input.value = v; }
+  input.addEventListener('input', function () { auto = false; set(input.value); });
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  function tick(ts) { if (!auto) return; if (t0 === null) t0 = ts; set(50 + 30 * Math.sin((ts - t0) / 1400)); requestAnimationFrame(tick); }
+  requestAnimationFrame(tick);
+})();
+</script>
+</body>
+</html>

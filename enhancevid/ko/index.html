@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EnhanceVid — 더 부드럽게, 더 선명하게</title>
+<meta name="description" content="30fps를 60fps로, FHD를 4K로. iPhone 안에서 영상을 부드럽고 선명하게 만들고, 원본은 그대로 둡니다.">
+<link rel="icon" href="../assets/icon.png">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<div class="wrap wide">
+  <header class="site">
+    <img class="appicon" src="../assets/icon.png" alt=""><div class="name">EnhanceVid</div>
+    <nav><a href="index.html">홈</a><a href="support.html">지원</a><a href="privacy.html">개인정보</a></nav>
+  </header>
+  <div class="langs"><a href="../index.html">English</a> <span class="cur">한국어</span> <a href="../ja/index.html">日本語</a> <a href="../zh-Hans/index.html">简体中文</a> <a href="../zh-Hant/index.html">繁體中文</a> <a href="../es-ES/index.html">Español</a> <a href="../de-DE/index.html">Deutsch</a> <a href="../fr-FR/index.html">Français</a> <a href="../it/index.html">Italiano</a> <a href="../pt-BR/index.html">Português</a> <a href="../ru/index.html">Русский</a></div>
+
+  <section class="hero">
+    <div>
+      <h1>끊기던 영상은 <em>부드럽게</em>,<br>흐릿한 영상은 <em>선명하게</em>.</h1>
+      <p class="lede">30fps를 60fps로, FHD를 4K로. 프레임 사이에 새 프레임을 만들어 넣고, 해상도를 올려 또렷하게 — 모든 처리는 내 iPhone 안에서 하고, 원본은 그대로 둔 채 새 영상으로 저장합니다.</p>
+      <a class="store" href="https://apps.apple.com/app/id6816116747"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.37 12.64c-.02-2.2 1.8-3.26 1.88-3.31-1.02-1.5-2.61-1.7-3.18-1.72-1.35-.14-2.64.8-3.33.8-.69 0-1.74-.78-2.87-.76-1.47.02-2.83.86-3.59 2.18-1.53 2.66-.39 6.59 1.1 8.75.73 1.05 1.6 2.24 2.73 2.2 1.1-.04 1.51-.71 2.84-.71 1.32 0 1.7.71 2.86.69 1.18-.02 1.93-1.07 2.65-2.13.83-1.22 1.18-2.4 1.2-2.46-.03-.01-2.3-.88-2.33-3.5zM14.2 6.17c.6-.73 1.01-1.75.9-2.76-.87.04-1.92.58-2.54 1.31-.56.65-1.05 1.69-.92 2.68.97.08 1.96-.49 2.56-1.23z"/></svg>App Store에서 다운로드</a>
+      <p class="fine">무료 · iOS 26 이상 · iPhone · iPad · Apple 실리콘 Mac</p>
+    </div>
+    <div class="hero-shot"><div class="phone"><img src="../assets/ko/shot-select.jpg" alt="영상을 고르면 &#x27;FHD · 30fps → 4K · 60fps&#x27; 제안이 뜨는 화면"></div></div>
+  </section>
+
+  <section class="block">
+    <span class="kicker">더 선명하게 · HD→FHD · FHD→4K</span>
+    <h2>흐릿함은 걷고, 또렷하게.</h2>
+    <p>Apple MetalFX 업스케일로 해상도를 올립니다. 가운데 선을 좌우로 밀어 비교해 보세요.</p>
+    <div class="compare" id="compare" style="--pos:50%">
+      <img src="../assets/after.jpg" alt="향상된 선명한 바다 사진">
+      <img class="before" src="../assets/before.jpg" alt="해상도가 낮아 흐릿한 같은 사진">
+      <span class="tag l">원본</span><span class="tag r">향상</span>
+      <div class="line"></div><div class="knob">⇆</div>
+      <input type="range" min="0" max="100" value="50" aria-label="원본과 향상 비교 위치">
+    </div>
+    <p class="caption-note">예시 이미지 — 낮은 해상도 원본을 크게 키운 모습과 향상한 모습을 나란히 보였습니다.</p>
+  </section>
+
+  <section class="block">
+    <span class="kicker">더 부드럽게 · 24→30fps · 30→60fps</span>
+    <h2>뚝뚝 끊기던 움직임이 매끄럽게.</h2>
+    <p>원본 프레임 사이에 새 프레임을 계산해 넣습니다. 장면이 바뀌는 곳은 억지로 섞지 않아 어색한 잔상이 생기지 않습니다.</p>
+    <div class="fps">
+      <div class="track low"><span class="label">30fps</span><div class="ball"></div></div>
+      <div class="track up"><span class="label">60fps</span><div class="ball"></div></div>
+    </div>
+    <div class="frames" aria-hidden="true">
+      <div class="frame"><div class="pane"><div class="dot" style="left:18%"></div></div><b>원본 프레임 A</b><span>찍힌 장면</span></div>
+      <div class="frame new"><div class="pane"><div class="dot" style="left:44%"></div></div><b>새 프레임</b><span>A와 B 사이를 계산해 채움</span></div>
+      <div class="frame"><div class="pane"><div class="dot" style="left:70%"></div></div><b>원본 프레임 B</b><span>찍힌 장면</span></div>
+    </div>
+    <p class="caption-note">움직임 차이를 알아보기 쉽게 과장해 보였습니다.</p>
+  </section>
+
+  <section class="block">
+    <span class="kicker">이렇게 씁니다</span>
+    <h2>고르고, 시작하고, 비교하고, 저장.</h2>
+    <div class="shots">
+      <figure><div class="phone"><img src="../assets/ko/shot-select.jpg" alt="영상을 고르면 &#x27;FHD · 30fps → 4K · 60fps&#x27; 제안이 뜨는 화면" loading="lazy"></div><figcaption>고르기<span>알맞은 향상을 제안합니다</span></figcaption></figure>
+      <figure><div class="phone"><img src="../assets/ko/shot-progress.jpg" alt="새 프레임과 확대 단계가 보이는 진행 화면" loading="lazy"></div><figcaption>향상<span>새 프레임 › 확대</span></figcaption></figure>
+      <figure><div class="phone"><img src="../assets/ko/shot-info.jpg" alt="원본과 결과의 사양을 비교하는 표" loading="lazy"></div><figcaption>비교<span>재생 · 사양 표 · 화질 점수</span></figcaption></figure>
+      <figure><div class="phone"><img src="../assets/ko/shot-done.jpg" alt="원본 FHD 30fps에서 결과 4K 60fps로 바뀐 것을 보여 주는 완료 창" loading="lazy"></div><figcaption>저장<span>원본 옆에 새 영상으로</span></figcaption></figure>
+    </div>
+  </section>
+
+  <section class="block">
+    <span class="kicker">그리고</span>
+    <h2>필요한 건 다 들어 있습니다.</h2>
+    <div class="grid">
+      <div class="feat"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 3v2M12 19v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M3 12h2M19 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4"/><circle cx="12" cy="12" r="4"/></svg></div><b>노이즈 줄이기</b><p>어두운 곳에서 찍은 자글자글한 영상을 깨끗하게. 지원하는 기기에서 켜집니다.</p></div>
+      <div class="feat"><div class="ic"><svg viewBox="0 0 24 24"><path d="M7 4v16M7 4l-3 3M7 4l3 3M17 20V4M17 20l-3-3M17 20l3-3"/></svg></div><b>위아래 자유롭게</b><p>4K 60fps를 30fps로, 4K를 FHD로. 내리는 것도 고를 수 있습니다.</p></div>
+      <div class="feat"><div class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="8" height="16" rx="2"/><rect x="13" y="4" width="8" height="16" rx="2"/></svg></div><b>눈으로 비교</b><p>나란히 재생, 사양 표, 화질 점수(PSNR·SSIM, 원하면 VMAF).</p></div>
+      <div class="feat"><div class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 1 0 18z" fill="currentColor"/></svg></div><b>HDR 그대로</b><p>iPhone으로 찍은 HDR·Dolby Vision 영상은 결과도 HDR입니다.</p></div>
+      <div class="feat"><div class="ic"><svg viewBox="0 0 24 24"><path d="M4 4h10l6 6v10H4z"/><path d="M14 4v6h6"/></svg></div><b>다양한 파일</b><p>사진 보관함과 파일 앱의 영상, MKV·WebM·AVI도 처리합니다.</p></div>
+      <div class="feat"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg></div><b>원본은 그대로</b><p>결과는 원본 옆에 새 영상으로 저장합니다. 원본을 바꾸거나 지우지 않습니다.</p></div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="privacy-band">
+      <div class="ic"><svg viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg></div>
+      <div><b>내 영상은 내 기기에만</b><p>영상은 어디로도 업로드되지 않습니다. 계정도 필요 없습니다. 무료이며 광고로 운영됩니다 — <a href="privacy.html">개인정보</a></p></div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <img src="../assets/icon.png" alt="EnhanceVid">
+    <h2>지금 영상 하나를 바꿔 보세요.</h2>
+    <a class="store" href="https://apps.apple.com/app/id6816116747">App Store에서 다운로드</a>
+  </section>
+
+  <footer>© 2026 Cream · <a href="support.html">지원</a> · <a href="privacy.html">개인정보</a> · 예시 사진: CC0(퍼블릭 도메인)</footer>
+</div>
+<script>
+(function () {
+  var box = document.getElementById('compare'); if (!box) return;
+  var input = box.querySelector('input'), auto = true, t0 = null;
+  function set(v) { box.style.setProperty('--pos', v + '%'); input.value = v; }
+  input.addEventListener('input', function () { auto = false; set(input.value); });
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  function tick(ts) { if (!auto) return; if (t0 === null) t0 = ts; set(50 + 30 * Math.sin((ts - t0) / 1400)); requestAnimationFrame(tick); }
+  requestAnimationFrame(tick);
+})();
+</script>
+</body>
+</html>

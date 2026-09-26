@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EnhanceVid — Smoother and sharper video</title>
+<meta name="description" content="30fps to 60fps, Full HD to 4K. Make your videos smoother and sharper right on your iPhone — your original stays untouched.">
+<link rel="icon" href="assets/icon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap wide">
+  <header class="site">
+    <img class="appicon" src="assets/icon.png" alt=""><div class="name">EnhanceVid</div>
+    <nav><a href="index.html">Home</a><a href="support.html">Support</a><a href="privacy.html">Privacy</a></nav>
+  </header>
+  <div class="langs"><span class="cur">English</span> <a href="ko/index.html">한국어</a> <a href="ja/index.html">日本語</a> <a href="zh-Hans/index.html">简体中文</a> <a href="zh-Hant/index.html">繁體中文</a> <a href="es-ES/index.html">Español</a> <a href="de-DE/index.html">Deutsch</a> <a href="fr-FR/index.html">Français</a> <a href="it/index.html">Italiano</a> <a href="pt-BR/index.html">Português</a> <a href="ru/index.html">Русский</a></div>
+
+  <section class="hero">
+    <div>
+      <h1>Choppy video, made <em>smooth</em>.<br>Soft video, made <em>sharp</em>.</h1>
+      <p class="lede">30fps to 60fps, Full HD to 4K. EnhanceVid computes new frames between the ones you shot and raises the resolution for crisper detail. Everything runs on your iPhone, and the result is saved as a new video next to your untouched original.</p>
+      <a class="store" href="https://apps.apple.com/app/id6816116747"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.37 12.64c-.02-2.2 1.8-3.26 1.88-3.31-1.02-1.5-2.61-1.7-3.18-1.72-1.35-.14-2.64.8-3.33.8-.69 0-1.74-.78-2.87-.76-1.47.02-2.83.86-3.59 2.18-1.53 2.66-.39 6.59 1.1 8.75.73 1.05 1.6 2.24 2.73 2.2 1.1-.04 1.51-.71 2.84-.71 1.32 0 1.7.71 2.86.69 1.18-.02 1.93-1.07 2.65-2.13.83-1.22 1.18-2.4 1.2-2.46-.03-.01-2.3-.88-2.33-3.5zM14.2 6.17c.6-.73 1.01-1.75.9-2.76-.87.04-1.92.58-2.54 1.31-.56.65-1.05 1.69-.92 2.68.97.08 1.96-.49 2.56-1.23z"/></svg>Download on the App Store</a>
+      <p class="fine">Free · iOS 26 or later · iPhone · iPad · Apple silicon Mac</p>
+    </div>
+    <div class="hero-shot"><div class="phone"><img src="assets/en/shot-select.jpg" alt="Screen suggesting &#x27;Full HD · 30fps → 4K · 60fps&#x27; for a picked video"></div></div>
+  </section>
+
+  <section class="block">
+    <span class="kicker">Sharper · HD→Full HD · Full HD→4K</span>
+    <h2>Less blur, more detail.</h2>
+    <p>Resolution is raised with Apple MetalFX upscaling. Drag the line to compare.</p>
+    <div class="compare" id="compare" style="--pos:50%">
+      <img src="assets/after.jpg" alt="Enhanced, sharp photo of the sea">
+      <img class="before" src="assets/before.jpg" alt="The same photo, blurry at low resolution">
+      <span class="tag l">Original</span><span class="tag r">Enhanced</span>
+      <div class="line"></div><div class="knob">⇆</div>
+      <input type="range" min="0" max="100" value="50" aria-label="Comparison position between original and enhanced">
+    </div>
+    <p class="caption-note">Sample image — a low-resolution original enlarged, next to the enhanced version.</p>
+  </section>
+
+  <section class="block">
+    <span class="kicker">Smoother · 24→30fps · 30→60fps</span>
+    <h2>Choppy motion, made fluid.</h2>
+    <p>New frames are computed between the original ones. Scene cuts are never blended, so there is no ghosting.</p>
+    <div class="fps">
+      <div class="track low"><span class="label">30fps</span><div class="ball"></div></div>
+      <div class="track up"><span class="label">60fps</span><div class="ball"></div></div>
+    </div>
+    <div class="frames" aria-hidden="true">
+      <div class="frame"><div class="pane"><div class="dot" style="left:18%"></div></div><b>Original frame A</b><span>As shot</span></div>
+      <div class="frame new"><div class="pane"><div class="dot" style="left:44%"></div></div><b>New frame</b><span>Computed between A and B</span></div>
+      <div class="frame"><div class="pane"><div class="dot" style="left:70%"></div></div><b>Original frame B</b><span>As shot</span></div>
+    </div>
+    <p class="caption-note">Motion is exaggerated here so the difference is easy to see.</p>
+  </section>
+
+  <section class="block">
+    <span class="kicker">How it works</span>
+    <h2>Pick, start, compare, save.</h2>
+    <div class="shots">
+      <figure><div class="phone"><img src="assets/en/shot-select.jpg" alt="Screen suggesting &#x27;Full HD · 30fps → 4K · 60fps&#x27; for a picked video" loading="lazy"></div><figcaption>Pick<span>It suggests the right enhancement</span></figcaption></figure>
+      <figure><div class="phone"><img src="assets/en/shot-progress.jpg" alt="Progress screen showing the new-frame and upscaling steps" loading="lazy"></div><figcaption>Enhance<span>New frames › Upscaling</span></figcaption></figure>
+      <figure><div class="phone"><img src="assets/en/shot-info.jpg" alt="Table comparing the specs of the original and the result" loading="lazy"></div><figcaption>Compare<span>Playback · specs · quality score</span></figcaption></figure>
+      <figure><div class="phone"><img src="assets/en/shot-done.jpg" alt="Completion card showing Full HD 30fps changed to 4K 60fps" loading="lazy"></div><figcaption>Save<span>Saved as a new video</span></figcaption></figure>
+    </div>
+  </section>
+
+  <section class="block">
+    <span class="kicker">And more</span>
+    <h2>Everything you need, built in.</h2>
+    <div class="grid">
+      <div class="feat"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 3v2M12 19v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M3 12h2M19 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4"/><circle cx="12" cy="12" r="4"/></svg></div><b>Noise reduction</b><p>Clean up grainy low-light video. Available on supported devices.</p></div>
+      <div class="feat"><div class="ic"><svg viewBox="0 0 24 24"><path d="M7 4v16M7 4l-3 3M7 4l3 3M17 20V4M17 20l-3-3M17 20l3-3"/></svg></div><b>Up or down</b><p>4K 60fps to 30fps, 4K to Full HD — going down is an option too.</p></div>
+      <div class="feat"><div class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="8" height="16" rx="2"/><rect x="13" y="4" width="8" height="16" rx="2"/></svg></div><b>See the difference</b><p>Side-by-side playback, a spec table and quality scores (PSNR, SSIM, optional VMAF).</p></div>
+      <div class="feat"><div class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 1 0 18z" fill="currentColor"/></svg></div><b>HDR stays HDR</b><p>HDR and Dolby Vision video shot on iPhone stays HDR in the result.</p></div>
+      <div class="feat"><div class="ic"><svg viewBox="0 0 24 24"><path d="M4 4h10l6 6v10H4z"/><path d="M14 4v6h6"/></svg></div><b>Many file types</b><p>Videos from Photos and the Files app, including MKV, WebM and AVI.</p></div>
+      <div class="feat"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg></div><b>Original untouched</b><p>The result is saved as a new video. The original is never changed or deleted.</p></div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="privacy-band">
+      <div class="ic"><svg viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg></div>
+      <div><b>Your videos stay on your device</b><p>Nothing is uploaded and no account is needed. Free, supported by ads — <a href="privacy.html">Privacy</a></p></div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <img src="assets/icon.png" alt="EnhanceVid">
+    <h2>Give one of your videos a try.</h2>
+    <a class="store" href="https://apps.apple.com/app/id6816116747">Download on the App Store</a>
+  </section>
+
+  <footer>© 2026 Cream · <a href="support.html">Support</a> · <a href="privacy.html">Privacy</a> · Sample photo: CC0 (public domain)</footer>
+</div>
+<script>
+(function () {
+  var box = document.getElementById('compare'); if (!box) return;
+  var input = box.querySelector('input'), auto = true, t0 = null;
+  function set(v) { box.style.setProperty('--pos', v + '%'); input.value = v; }
+  input.addEventListener('input', function () { auto = false; set(input.value); });
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  function tick(ts) { if (!auto) return; if (t0 === null) t0 = ts; set(50 + 30 * Math.sin((ts - t0) / 1400)); requestAnimationFrame(tick); }
+  requestAnimationFrame(tick);
+})();
+</script>
+</body>
+</html>

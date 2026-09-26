@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EnhanceVid — 更流暢，更清晰</title>
+<meta name="description" content="30fps 變 60fps，Full HD 變 4K。在 iPhone 上讓影片更流暢、更清晰，原始檔保持不變。">
+<link rel="icon" href="../assets/icon.png">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<div class="wrap wide">
+  <header class="site">
+    <img class="appicon" src="../assets/icon.png" alt=""><div class="name">EnhanceVid</div>
+    <nav><a href="index.html">首頁</a><a href="support.html">支援</a><a href="privacy.html">隱私</a></nav>
+  </header>
+  <div class="langs"><a href="../index.html">English</a> <a href="../ko/index.html">한국어</a> <a href="../ja/index.html">日本語</a> <a href="../zh-Hans/index.html">简体中文</a> <span class="cur">繁體中文</span> <a href="../es-ES/index.html">Español</a> <a href="../de-DE/index.html">Deutsch</a> <a href="../fr-FR/index.html">Français</a> <a href="../it/index.html">Italiano</a> <a href="../pt-BR/index.html">Português</a> <a href="../ru/index.html">Русский</a></div>
+
+  <section class="hero">
+    <div>
+      <h1>卡頓的影片變<em>流暢</em>，<br>模糊的影片變<em>清晰</em>。</h1>
+      <p class="lede">30fps 變 60fps，Full HD 變 4K。在原始影格之間產生新影格，並提高解析度讓畫面更清晰——所有處理都在你的 iPhone 上完成，原始檔保持不變，結果另存為新影片。</p>
+      <a class="store" href="https://apps.apple.com/app/id6816116747"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.37 12.64c-.02-2.2 1.8-3.26 1.88-3.31-1.02-1.5-2.61-1.7-3.18-1.72-1.35-.14-2.64.8-3.33.8-.69 0-1.74-.78-2.87-.76-1.47.02-2.83.86-3.59 2.18-1.53 2.66-.39 6.59 1.1 8.75.73 1.05 1.6 2.24 2.73 2.2 1.1-.04 1.51-.71 2.84-.71 1.32 0 1.7.71 2.86.69 1.18-.02 1.93-1.07 2.65-2.13.83-1.22 1.18-2.4 1.2-2.46-.03-.01-2.3-.88-2.33-3.5zM14.2 6.17c.6-.73 1.01-1.75.9-2.76-.87.04-1.92.58-2.54 1.31-.56.65-1.05 1.69-.92 2.68.97.08 1.96-.49 2.56-1.23z"/></svg>在 App Store 下載</a>
+      <p class="fine">免費 · iOS 26 或以上 · iPhone · iPad · Apple 晶片 Mac</p>
+    </div>
+    <div class="hero-shot"><div class="phone"><img src="../assets/zh-Hant/shot-select.jpg" alt="選擇影片後顯示「Full HD · 30fps → 4K · 60fps」建議的畫面"></div></div>
+  </section>
+
+  <section class="block">
+    <span class="kicker">更清晰 · HD→Full HD · Full HD→4K</span>
+    <h2>告別模糊，細節更清晰。</h2>
+    <p>使用 Apple MetalFX 放大提高解析度。左右拖動中間的線來比較。</p>
+    <div class="compare" id="compare" style="--pos:50%">
+      <img src="../assets/after.jpg" alt="增強後清晰的海景照片">
+      <img class="before" src="../assets/before.jpg" alt="同一張照片，解析度低而模糊">
+      <span class="tag l">原始檔</span><span class="tag r">增強後</span>
+      <div class="line"></div><div class="knob">⇆</div>
+      <input type="range" min="0" max="100" value="50" aria-label="原始檔與增強後的比較位置">
+    </div>
+    <p class="caption-note">範例圖片——低解析度原圖放大後的效果與增強後的效果並排呈現。</p>
+  </section>
+
+  <section class="block">
+    <span class="kicker">更流暢 · 24→30fps · 30→60fps</span>
+    <h2>卡頓的動作，變得順暢。</h2>
+    <p>在原始影格之間計算並插入新影格。場景切換處不會強行混合，不會出現不自然的殘影。</p>
+    <div class="fps">
+      <div class="track low"><span class="label">30fps</span><div class="ball"></div></div>
+      <div class="track up"><span class="label">60fps</span><div class="ball"></div></div>
+    </div>
+    <div class="frames" aria-hidden="true">
+      <div class="frame"><div class="pane"><div class="dot" style="left:18%"></div></div><b>原始影格 A</b><span>拍攝的畫面</span></div>
+      <div class="frame new"><div class="pane"><div class="dot" style="left:44%"></div></div><b>新影格</b><span>在 A 與 B 之間計算產生</span></div>
+      <div class="frame"><div class="pane"><div class="dot" style="left:70%"></div></div><b>原始影格 B</b><span>拍攝的畫面</span></div>
+    </div>
+    <p class="caption-note">為方便看出差異，這裡誇大了動作。</p>
+  </section>
+
+  <section class="block">
+    <span class="kicker">使用方式</span>
+    <h2>選擇、開始、比較、儲存。</h2>
+    <div class="shots">
+      <figure><div class="phone"><img src="../assets/zh-Hant/shot-select.jpg" alt="選擇影片後顯示「Full HD · 30fps → 4K · 60fps」建議的畫面" loading="lazy"></div><figcaption>選擇<span>建議合適的增強方式</span></figcaption></figure>
+      <figure><div class="phone"><img src="../assets/zh-Hant/shot-progress.jpg" alt="顯示新影格與放大步驟的進度畫面" loading="lazy"></div><figcaption>增強<span>新影格 › 放大</span></figcaption></figure>
+      <figure><div class="phone"><img src="../assets/zh-Hant/shot-info.jpg" alt="比較原始檔與結果規格的表格" loading="lazy"></div><figcaption>比較<span>播放 · 規格表 · 畫質評分</span></figcaption></figure>
+      <figure><div class="phone"><img src="../assets/zh-Hant/shot-done.jpg" alt="顯示 Full HD 30fps 變為 4K 60fps 的完成視窗" loading="lazy"></div><figcaption>儲存<span>另存為新影片</span></figcaption></figure>
+    </div>
+  </section>
+
+  <section class="block">
+    <span class="kicker">還有</span>
+    <h2>需要的功能，一應俱全。</h2>
+    <div class="grid">
+      <div class="feat"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 3v2M12 19v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M3 12h2M19 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4"/><circle cx="12" cy="12" r="4"/></svg></div><b>降噪</b><p>讓暗光下拍攝、滿是雜訊的影片變乾淨。在支援的裝置上可用。</p></div>
+      <div class="feat"><div class="ic"><svg viewBox="0 0 24 24"><path d="M7 4v16M7 4l-3 3M7 4l3 3M17 20V4M17 20l-3-3M17 20l3-3"/></svg></div><b>升降自由</b><p>4K 60fps 轉 30fps，4K 轉 Full HD——也可以降低。</p></div>
+      <div class="feat"><div class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="8" height="16" rx="2"/><rect x="13" y="4" width="8" height="16" rx="2"/></svg></div><b>親眼比較</b><p>並排播放、規格表、畫質評分（PSNR、SSIM，可選 VMAF）。</p></div>
+      <div class="feat"><div class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 1 0 18z" fill="currentColor"/></svg></div><b>HDR 維持不變</b><p>iPhone 拍攝的 HDR、杜比視界影片，結果仍是 HDR。</p></div>
+      <div class="feat"><div class="ic"><svg viewBox="0 0 24 24"><path d="M4 4h10l6 6v10H4z"/><path d="M14 4v6h6"/></svg></div><b>多種檔案</b><p>照片圖庫與「檔案」App 中的影片，也支援 MKV、WebM、AVI。</p></div>
+      <div class="feat"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg></div><b>原始檔不變</b><p>結果另存為新影片，不會修改或刪除原始檔。</p></div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="privacy-band">
+      <div class="ic"><svg viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg></div>
+      <div><b>你的影片只留在你的裝置上</b><p>不會上傳任何影片，也不需要帳號。免費，由廣告支持—— <a href="privacy.html">隱私</a></p></div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <img src="../assets/icon.png" alt="EnhanceVid">
+    <h2>現在就來增強一部影片吧。</h2>
+    <a class="store" href="https://apps.apple.com/app/id6816116747">在 App Store 下載</a>
+  </section>
+
+  <footer>© 2026 Cream · <a href="support.html">支援</a> · <a href="privacy.html">隱私</a> · 範例照片：CC0（公共領域）</footer>
+</div>
+<script>
+(function () {
+  var box = document.getElementById('compare'); if (!box) return;
+  var input = box.querySelector('input'), auto = true, t0 = null;
+  function set(v) { box.style.setProperty('--pos', v + '%'); input.value = v; }
+  input.addEventListener('input', function () { auto = false; set(input.value); });
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  function tick(ts) { if (!auto) return; if (t0 === null) t0 = ts; set(50 + 30 * Math.sin((ts - t0) / 1400)); requestAnimationFrame(tick); }
+  requestAnimationFrame(tick);
+})();
+</script>
+</body>
+</html>

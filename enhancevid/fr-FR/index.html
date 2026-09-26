@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EnhanceVid — Des vidéos plus fluides et plus nettes</title>
+<meta name="description" content="De 30 à 60 fps, de Full HD à 4K. Rendez vos vidéos plus fluides et plus nettes sur votre iPhone ; l’original reste intact.">
+<link rel="icon" href="../assets/icon.png">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<div class="wrap wide">
+  <header class="site">
+    <img class="appicon" src="../assets/icon.png" alt=""><div class="name">EnhanceVid</div>
+    <nav><a href="index.html">Accueil</a><a href="support.html">Assistance</a><a href="privacy.html">Confidentialité</a></nav>
+  </header>
+  <div class="langs"><a href="../index.html">English</a> <a href="../ko/index.html">한국어</a> <a href="../ja/index.html">日本語</a> <a href="../zh-Hans/index.html">简体中文</a> <a href="../zh-Hant/index.html">繁體中文</a> <a href="../es-ES/index.html">Español</a> <a href="../de-DE/index.html">Deutsch</a> <span class="cur">Français</span> <a href="../it/index.html">Italiano</a> <a href="../pt-BR/index.html">Português</a> <a href="../ru/index.html">Русский</a></div>
+
+  <section class="hero">
+    <div>
+      <h1>Vidéo saccadée, désormais <em>fluide</em>.<br>Vidéo floue, désormais <em>nette</em>.</h1>
+      <p class="lede">De 30 à 60 fps, de Full HD à 4K. EnhanceVid calcule de nouvelles images entre celles que vous avez filmées et augmente la résolution pour plus de détails. Tout se fait sur votre iPhone et le résultat est enregistré comme nouvelle vidéo, à côté de l’original intact.</p>
+      <a class="store" href="https://apps.apple.com/app/id6816116747"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.37 12.64c-.02-2.2 1.8-3.26 1.88-3.31-1.02-1.5-2.61-1.7-3.18-1.72-1.35-.14-2.64.8-3.33.8-.69 0-1.74-.78-2.87-.76-1.47.02-2.83.86-3.59 2.18-1.53 2.66-.39 6.59 1.1 8.75.73 1.05 1.6 2.24 2.73 2.2 1.1-.04 1.51-.71 2.84-.71 1.32 0 1.7.71 2.86.69 1.18-.02 1.93-1.07 2.65-2.13.83-1.22 1.18-2.4 1.2-2.46-.03-.01-2.3-.88-2.33-3.5zM14.2 6.17c.6-.73 1.01-1.75.9-2.76-.87.04-1.92.58-2.54 1.31-.56.65-1.05 1.69-.92 2.68.97.08 1.96-.49 2.56-1.23z"/></svg>Télécharger dans l’App Store</a>
+      <p class="fine">Gratuit · iOS 26 ou version ultérieure · iPhone · iPad · Mac avec puce Apple</p>
+    </div>
+    <div class="hero-shot"><div class="phone"><img src="../assets/fr-FR/shot-select.jpg" alt="Écran qui propose « Full HD · 30 fps → 4K · 60 fps » pour la vidéo choisie"></div></div>
+  </section>
+
+  <section class="block">
+    <span class="kicker">Plus net · HD→Full HD · Full HD→4K</span>
+    <h2>Moins de flou, plus de détails.</h2>
+    <p>La résolution est augmentée avec la mise à l’échelle Apple MetalFX. Faites glisser la ligne pour comparer.</p>
+    <div class="compare" id="compare" style="--pos:50%">
+      <img src="../assets/after.jpg" alt="Photo de mer améliorée et nette">
+      <img class="before" src="../assets/before.jpg" alt="La même photo, floue en basse résolution">
+      <span class="tag l">Original</span><span class="tag r">Amélioré</span>
+      <div class="line"></div><div class="knob">⇆</div>
+      <input type="range" min="0" max="100" value="50" aria-label="Position de comparaison entre l’original et la version améliorée">
+    </div>
+    <p class="caption-note">Image d’exemple : un original en basse résolution agrandi, à côté de la version améliorée.</p>
+  </section>
+
+  <section class="block">
+    <span class="kicker">Plus fluide · 24→30 fps · 30→60 fps</span>
+    <h2>Des mouvements saccadés, rendus fluides.</h2>
+    <p>De nouvelles images sont calculées entre les images d’origine. Les changements de scène ne sont jamais mélangés : pas d’image fantôme.</p>
+    <div class="fps">
+      <div class="track low"><span class="label">30fps</span><div class="ball"></div></div>
+      <div class="track up"><span class="label">60fps</span><div class="ball"></div></div>
+    </div>
+    <div class="frames" aria-hidden="true">
+      <div class="frame"><div class="pane"><div class="dot" style="left:18%"></div></div><b>Image d’origine A</b><span>Telle que filmée</span></div>
+      <div class="frame new"><div class="pane"><div class="dot" style="left:44%"></div></div><b>Nouvelle image</b><span>Calculée entre A et B</span></div>
+      <div class="frame"><div class="pane"><div class="dot" style="left:70%"></div></div><b>Image d’origine B</b><span>Telle que filmée</span></div>
+    </div>
+    <p class="caption-note">Le mouvement est exagéré pour rendre la différence visible.</p>
+  </section>
+
+  <section class="block">
+    <span class="kicker">Comment ça marche</span>
+    <h2>Choisir, lancer, comparer, enregistrer.</h2>
+    <div class="shots">
+      <figure><div class="phone"><img src="../assets/fr-FR/shot-select.jpg" alt="Écran qui propose « Full HD · 30 fps → 4K · 60 fps » pour la vidéo choisie" loading="lazy"></div><figcaption>Choisir<span>Propose l’amélioration adaptée</span></figcaption></figure>
+      <figure><div class="phone"><img src="../assets/fr-FR/shot-progress.jpg" alt="Écran de progression avec les étapes nouvelles images et agrandissement" loading="lazy"></div><figcaption>Améliorer<span>Nouvelles images › Agrandissement</span></figcaption></figure>
+      <figure><div class="phone"><img src="../assets/fr-FR/shot-info.jpg" alt="Tableau comparant les données de l’original et du résultat" loading="lazy"></div><figcaption>Comparer<span>Lecture · données · score de qualité</span></figcaption></figure>
+      <figure><div class="phone"><img src="../assets/fr-FR/shot-done.jpg" alt="Fenêtre de fin montrant Full HD 30 fps devenu 4K 60 fps" loading="lazy"></div><figcaption>Enregistrer<span>Enregistrée comme nouvelle vidéo</span></figcaption></figure>
+    </div>
+  </section>
+
+  <section class="block">
+    <span class="kicker">Et aussi</span>
+    <h2>Tout ce qu’il faut, intégré.</h2>
+    <div class="grid">
+      <div class="feat"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 3v2M12 19v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M3 12h2M19 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4"/><circle cx="12" cy="12" r="4"/></svg></div><b>Réduction du bruit</b><p>Nettoyez les vidéos granuleuses tournées en basse lumière. Sur les appareils compatibles.</p></div>
+      <div class="feat"><div class="ic"><svg viewBox="0 0 24 24"><path d="M7 4v16M7 4l-3 3M7 4l3 3M17 20V4M17 20l-3-3M17 20l3-3"/></svg></div><b>Monter ou descendre</b><p>4K 60 fps vers 30 fps, 4K vers Full HD : réduire est aussi possible.</p></div>
+      <div class="feat"><div class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="8" height="16" rx="2"/><rect x="13" y="4" width="8" height="16" rx="2"/></svg></div><b>Voyez la différence</b><p>Lecture côte à côte, tableau des données et scores de qualité (PSNR, SSIM, VMAF en option).</p></div>
+      <div class="feat"><div class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 1 0 18z" fill="currentColor"/></svg></div><b>Le HDR reste HDR</b><p>Les vidéos HDR et Dolby Vision filmées avec l’iPhone restent en HDR.</p></div>
+      <div class="feat"><div class="ic"><svg viewBox="0 0 24 24"><path d="M4 4h10l6 6v10H4z"/><path d="M14 4v6h6"/></svg></div><b>Nombreux formats</b><p>Vidéos de Photos et de l’app Fichiers, y compris MKV, WebM et AVI.</p></div>
+      <div class="feat"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg></div><b>L’original intact</b><p>Le résultat est enregistré comme nouvelle vidéo. L’original n’est jamais modifié ni supprimé.</p></div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="privacy-band">
+      <div class="ic"><svg viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg></div>
+      <div><b>Vos vidéos restent sur votre appareil</b><p>Rien n’est envoyé en ligne, aucun compte requis. Gratuit, financé par la publicité — <a href="privacy.html">Confidentialité</a></p></div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <img src="../assets/icon.png" alt="EnhanceVid">
+    <h2>Essayez avec une de vos vidéos.</h2>
+    <a class="store" href="https://apps.apple.com/app/id6816116747">Télécharger dans l’App Store</a>
+  </section>
+
+  <footer>© 2026 Cream · <a href="support.html">Assistance</a> · <a href="privacy.html">Confidentialité</a> · Photo d’exemple : CC0 (domaine public)</footer>
+</div>
+<script>
+(function () {
+  var box = document.getElementById('compare'); if (!box) return;
+  var input = box.querySelector('input'), auto = true, t0 = null;
+  function set(v) { box.style.setProperty('--pos', v + '%'); input.value = v; }
+  input.addEventListener('input', function () { auto = false; set(input.value); });
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  function tick(ts) { if (!auto) return; if (t0 === null) t0 = ts; set(50 + 30 * Math.sin((ts - t0) / 1400)); requestAnimationFrame(tick); }
+  requestAnimationFrame(tick);
+})();
+</script>
+</body>
+</html>
