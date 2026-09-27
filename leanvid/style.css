@@ -1,4 +1,4 @@
-/* ursusshock-site 공통 스타일 — GitHub Pages 배포용 (P4) */
+/* LeanVid 사이트 스타일 — EnhanceVid 페이지 틀에 LeanVid 초록(원래 색)을 입혔다(2026-09-27). 지원·개인정보 페이지도 이 파일을 쓴다 */
 :root{
   --bg:#F5FAF7; --surface:#FFFFFF; --ink:#122019; --ink-2:#41564C; --ink-3:#6B7F75;
   --accent:#0A5C3E; --accent-2:#2E9C77; --border:#DCE8E2;
@@ -37,3 +37,78 @@ footer{margin-top:64px;color:var(--ink-3);font-size:13px;border-top:1px solid va
 .langs .cur{color:var(--ink);font-weight:600}
 ul{padding-left:22px}
 li{margin:6px 0}
+
+/* ── 첫 페이지 부품 (EnhanceVid 에서 가져옴) ───────────────────────────── */
+header.site .appicon{width:44px;height:44px;border-radius:11px;box-shadow:0 2px 8px rgba(0,0,0,.18)}
+.wide{max-width:1040px}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;margin:8px 0 72px}
+.hero h1{font-size:44px;line-height:1.18;letter-spacing:-.02em;margin:0 0 18px}
+.hero h1 em{font-style:normal;background:linear-gradient(120deg,var(--accent),var(--accent-2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero .lede{font-size:18px;margin-bottom:26px}
+.store{display:inline-flex;align-items:center;gap:10px;background:var(--ink);color:var(--bg);padding:14px 22px;border-radius:14px;font-weight:700;text-decoration:none}
+.store svg{width:22px;height:22px;fill:currentColor}
+.fine{font-size:13px;color:var(--ink-3);margin-top:12px}
+.hero-shot{justify-self:center}
+.phone{width:260px;border-radius:40px;padding:10px;background:linear-gradient(160deg,#3a3d3b,#141615);box-shadow:0 30px 60px rgba(10,30,18,.30)}
+.phone img{display:block;width:100%;border-radius:31px}
+section.block{margin:88px 0}
+.kicker{display:inline-block;font-size:13px;font-weight:700;letter-spacing:.06em;color:var(--accent);margin-bottom:10px}
+section.block h2{font-size:30px;line-height:1.25;margin:0 0 12px;letter-spacing:-.01em}
+section.block > p{color:var(--ink-2);margin:0 0 26px}
+/* 앱 화면 줄 */
+.shots{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.shots figure{margin:0;text-align:center}
+.shots .phone{width:100%;border-radius:30px;padding:7px}
+.shots .phone img{border-radius:24px}
+.shots figcaption{font-size:14px;font-weight:700;margin-top:12px}
+.shots figcaption span{display:block;font-weight:500;font-size:12px;color:var(--ink-3)}
+/* 기능 카드 */
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.feat{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:20px}
+.feat .ic{width:40px;height:40px;border-radius:12px;display:flex;align-items:center;justify-content:center;background:color-mix(in srgb,var(--accent) 14%,transparent);color:var(--accent);margin-bottom:12px}
+.feat .ic svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.feat b{display:block;margin-bottom:4px}
+.feat p{margin:0;font-size:14px;color:var(--ink-2)}
+.privacy-band{display:flex;gap:18px;align-items:center;border-radius:20px;padding:24px;background:linear-gradient(135deg,color-mix(in srgb,var(--accent) 14%,var(--surface)),var(--surface));border:1px solid var(--border)}
+.privacy-band .ic{flex:none;width:52px;height:52px;border-radius:16px;background:linear-gradient(135deg,var(--accent),var(--accent-2));display:flex;align-items:center;justify-content:center}
+.privacy-band svg{width:28px;height:28px;fill:none;stroke:#fff;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.privacy-band p{margin:4px 0 0;color:var(--ink-2)}
+.cta{text-align:center;margin:88px 0 40px}
+.cta img{width:88px;height:88px;border-radius:22px;box-shadow:0 10px 30px rgba(10,30,18,.25)}
+.cta h2{margin:18px 0 18px;font-size:28px}
+/* 원본 대비 크기 막대 — 회색 = 원본, 초록 = LeanVid */
+.caption-note{font-size:13px;color:var(--ink-3);margin-top:10px}
+.save{display:grid;gap:22px;max-width:760px}
+.shead{display:flex;align-items:baseline;gap:12px;margin-bottom:8px}
+.shead b{font-size:17px}
+.shead span{color:var(--ink-3);font-size:14px}
+.shead em{margin-left:auto;font-style:normal;font-weight:800;font-size:26px;color:var(--accent);letter-spacing:-.01em}
+.sbar{height:36px;border-radius:12px;background:color-mix(in srgb,var(--ink-3) 22%,var(--surface));overflow:hidden}
+.sfill{height:100%;width:var(--w);border-radius:12px;background:linear-gradient(90deg,var(--accent),var(--accent-2));animation:shrink 3.6s ease-in-out infinite}
+@keyframes shrink{0%,12%{width:100%}50%,100%{width:var(--w)}}
+.grid.two{grid-template-columns:repeat(2,1fr)}
+.sfill.before{background:color-mix(in srgb,var(--ink-3) 55%,var(--surface));animation:none}
+.shead em.plain{color:var(--ink-2)}
+.big{font-size:40px;line-height:1.15;font-weight:800;letter-spacing:-.02em;color:var(--accent);margin-top:4px}
+/* 스토어 스크린샷 줄 — 옆으로 넘겨 본다 */
+.gallery{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding:4px 2px 14px}
+.gallery img{flex:none;width:220px;border-radius:22px;scroll-snap-align:start;box-shadow:0 12px 28px rgba(10,40,25,.18)}
+.privacy-band.soft{margin-top:14px;background:var(--surface)}
+/* 지원·개인정보 머리 */
+.page-hero{display:flex;gap:16px;align-items:center;margin-bottom:8px}
+.page-hero img{width:64px;height:64px;border-radius:16px}
+.page-hero h1{margin:0}
+@media (max-width:760px){
+  header.site{flex-wrap:wrap;row-gap:10px}
+  header.site nav{margin-left:0;width:100%;flex-wrap:wrap;gap:6px 16px}
+  .hero{grid-template-columns:1fr;gap:32px}
+  .hero h1{font-size:34px}
+  .shots{grid-template-columns:repeat(4,60%);overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:8px}
+  .shots figure{scroll-snap-align:center}
+  .grid,.grid.two{grid-template-columns:1fr}
+  .shead em{font-size:22px}
+}
+@media (prefers-reduced-motion:reduce){ .sfill{animation:none} }
+
+/* 한국어 제목은 낱말 단위로 줄을 바꾼다("줄이세/요." 방지). 중·일에 쓰면 줄이 안 바뀌어 한국어만. */
+:lang(ko) h1,:lang(ko) h2{word-break:keep-all}

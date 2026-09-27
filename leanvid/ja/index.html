@@ -4,31 +4,83 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>LeanVid — 画質はそのまま、容量だけ削減</title>
+<meta name="description" content="LeanVid は写真ライブラリとファイルアプリの動画を、ビットレートだけ下げて圧縮します — 解像度・フレームレート・色・HDR はそのままです。すべての結果は元の動画を置き換える前に検証され、写真ライブラリの元の動画は30日間復元できます。">
+<link rel="icon" href="../assets/icon.png">
 <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-<div class="wrap">
+<div class="wrap wide">
   <header class="site">
-    <div class="mark">L</div><div class="name">LeanVid</div>
+    <img class="appicon" src="../assets/icon.png" alt=""><div class="name">LeanVid</div>
     <nav><a href="index.html">ホーム</a><a href="support.html">サポート</a><a href="privacy.html">プライバシー</a></nav>
   </header>
   <div class="langs"><a href="../index.html">English</a> <a href="../ko/index.html">한국어</a> <span class="cur">日本語</span> <a href="../zh-Hans/index.html">简体中文</a> <a href="../zh-Hant/index.html">繁體中文</a> <a href="../es-ES/index.html">Español</a> <a href="../de-DE/index.html">Deutsch</a> <a href="../fr-FR/index.html">Français</a> <a href="../it/index.html">Italiano</a> <a href="../pt-BR/index.html">Português</a> <a href="../ru/index.html">Русский</a></div>
 
-  <h1>画質はそのままに、容量だけ小さく。</h1>
-  <p class="lede">LeanVid は写真ライブラリとファイルアプリの動画を、ビットレートだけ下げて圧縮します — 解像度・フレームレート・色・HDR はそのままです。すべての結果は元の動画を置き換える前に検証され、写真ライブラリの元の動画は30日間復元できます。</p>
+  <section class="hero">
+    <div>
+      <h1>画質はそのままに、容量だけ小さく。</h1>
+      <p class="lede">LeanVid は写真ライブラリとファイルアプリの動画を、ビットレートだけ下げて圧縮します — 解像度・フレームレート・色・HDR はそのままです。すべての結果は元の動画を置き換える前に検証され、写真ライブラリの元の動画は30日間復元できます。</p>
+      <a class="store" href="https://apps.apple.com/app/id6796710561"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.37 12.64c-.02-2.2 1.8-3.26 1.88-3.31-1.02-1.5-2.61-1.7-3.18-1.72-1.35-.14-2.64.8-3.33.8-.69 0-1.74-.78-2.87-.76-1.47.02-2.83.86-3.59 2.18-1.53 2.66-.39 6.59 1.1 8.75.73 1.05 1.6 2.24 2.73 2.2 1.1-.04 1.51-.71 2.84-.71 1.32 0 1.7.71 2.86.69 1.18-.02 1.93-1.07 2.65-2.13.83-1.22 1.18-2.4 1.2-2.46-.03-.01-2.3-.88-2.33-3.5zM14.2 6.17c.6-.73 1.01-1.75.9-2.76-.87.04-1.92.58-2.54 1.31-.56.65-1.05 1.69-.92 2.68.97.08 1.96-.49 2.56-1.23z"/></svg>App Storeからダウンロード</a>
+      <p class="fine">iOS 18 以降 · iPhone および iPad（Apple silicon 搭載の Mac では iPad アプリとして動作）</p>
+    </div>
+    <div class="hero-shot"><div class="phone"><img src="../assets/ja/screen-cover.jpg" alt="取り戻した空き容量を その場で確認"></div></div>
+  </section>
 
-  <div class="card">
-    <ul>
-      <li><b>画質を保つ圧縮</b> — ビットレートだけを調整し、HDR とすべてのトラックを保持</li>
-      <li><b>検証済みの安全な置き換え</b> — 整合性チェック・復旧ジャーナル・システム確認</li>
-      <li><b>自分の目で確認</b> — 並べて・スライダーでの比較、詳細なスペック表</li>
-      <li><b>ファイルアプリと多様な形式</b> — このiPhone内・iCloud Drive の動画も選べます。MKV・WebM・AVI・WMV・FLV・TS・MPG・VOB ファイルは端末内で HEVC/MP4 に変換します</li>
-      <li><b>待ち時間なし</b> — Live Activity で進捗を表示するバックグラウンド圧縮（iOS 26 以降）。それ以前のバージョンでは、アプリに戻ると自動的に再開します</li>
-      <li><b>オンデバイス処理</b> — 動画は iPhone 上で圧縮され、どこにもアップロードされません。アカウントは不要です</li>
-    </ul>
-  </div>
+  <section class="block">
+    <span class="kicker">実際の動画で計測</span>
+    <h2>同じ動画を、ずっと小さく。</h2>
+    <div class="save">
+      <div class="srow"><div class="shead"><b>元動画</b><span>3:34</span><em class="plain">1.24 GB</em></div>
+        <div class="sbar"><div class="sfill before" style="--w:100%"></div></div></div>
+      <div class="srow"><div class="shead"><b>LeanVid</b><span>3:34</span><em>99.4 MB</em></div>
+        <div class="sbar"><div class="sfill" style="--w:8%"></div></div></div>
+      <div class="big">約92%小さく</div>
+      <p class="caption-note">自社テスト：3分34秒の画面収録。結果は動画によって異なります。</p>
+    </div>
+  </section>
 
-  <p><b><a href="https://apps.apple.com/app/id6796710561">App Storeからダウンロード</a></b></p>
+  <section class="block">
+    <span class="kicker">使い方</span>
+    <h2>選んで、圧縮して、確かめて、置き換える。</h2>
+    <div class="gallery">
+      <img src="../assets/ja/shot-cover.jpg" alt="画質はそのまま、 サイズだけ激減" loading="lazy">
+      <img src="../assets/ja/shot-picker.jpg" alt="容量を食う動画から ひと目で" loading="lazy">
+      <img src="../assets/ja/shot-progress.jpg" alt="閉じても、ロックしても 圧縮は続く" loading="lazy">
+      <img src="../assets/ja/shot-celebration.jpg" alt="取り戻した空き容量を その場で確認" loading="lazy">
+      <img src="../assets/ja/shot-compare.jpg" alt="画質は自分の目で 確かめる" loading="lazy">
+      <img src="../assets/ja/shot-report.jpg" alt="検証に合格して初めて 元動画を置き換え" loading="lazy">
+      <img src="../assets/ja/shot-spec.jpg" alt="HDR もフレームレートも そのまま保持" loading="lazy">
+      <img src="../assets/ja/shot-history.jpg" alt="記録が残るから いつでも再比較" loading="lazy">
+    </div>
+  </section>
+
+  <section class="block">
+    <span class="kicker">さらに</span>
+    <h2>必要なものは、ぜんぶ入り。</h2>
+    <div class="grid two">
+      <div class="feat"><div class="ic"><svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h10M4 17h6"/><path d="M17 14l3 3-3 3"/></svg></div><b>画質を保つ圧縮</b><p>ビットレートだけを調整し、HDR とすべてのトラックを保持</p></div>
+      <div class="feat"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg></div><b>検証済みの安全な置き換え</b><p>整合性チェック・復旧ジャーナル・システム確認</p></div>
+      <div class="feat"><div class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="8" height="16" rx="2"/><rect x="13" y="4" width="8" height="16" rx="2"/></svg></div><b>自分の目で確認</b><p>並べて・スライダーでの比較、詳細なスペック表</p></div>
+      <div class="feat"><div class="ic"><svg viewBox="0 0 24 24"><path d="M4 4h10l6 6v10H4z"/><path d="M14 4v6h6"/></svg></div><b>ファイルアプリと多様な形式</b><p>このiPhone内・iCloud Drive の動画も選べます。MKV・WebM・AVI・WMV・FLV・TS・MPG・VOB ファイルは端末内で HEVC/MP4 に変換します</p></div>
+    </div>
+    <div class="privacy-band soft">
+      <div class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+      <div><b>待ち時間なし</b><p>Live Activity で進捗を表示するバックグラウンド圧縮（iOS 26 以降）。それ以前のバージョンでは、アプリに戻ると自動的に再開します</p></div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="privacy-band">
+      <div class="ic"><svg viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg></div>
+      <div><b>オンデバイス処理</b><p>動画は iPhone 上で圧縮され、どこにもアップロードされません。アカウントは不要です — <a href="privacy.html">プライバシー</a></p></div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <img src="../assets/icon.png" alt="LeanVid">
+    <h2>次の動画から、空き容量を取り戻そう。</h2>
+    <a class="store" href="https://apps.apple.com/app/id6796710561"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.37 12.64c-.02-2.2 1.8-3.26 1.88-3.31-1.02-1.5-2.61-1.7-3.18-1.72-1.35-.14-2.64.8-3.33.8-.69 0-1.74-.78-2.87-.76-1.47.02-2.83.86-3.59 2.18-1.53 2.66-.39 6.59 1.1 8.75.73 1.05 1.6 2.24 2.73 2.2 1.1-.04 1.51-.71 2.84-.71 1.32 0 1.7.71 2.86.69 1.18-.02 1.93-1.07 2.65-2.13.83-1.22 1.18-2.4 1.2-2.46-.03-.01-2.3-.88-2.33-3.5zM14.2 6.17c.6-.73 1.01-1.75.9-2.76-.87.04-1.92.58-2.54 1.31-.56.65-1.05 1.69-.92 2.68.97.08 1.96-.49 2.56-1.23z"/></svg>App Storeからダウンロード</a>
+  </section>
 
   <footer>© 2026 Cream · <a href="support.html">サポート</a> · <a href="privacy.html">プライバシー</a></footer>
 </div>

@@ -1,0 +1,915 @@
+{
+ "en": {
+  "title": "LeanVid — Shrink videos, keep quality",
+  "desc": "LeanVid compresses videos from your photo library and the Files app by lowering only the bitrate — resolution, frame rate, color, and HDR stay intact. Every result is verified before it replaces the original, and photo library originals stay recoverable for 30 days.",
+  "nav": [
+   "Home",
+   "Support",
+   "Privacy"
+  ],
+  "h1": "Shrink videos, keep the quality.",
+  "lede": "LeanVid compresses videos from your photo library and the Files app by lowering only the bitrate — resolution, frame rate, color, and HDR stay intact. Every result is verified before it replaces the original, and photo library originals stay recoverable for 30 days.",
+  "store": "Download on the App Store",
+  "fine": "iOS 18 or later · iPhone and iPad (also runs on Apple silicon Macs as an iPad app)",
+  "feats": [
+   [
+    "Quality-preserving compression",
+    "bitrate-only, HDR and every track preserved"
+   ],
+   [
+    "Verified, safe replacement",
+    "integrity checks, recovery journal, system confirmation"
+   ],
+   [
+    "See it yourself",
+    "side-by-side and slider comparison, full spec table"
+   ],
+   [
+    "Files app and more formats",
+    "pick videos from On My iPhone or iCloud Drive; MKV, WebM, AVI, WMV, FLV, TS, MPG and VOB files are converted to HEVC/MP4 on your device"
+   ],
+   [
+    "No waiting",
+    "background compression with Live Activity progress (iOS 26+); on earlier versions it resumes automatically when you return"
+   ],
+   [
+    "On-device processing",
+    "your videos are compressed on your iPhone and are never uploaded; no account required"
+   ]
+  ],
+  "k_save": "Measured on a real video",
+  "h_save": "Same video, a fraction of the space.",
+  "lv_big": "About 92% smaller",
+  "lv_note": "Our own test: a 3 min 34 s screen recording. Results vary by video.",
+  "original": "Original",
+  "k_how": "How it works",
+  "h_how": "Pick, compress, check, replace.",
+  "k_more": "And more",
+  "h_more": "Everything you need, built in.",
+  "cta": "Free up space, starting with your next video.",
+  "shots": [
+   {
+    "headline": "Keep the quality. Drop the size.",
+    "sub": "Compress · Verify · Replace safely"
+   },
+   {
+    "headline": "Start with the videos that eat your storage",
+    "sub": "Sorted by size · Estimated savings"
+   },
+   {
+    "headline": "Keeps going, even when you leave",
+    "sub": "Live Activity progress on the Lock Screen"
+   },
+   {
+    "headline": "See the space you just got back",
+    "sub": "Savings from this run"
+   },
+   {
+    "headline": "Trust your own eyes on quality",
+    "sub": "Original ↔ result slider"
+   },
+   {
+    "headline": "Originals replaced only after verification",
+    "sub": "Integrity checks · Recovery journal"
+   },
+   {
+    "headline": "HDR and frame rate, preserved",
+    "sub": "Side-by-side spec comparison"
+   },
+   {
+    "headline": "Every run on record — compare anytime",
+    "sub": "History · Export"
+   }
+  ]
+ },
+ "ko": {
+  "title": "LeanVid — 화질 그대로, 용량만 줄이기",
+  "desc": "LeanVid는 사진 보관함과 파일 앱의 동영상을 비트레이트만 낮춰 압축합니다 — 해상도·프레임레이트·색상·HDR은 그대로 유지됩니다. 모든 결과물은 원본을 교체하기 전에 검증되며, 사진 보관함의 원본은 30일 동안 복원할 수 있습니다.",
+  "nav": [
+   "홈",
+   "지원",
+   "개인정보"
+  ],
+  "h1": "화질은 그대로, 용량만 줄이세요.",
+  "lede": "LeanVid는 사진 보관함과 파일 앱의 동영상을 비트레이트만 낮춰 압축합니다 — 해상도·프레임레이트·색상·HDR은 그대로 유지됩니다. 모든 결과물은 원본을 교체하기 전에 검증되며, 사진 보관함의 원본은 30일 동안 복원할 수 있습니다.",
+  "store": "App Store에서 다운로드하기",
+  "fine": "iOS 18 이상 · iPhone 및 iPad (Apple 실리콘 Mac에서는 iPad 앱으로 실행)",
+  "feats": [
+   [
+    "화질 보존 압축",
+    "비트레이트만 조정, HDR과 모든 트랙 보존"
+   ],
+   [
+    "검증된 안전 교체",
+    "무결성 검사·복구 저널·시스템 확인"
+   ],
+   [
+    "직접 확인",
+    "나란히·슬라이더 비교, 상세 스펙 표"
+   ],
+   [
+    "파일 앱과 다양한 포맷",
+    "나의 iPhone·iCloud Drive의 동영상도 고를 수 있고, MKV·WebM·AVI·WMV·FLV·TS·MPG·VOB 파일은 기기 안에서 HEVC/MP4로 변환합니다"
+   ],
+   [
+    "기다림 없이",
+    "백그라운드 압축과 라이브 액티비티 진행률 (iOS 26+); 이전 버전에서는 앱에 돌아오면 자동으로 재개됩니다"
+   ],
+   [
+    "온디바이스 처리",
+    "동영상은 iPhone에서 압축되며 어디로도 업로드되지 않습니다. 계정 불필요"
+   ]
+  ],
+  "k_save": "실제 영상으로 잰 값",
+  "h_save": "같은 영상, 훨씬 작은 공간.",
+  "lv_big": "약 92% 작게",
+  "lv_note": "직접 잰 예: 3분 34초 화면 녹화. 영상마다 다릅니다.",
+  "original": "원본",
+  "k_how": "이렇게 씁니다",
+  "h_how": "고르고, 줄이고, 확인하고, 바꾸기.",
+  "k_more": "그리고",
+  "h_more": "필요한 건 다 들어 있습니다.",
+  "cta": "다음 영상부터 공간을 되찾아 보세요.",
+  "shots": [
+   {
+    "headline": "화질은 그대로, 용량만 확 줄인다",
+    "sub": "동영상 압축 · 검증 · 안전 교체"
+   },
+   {
+    "headline": "용량 잡아먹는 영상부터 한눈에",
+    "sub": "용량 큰 순 정렬 · 절약 예상 표시"
+   },
+   {
+    "headline": "닫아도, 잠가도 계속되는 압축",
+    "sub": "라이브 액티비티로 진행률 확인"
+   },
+   {
+    "headline": "되찾은 공간을 바로 확인",
+    "sub": "이번 압축으로 절약한 용량"
+   },
+   {
+    "headline": "내 눈으로 확인하는 화질",
+    "sub": "원본 ↔ 결과 슬라이더 비교"
+   },
+   {
+    "headline": "검증을 통과해야만 원본을 교체",
+    "sub": "무결성 검사 · 복구 저널 · 30일 복원"
+   },
+   {
+    "headline": "HDR·프레임레이트까지 그대로 보존",
+    "sub": "압축 전후 상세 스펙 대조"
+   },
+   {
+    "headline": "기록이 남아 언제든 다시 비교",
+    "sub": "압축 히스토리 · 내보내기"
+   }
+  ]
+ },
+ "ja": {
+  "title": "LeanVid — 画質はそのまま、容量だけ削減",
+  "desc": "LeanVid は写真ライブラリとファイルアプリの動画を、ビットレートだけ下げて圧縮します — 解像度・フレームレート・色・HDR はそのままです。すべての結果は元の動画を置き換える前に検証され、写真ライブラリの元の動画は30日間復元できます。",
+  "nav": [
+   "ホーム",
+   "サポート",
+   "プライバシー"
+  ],
+  "h1": "画質はそのままに、容量だけ小さく。",
+  "lede": "LeanVid は写真ライブラリとファイルアプリの動画を、ビットレートだけ下げて圧縮します — 解像度・フレームレート・色・HDR はそのままです。すべての結果は元の動画を置き換える前に検証され、写真ライブラリの元の動画は30日間復元できます。",
+  "store": "App Storeからダウンロード",
+  "fine": "iOS 18 以降 · iPhone および iPad（Apple silicon 搭載の Mac では iPad アプリとして動作）",
+  "feats": [
+   [
+    "画質を保つ圧縮",
+    "ビットレートだけを調整し、HDR とすべてのトラックを保持"
+   ],
+   [
+    "検証済みの安全な置き換え",
+    "整合性チェック・復旧ジャーナル・システム確認"
+   ],
+   [
+    "自分の目で確認",
+    "並べて・スライダーでの比較、詳細なスペック表"
+   ],
+   [
+    "ファイルアプリと多様な形式",
+    "このiPhone内・iCloud Drive の動画も選べます。MKV・WebM・AVI・WMV・FLV・TS・MPG・VOB ファイルは端末内で HEVC/MP4 に変換します"
+   ],
+   [
+    "待ち時間なし",
+    "Live Activity で進捗を表示するバックグラウンド圧縮（iOS 26 以降）。それ以前のバージョンでは、アプリに戻ると自動的に再開します"
+   ],
+   [
+    "オンデバイス処理",
+    "動画は iPhone 上で圧縮され、どこにもアップロードされません。アカウントは不要です"
+   ]
+  ],
+  "k_save": "実際の動画で計測",
+  "h_save": "同じ動画を、ずっと小さく。",
+  "lv_big": "約92%小さく",
+  "lv_note": "自社テスト：3分34秒の画面収録。結果は動画によって異なります。",
+  "original": "元動画",
+  "k_how": "使い方",
+  "h_how": "選んで、圧縮して、確かめて、置き換える。",
+  "k_more": "さらに",
+  "h_more": "必要なものは、ぜんぶ入り。",
+  "cta": "次の動画から、空き容量を取り戻そう。",
+  "shots": [
+   {
+    "headline": "画質はそのまま、 サイズだけ激減",
+    "sub": "圧縮 · 検証 · 安全に置き換え"
+   },
+   {
+    "headline": "容量を食う動画から ひと目で",
+    "sub": "サイズ順に並べ替え · 節約見込みを表示"
+   },
+   {
+    "headline": "閉じても、ロックしても 圧縮は続く",
+    "sub": "ロック画面のライブアクティビティで進捗確認"
+   },
+   {
+    "headline": "取り戻した空き容量を その場で確認",
+    "sub": "今回の圧縮で節約した容量"
+   },
+   {
+    "headline": "画質は自分の目で 確かめる",
+    "sub": "元動画 ↔ 結果 スライダー比較"
+   },
+   {
+    "headline": "検証に合格して初めて 元動画を置き換え",
+    "sub": "整合性チェック · 復旧ジャーナル · 30日復元"
+   },
+   {
+    "headline": "HDR もフレームレートも そのまま保持",
+    "sub": "圧縮前後の詳細スペック比較"
+   },
+   {
+    "headline": "記録が残るから いつでも再比較",
+    "sub": "圧縮履歴 · 書き出し"
+   }
+  ]
+ },
+ "zh-Hans": {
+  "title": "LeanVid — 视频压缩，画质不变",
+  "desc": "LeanVid 只降低比特率来压缩照片图库和“文件”应用中的视频——分辨率、帧率、色彩和 HDR 保持不变。每个结果在替换原片之前都会经过验证，照片图库中的原片可在 30 天内恢复。",
+  "nav": [
+   "首页",
+   "支持",
+   "隐私"
+  ],
+  "h1": "压缩视频，保留画质。",
+  "lede": "LeanVid 只降低比特率来压缩照片图库和“文件”应用中的视频——分辨率、帧率、色彩和 HDR 保持不变。每个结果在替换原片之前都会经过验证，照片图库中的原片可在 30 天内恢复。",
+  "store": "在 App Store 下载",
+  "fine": "iOS 18 或更高版本 · iPhone 和 iPad（也能作为 iPad App 在 Apple silicon Mac 上运行）",
+  "feats": [
+   [
+    "画质保留压缩",
+    "仅调整比特率，保留 HDR 与所有轨道"
+   ],
+   [
+    "经过校验的安全替换",
+    "完整性校验、恢复日志、系统确认"
+   ],
+   [
+    "眼见为实",
+    "并排与滑块对比，完整规格表"
+   ],
+   [
+    "“文件”应用与更多格式",
+    "也可以选择“我的 iPhone”和 iCloud 云盘中的视频；MKV、WebM、AVI、WMV、FLV、TS、MPG、VOB 文件会在设备上转换为 HEVC/MP4"
+   ],
+   [
+    "无需等待",
+    "后台压缩，并通过 Live Activity 显示进度（iOS 26 及更高版本）；更早的版本会在你回到应用时自动继续"
+   ],
+   [
+    "本机处理",
+    "视频在你的 iPhone 上压缩，绝不上传；无需账户"
+   ]
+  ],
+  "k_save": "用真实视频实测",
+  "h_save": "同一段视频，只占一小部分空间。",
+  "lv_big": "约小 92%",
+  "lv_note": "我们的实测：一段 3 分 34 秒的屏幕录制。结果因视频而异。",
+  "original": "原视频",
+  "k_how": "使用方法",
+  "h_how": "选好、压缩、确认、替换。",
+  "k_more": "还有",
+  "h_more": "所需功能，一应俱全。",
+  "cta": "从下一段视频开始，找回空间。",
+  "shots": [
+   {
+    "headline": "画质不变， 体积大幅缩小",
+    "sub": "视频压缩 · 校验 · 安全替换"
+   },
+   {
+    "headline": "占空间的视频 一目了然",
+    "sub": "按体积排序 · 显示预计节省"
+   },
+   {
+    "headline": "关闭、锁屏 压缩也不停",
+    "sub": "通过实时活动查看进度"
+   },
+   {
+    "headline": "立即查看 找回的空间",
+    "sub": "本次压缩节省的容量"
+   },
+   {
+    "headline": "用你的双眼 检验画质",
+    "sub": "原视频 ↔ 结果 滑块对比"
+   },
+   {
+    "headline": "通过校验后 才替换原视频",
+    "sub": "完整性检查 · 恢复日志 · 30 天可恢复"
+   },
+   {
+    "headline": "连 HDR、帧率 都原样保留",
+    "sub": "压缩前后详细规格对比"
+   },
+   {
+    "headline": "留有记录 随时再次对比",
+    "sub": "压缩历史记录 · 导出"
+   }
+  ]
+ },
+ "zh-Hant": {
+  "title": "LeanVid — 縮小影片，保留畫質",
+  "desc": "LeanVid 只降低位元率來壓縮照片圖庫和「檔案」App 中的影片——解析度、影格率、色彩和 HDR 保持不變。每個結果在取代原始檔之前都會經過驗證，照片圖庫中的原始檔可在 30 天內復原。",
+  "nav": [
+   "首頁",
+   "支援",
+   "隱私權"
+  ],
+  "h1": "縮小影片，畫質不變。",
+  "lede": "LeanVid 只降低位元率來壓縮照片圖庫和「檔案」App 中的影片——解析度、影格率、色彩和 HDR 保持不變。每個結果在取代原始檔之前都會經過驗證，照片圖庫中的原始檔可在 30 天內復原。",
+  "store": "在 App Store 下載",
+  "fine": "iOS 18 或以上版本 · iPhone 與 iPad（在搭載 Apple silicon 的 Mac 上也能以 iPad App 形式執行）",
+  "feats": [
+   [
+    "保留畫質的壓縮",
+    "僅調整位元率，保留 HDR 與每一條軌道"
+   ],
+   [
+    "經過驗證的安全取代",
+    "完整性檢查、復原日誌、系統確認"
+   ],
+   [
+    "親眼確認",
+    "並排與滑桿比較、完整規格表"
+   ],
+   [
+    "「檔案」App 與更多格式",
+    "也可以選擇「我的 iPhone」和 iCloud 雲碟中的影片；MKV、WebM、AVI、WMV、FLV、TS、MPG、VOB 檔案會在裝置上轉換為 HEVC/MP4"
+   ],
+   [
+    "無需等待",
+    "背景壓縮，並以 Live Activity 顯示進度（iOS 26 以上）；較早的版本會在您回到 App 時自動繼續"
+   ],
+   [
+    "裝置本機處理",
+    "您的影片在 iPhone 上壓縮，絕不會被上傳；無需帳號"
+   ]
+  ],
+  "k_save": "用真實影片實測",
+  "h_save": "同一段影片，只佔一小部分空間。",
+  "lv_big": "約小 92%",
+  "lv_note": "我們的實測：一段 3 分 34 秒的螢幕錄影。結果因影片而異。",
+  "original": "原始檔",
+  "k_how": "使用方式",
+  "h_how": "選好、壓縮、確認、替換。",
+  "k_more": "還有",
+  "h_more": "需要的功能，一應俱全。",
+  "cta": "從下一段影片開始，找回空間。",
+  "shots": [
+   {
+    "headline": "畫質不變， 容量大幅縮小",
+    "sub": "影片壓縮 · 驗證 · 安全替換"
+   },
+   {
+    "headline": "先處理最占空間的 那些影片",
+    "sub": "依容量排序 · 顯示預估節省"
+   },
+   {
+    "headline": "關閉、鎖屏， 壓縮也不停",
+    "sub": "鎖定畫面上的即時動態進度"
+   },
+   {
+    "headline": "立即看見 找回的空間",
+    "sub": "本次壓縮節省的容量"
+   },
+   {
+    "headline": "用你的雙眼 檢驗畫質",
+    "sub": "原始檔 ↔ 結果 滑桿對比"
+   },
+   {
+    "headline": "通過驗證後 才替換原始檔",
+    "sub": "完整性檢查 · 復原日誌"
+   },
+   {
+    "headline": "HDR 與影格率 原樣保留",
+    "sub": "壓縮前後詳細規格對照"
+   },
+   {
+    "headline": "留有記錄， 隨時再次對比",
+    "sub": "壓縮記錄 · 輸出"
+   }
+  ]
+ },
+ "es-ES": {
+  "title": "LeanVid — Reduce vídeos, conserva la calidad",
+  "desc": "LeanVid comprime los vídeos de tu fototeca y de la app Archivos bajando solo la tasa de bits: la resolución, la frecuencia de fotogramas, el color y el HDR se mantienen intactos. Cada resultado se verifica antes de sustituir el original, y los originales de la fototeca se pueden recuperar durante 30 días.",
+  "nav": [
+   "Inicio",
+   "Soporte",
+   "Privacidad"
+  ],
+  "h1": "Reduce tus vídeos sin perder calidad.",
+  "lede": "LeanVid comprime los vídeos de tu fototeca y de la app Archivos bajando solo la tasa de bits: la resolución, la frecuencia de fotogramas, el color y el HDR se mantienen intactos. Cada resultado se verifica antes de sustituir el original, y los originales de la fototeca se pueden recuperar durante 30 días.",
+  "store": "Descárgalo en el App Store",
+  "fine": "iOS 18 o posterior · iPhone y iPad (también funciona en Mac con Apple silicon como app para iPad)",
+  "feats": [
+   [
+    "Compresión que preserva la calidad",
+    "solo el bitrate; se conservan el HDR y todas las pistas"
+   ],
+   [
+    "Reemplazo verificado y seguro",
+    "comprobaciones de integridad, registro de recuperación y confirmación del sistema"
+   ],
+   [
+    "Compruébalo tú mismo",
+    "comparación en paralelo y con control deslizante, tabla de especificaciones completa"
+   ],
+   [
+    "La app Archivos y más formatos",
+    "elige vídeos de En mi iPhone o iCloud Drive; los archivos MKV, WebM, AVI, WMV, FLV, TS, MPG y VOB se convierten a HEVC/MP4 en tu dispositivo"
+   ],
+   [
+    "Sin esperas",
+    "compresión en segundo plano con progreso en Live Activity (iOS 26 o posterior); en versiones anteriores se reanuda automáticamente al volver a la app"
+   ],
+   [
+    "Procesamiento en el dispositivo",
+    "tus vídeos se comprimen en tu iPhone y no se suben a ningún sitio; no requiere cuenta"
+   ]
+  ],
+  "k_save": "Medido con un vídeo real",
+  "h_save": "El mismo vídeo, en una fracción del espacio.",
+  "lv_big": "Un 92 % más pequeño",
+  "lv_note": "Prueba propia: una grabación de pantalla de 3 min 34 s. El resultado varía según el vídeo.",
+  "original": "Original",
+  "k_how": "Cómo funciona",
+  "h_how": "Elige, comprime, comprueba y reemplaza.",
+  "k_more": "Y además",
+  "h_more": "Todo lo que necesitas, incluido.",
+  "cta": "Recupera espacio desde tu próximo vídeo.",
+  "shots": [
+   {
+    "headline": "Misma calidad, menos tamaño",
+    "sub": "Comprime · Verifica · Reemplaza sin riesgo"
+   },
+   {
+    "headline": "Empieza por los vídeos que más ocupan",
+    "sub": "Ordenados por tamaño · Ahorro estimado"
+   },
+   {
+    "headline": "Sigue comprimiendo, aunque salgas",
+    "sub": "Actividad en vivo en la pantalla bloqueada"
+   },
+   {
+    "headline": "Mira el espacio que acabas de recuperar",
+    "sub": "Lo ahorrado en esta compresión"
+   },
+   {
+    "headline": "Comprueba la calidad con tus propios ojos",
+    "sub": "Original ↔ resultado con deslizante"
+   },
+   {
+    "headline": "Reemplaza el original solo tras verificar",
+    "sub": "Verificación de integridad · Diario de recuperación"
+   },
+   {
+    "headline": "HDR y frecuencia de fotogramas, intactos",
+    "sub": "Comparación de especificaciones lado a lado"
+   },
+   {
+    "headline": "Todo queda registrado: compara cuando quieras",
+    "sub": "Historial · Exportar"
+   }
+  ]
+ },
+ "de-DE": {
+  "title": "LeanVid — Videos verkleinern, Qualität behalten",
+  "desc": "LeanVid komprimiert Videos aus deiner Fotomediathek und der Dateien-App, indem nur die Bitrate gesenkt wird – Auflösung, Bildrate, Farbe und HDR bleiben erhalten. Jedes Ergebnis wird geprüft, bevor es das Original ersetzt, und Originale aus der Fotomediathek lassen sich 30 Tage lang wiederherstellen.",
+  "nav": [
+   "Start",
+   "Support",
+   "Datenschutz"
+  ],
+  "h1": "Videos verkleinern, Qualität behalten.",
+  "lede": "LeanVid komprimiert Videos aus deiner Fotomediathek und der Dateien-App, indem nur die Bitrate gesenkt wird – Auflösung, Bildrate, Farbe und HDR bleiben erhalten. Jedes Ergebnis wird geprüft, bevor es das Original ersetzt, und Originale aus der Fotomediathek lassen sich 30 Tage lang wiederherstellen.",
+  "store": "Laden im App Store",
+  "fine": "iOS 18 oder neuer · iPhone und iPad (läuft auch auf Macs mit Apple silicon als iPad-App)",
+  "feats": [
+   [
+    "Qualitätserhaltende Komprimierung",
+    "nur Bitrate, HDR und alle Spuren bleiben erhalten"
+   ],
+   [
+    "Geprüfter, sicherer Ersatz",
+    "Integritätsprüfungen, Wiederherstellungsjournal, Systembestätigung"
+   ],
+   [
+    "Überzeugen Sie sich selbst",
+    "Vergleich nebeneinander und per Schieberegler, vollständige Spezifikationstabelle"
+   ],
+   [
+    "Dateien-App und mehr Formate",
+    "wähle Videos aus „Auf meinem iPhone“ oder iCloud Drive; MKV-, WebM-, AVI-, WMV-, FLV-, TS-, MPG- und VOB-Dateien werden auf deinem Gerät in HEVC/MP4 umgewandelt"
+   ],
+   [
+    "Kein Warten",
+    "Komprimierung im Hintergrund mit Fortschritt in der Live Activity (ab iOS 26); auf älteren Versionen wird sie bei der Rückkehr zur App automatisch fortgesetzt"
+   ],
+   [
+    "Verarbeitung auf dem Gerät",
+    "Ihre Videos werden auf Ihrem iPhone komprimiert und niemals hochgeladen; kein Account erforderlich"
+   ]
+  ],
+  "k_save": "An einem echten Video gemessen",
+  "h_save": "Dasselbe Video, ein Bruchteil des Speichers.",
+  "lv_big": "Rund 92 % kleiner",
+  "lv_note": "Eigener Test: eine Bildschirmaufnahme von 3:34 Min. Das Ergebnis hängt vom Video ab.",
+  "original": "Original",
+  "k_how": "So funktioniert’s",
+  "h_how": "Auswählen, komprimieren, prüfen, ersetzen.",
+  "k_more": "Und mehr",
+  "h_more": "Alles drin, was du brauchst.",
+  "cta": "Hol dir Speicher zurück – ab deinem nächsten Video.",
+  "shots": [
+   {
+    "headline": "Qualität behalten. Größe halbieren.",
+    "sub": "Komprimieren · Überprüfen · Sicher ersetzen"
+   },
+   {
+    "headline": "Starte mit den Videos, die am meisten belegen",
+    "sub": "Nach Größe sortiert · Geschätzte Ersparnis"
+   },
+   {
+    "headline": "Läuft weiter — auch wenn du gehst",
+    "sub": "Live-Aktivität auf dem Sperrbildschirm"
+   },
+   {
+    "headline": "Sieh, wie viel Platz du zurückbekommst",
+    "sub": "Ersparnis dieses Durchlaufs"
+   },
+   {
+    "headline": "Prüf die Qualität mit eigenen Augen",
+    "sub": "Original ↔ Ergebnis per Schieberegler"
+   },
+   {
+    "headline": "Ersetzt wird nur nach bestandener Prüfung",
+    "sub": "Integritätscheck · Wiederherstellungsjournal"
+   },
+   {
+    "headline": "HDR und Bildrate bleiben erhalten",
+    "sub": "Spezifikationen im direkten Vergleich"
+   },
+   {
+    "headline": "Alles dokumentiert — jederzeit vergleichbar",
+    "sub": "Verlauf · Export"
+   }
+  ]
+ },
+ "fr-FR": {
+  "title": "LeanVid — Réduisez vos vidéos, gardez la qualité",
+  "desc": "LeanVid compresse les vidéos de votre photothèque et de l’app Fichiers en ne réduisant que le débit — résolution, cadence, couleurs et HDR restent intacts. Chaque résultat est vérifié avant de remplacer l’original, et les originaux de la photothèque restent récupérables pendant 30 jours.",
+  "nav": [
+   "Accueil",
+   "Assistance",
+   "Confidentialité"
+  ],
+  "h1": "Réduisez vos vidéos, gardez la qualité.",
+  "lede": "LeanVid compresse les vidéos de votre photothèque et de l’app Fichiers en ne réduisant que le débit — résolution, cadence, couleurs et HDR restent intacts. Chaque résultat est vérifié avant de remplacer l’original, et les originaux de la photothèque restent récupérables pendant 30 jours.",
+  "store": "Télécharger dans l’App Store",
+  "fine": "iOS 18 ou version ultérieure · iPhone et iPad (fonctionne aussi sur les Mac Apple silicon en tant qu’app iPad)",
+  "feats": [
+   [
+    "Compression qui préserve la qualité",
+    "débit binaire uniquement ; HDR et toutes les pistes préservés"
+   ],
+   [
+    "Remplacement vérifié et sûr",
+    "contrôles d’intégrité, journal de récupération, confirmation système"
+   ],
+   [
+    "Voyez par vous-même",
+    "comparaison côte à côte et au curseur, tableau détaillé des caractéristiques"
+   ],
+   [
+    "L’app Fichiers et plus de formats",
+    "choisissez des vidéos dans Sur mon iPhone ou iCloud Drive ; les fichiers MKV, WebM, AVI, WMV, FLV, TS, MPG et VOB sont convertis en HEVC/MP4 sur votre appareil"
+   ],
+   [
+    "Aucune attente",
+    "compression en arrière-plan avec progression via Live Activity (iOS 26 ou version ultérieure). Sur les versions antérieures, elle reprend automatiquement à votre retour dans l’application"
+   ],
+   [
+    "Traitement sur l’appareil",
+    "vos vidéos sont compressées sur votre iPhone et ne sont jamais téléversées ; aucun compte requis"
+   ]
+  ],
+  "k_save": "Mesuré sur une vraie vidéo",
+  "h_save": "La même vidéo, pour une fraction de l’espace.",
+  "lv_big": "Environ 92 % plus léger",
+  "lv_note": "Notre test : un enregistrement d’écran de 3 min 34 s. Le résultat varie selon la vidéo.",
+  "original": "Original",
+  "k_how": "Comment ça marche",
+  "h_how": "Choisir, compresser, vérifier, remplacer.",
+  "k_more": "Et aussi",
+  "h_more": "Tout ce qu’il faut, intégré.",
+  "cta": "Libérez de l’espace dès votre prochaine vidéo.",
+  "shots": [
+   {
+    "headline": "Gardez la qualité, réduisez la taille",
+    "sub": "Compresser · Vérifier · Remplacer en sécurité"
+   },
+   {
+    "headline": "Commencez par les vidéos qui dévorent le stockage",
+    "sub": "Triées par taille · Économie estimée"
+   },
+   {
+    "headline": "Continue même quand vous partez",
+    "sub": "Progression en direct sur l'écran verrouillé"
+   },
+   {
+    "headline": "Voyez l'espace que vous récupérez",
+    "sub": "L'économie de cette compression"
+   },
+   {
+    "headline": "Jugez la qualité de vos propres yeux",
+    "sub": "Curseur original ↔ résultat"
+   },
+   {
+    "headline": "L'original remplacé seulement après vérification",
+    "sub": "Contrôle d'intégrité · Journal de récupération"
+   },
+   {
+    "headline": "HDR et fréquence d'images préservés",
+    "sub": "Comparaison des spécifications avant/après"
+   },
+   {
+    "headline": "Tout est enregistré — comparez à tout moment",
+    "sub": "Historique · Exportation"
+   }
+  ]
+ },
+ "it": {
+  "title": "LeanVid — Riduci i video, mantieni la qualità",
+  "desc": "LeanVid comprime i video della libreria foto e dell’app File abbassando solo il bitrate — risoluzione, frequenza dei fotogrammi, colore e HDR restano intatti. Ogni risultato viene verificato prima di sostituire l’originale, e gli originali della libreria foto restano recuperabili per 30 giorni.",
+  "nav": [
+   "Home",
+   "Supporto",
+   "Privacy"
+  ],
+  "h1": "Riduci i video, mantieni la qualità.",
+  "lede": "LeanVid comprime i video della libreria foto e dell’app File abbassando solo il bitrate — risoluzione, frequenza dei fotogrammi, colore e HDR restano intatti. Ogni risultato viene verificato prima di sostituire l’originale, e gli originali della libreria foto restano recuperabili per 30 giorni.",
+  "store": "Scarica su App Store",
+  "fine": "iOS 18 o versioni successive · iPhone e iPad (funziona anche su Mac con Apple silicon come app per iPad)",
+  "feats": [
+   [
+    "Compressione che preserva la qualità",
+    "solo il bitrate, HDR e ogni traccia preservati"
+   ],
+   [
+    "Sostituzione sicura e verificata",
+    "controlli di integrità, journal di recupero, conferma di sistema"
+   ],
+   [
+    "Verifica di persona",
+    "confronto affiancato e con cursore, tabella completa delle specifiche"
+   ],
+   [
+    "App File e più formati",
+    "scegli i video da Su iPhone o iCloud Drive; i file MKV, WebM, AVI, WMV, FLV, TS, MPG e VOB vengono convertiti in HEVC/MP4 sul dispositivo"
+   ],
+   [
+    "Nessuna attesa",
+    "compressione in background con avanzamento tramite Live Activity (da iOS 26 in poi); sulle versioni precedenti riprende automaticamente quando torni"
+   ],
+   [
+    "Elaborazione sul dispositivo",
+    "i tuoi video vengono compressi sul tuo iPhone e non vengono mai caricati; nessun account richiesto"
+   ]
+  ],
+  "k_save": "Misurato su un video reale",
+  "h_save": "Lo stesso video, in una frazione dello spazio.",
+  "lv_big": "Circa il 92% più piccolo",
+  "lv_note": "Nostro test: una registrazione dello schermo di 3 min 34 s. Il risultato varia da video a video.",
+  "original": "Originale",
+  "k_how": "Come funziona",
+  "h_how": "Scegli, comprimi, controlla, sostituisci.",
+  "k_more": "E inoltre",
+  "h_more": "Tutto quello che serve, già dentro.",
+  "cta": "Libera spazio a partire dal prossimo video.",
+  "shots": [
+   {
+    "headline": "Stessa qualità, metà spazio",
+    "sub": "Comprimi · Verifica · Sostituisci"
+   },
+   {
+    "headline": "Parti dai video che divorano lo spazio",
+    "sub": "Ordinati per dimensione · Risparmio stimato"
+   },
+   {
+    "headline": "Continua anche quando esci",
+    "sub": "Avanzamento nelle Live Activity"
+   },
+   {
+    "headline": "Guarda lo spazio appena recuperato",
+    "sub": "Il risparmio di questa sessione"
+   },
+   {
+    "headline": "Giudica la qualità con i tuoi occhi",
+    "sub": "Cursore originale ↔ risultato"
+   },
+   {
+    "headline": "Sostituisce solo dopo la verifica",
+    "sub": "Controlli di integrità · Journal di ripristino"
+   },
+   {
+    "headline": "HDR e frame rate, intatti",
+    "sub": "Confronto specifiche affiancato"
+   },
+   {
+    "headline": "Ogni sessione salvata — confronta quando vuoi",
+    "sub": "Cronologia · Esportazione"
+   }
+  ]
+ },
+ "pt-BR": {
+  "title": "LeanVid — Reduza vídeos, mantenha a qualidade",
+  "desc": "O LeanVid comprime os vídeos da sua fototeca e do app Arquivos reduzindo apenas a taxa de bits — resolução, taxa de quadros, cor e HDR permanecem intactos. Cada resultado é verificado antes de substituir o original, e os originais da fototeca podem ser recuperados por 30 dias.",
+  "nav": [
+   "Início",
+   "Suporte",
+   "Privacidade"
+  ],
+  "h1": "Reduza seus vídeos, mantenha a qualidade.",
+  "lede": "O LeanVid comprime os vídeos da sua fototeca e do app Arquivos reduzindo apenas a taxa de bits — resolução, taxa de quadros, cor e HDR permanecem intactos. Cada resultado é verificado antes de substituir o original, e os originais da fototeca podem ser recuperados por 30 dias.",
+  "store": "Baixar na App Store",
+  "fine": "iOS 18 ou posterior · iPhone e iPad (também funciona em Macs com Apple silicon como um app de iPad)",
+  "feats": [
+   [
+    "Compressão que preserva a qualidade",
+    "apenas o bitrate, com HDR e todas as faixas preservados"
+   ],
+   [
+    "Substituição segura e verificada",
+    "verificações de integridade, registro de recuperação, confirmação do sistema"
+   ],
+   [
+    "Veja com seus próprios olhos",
+    "comparação lado a lado e com controle deslizante, tabela completa de especificações"
+   ],
+   [
+    "App Arquivos e mais formatos",
+    "escolha vídeos de No Meu iPhone ou do iCloud Drive; arquivos MKV, WebM, AVI, WMV, FLV, TS, MPG e VOB são convertidos para HEVC/MP4 no seu dispositivo"
+   ],
+   [
+    "Sem espera",
+    "compressão em segundo plano com progresso na Live Activity (iOS 26 ou posterior); em versões anteriores, ela continua automaticamente quando você volta ao app"
+   ],
+   [
+    "Processamento no dispositivo",
+    "seus vídeos são comprimidos no seu iPhone e nunca saem dele; sem necessidade de conta"
+   ]
+  ],
+  "k_save": "Medido com um vídeo real",
+  "h_save": "O mesmo vídeo, em uma fração do espaço.",
+  "lv_big": "Cerca de 92% menor",
+  "lv_note": "Nosso teste: uma gravação de tela de 3 min 34 s. O resultado varia de vídeo para vídeo.",
+  "original": "Original",
+  "k_how": "Como funciona",
+  "h_how": "Escolha, comprima, confira, substitua.",
+  "k_more": "E mais",
+  "h_more": "Tudo de que você precisa, incluído.",
+  "cta": "Libere espaço a partir do seu próximo vídeo.",
+  "shots": [
+   {
+    "headline": "Mesma qualidade. Muito menos espaço.",
+    "sub": "Comprimir · Verificar · Substituir com segurança"
+   },
+   {
+    "headline": "Comece pelos vídeos que devoram seu espaço",
+    "sub": "Ordenados por tamanho · Economia estimada"
+   },
+   {
+    "headline": "Continua rodando, mesmo se você sair",
+    "sub": "Atividade ao Vivo na Tela Bloqueada"
+   },
+   {
+    "headline": "Veja o espaço que você recuperou",
+    "sub": "Economia desta compressão"
+   },
+   {
+    "headline": "Confira a qualidade com seus próprios olhos",
+    "sub": "Original ↔ resultado no deslizador"
+   },
+   {
+    "headline": "Só substitui após a verificação",
+    "sub": "Checagem de integridade · Diário de recuperação"
+   },
+   {
+    "headline": "HDR e taxa de quadros preservados",
+    "sub": "Comparação de especificações lado a lado"
+   },
+   {
+    "headline": "Tudo registrado — compare quando quiser",
+    "sub": "Histórico · Exportação"
+   }
+  ]
+ },
+ "ru": {
+  "title": "LeanVid — Уменьшайте видео без потери качества",
+  "desc": "LeanVid сжимает видео из медиатеки и приложения «Файлы», снижая только битрейт, — разрешение, частота кадров, цвет и HDR остаются прежними. Каждый результат проверяется перед заменой оригинала, а оригиналы из медиатеки можно восстановить в течение 30 дней.",
+  "nav": [
+   "Главная",
+   "Поддержка",
+   "Конфиденциальность"
+  ],
+  "h1": "Уменьшайте видео, сохраняя качество.",
+  "lede": "LeanVid сжимает видео из медиатеки и приложения «Файлы», снижая только битрейт, — разрешение, частота кадров, цвет и HDR остаются прежними. Каждый результат проверяется перед заменой оригинала, а оригиналы из медиатеки можно восстановить в течение 30 дней.",
+  "store": "Загрузите в App Store",
+  "fine": "iOS 18 или новее · iPhone и iPad (также работает на Mac с Apple silicon как приложение для iPad)",
+  "feats": [
+   [
+    "Сжатие с сохранением качества",
+    "только битрейт, HDR и все дорожки сохраняются"
+   ],
+   [
+    "Проверенная, безопасная замена",
+    "проверки целостности, журнал восстановления, системное подтверждение"
+   ],
+   [
+    "Убедитесь сами",
+    "сравнение бок о бок и с ползунком, полная таблица характеристик"
+   ],
+   [
+    "«Файлы» и другие форматы",
+    "выбирайте видео из «На iPhone» или iCloud Drive; файлы MKV, WebM, AVI, WMV, FLV, TS, MPG и VOB конвертируются в HEVC/MP4 прямо на устройстве"
+   ],
+   [
+    "Без ожидания",
+    "сжатие в фоне с индикатором прогресса Live Activity (iOS 26 и новее); на более ранних версиях сжатие автоматически возобновляется при возвращении в приложение"
+   ],
+   [
+    "Обработка на устройстве",
+    "ваши видео сжимаются прямо на iPhone и никуда не загружаются; учётная запись не требуется"
+   ]
+  ],
+  "k_save": "Замерено на настоящем видео",
+  "h_save": "То же видео — в разы меньше места.",
+  "lv_big": "Примерно на 92% меньше",
+  "lv_note": "Наш тест: запись экрана длиной 3 мин 34 с. Результат зависит от видео.",
+  "original": "Оригинал",
+  "k_how": "Как это работает",
+  "h_how": "Выберите, сожмите, проверьте, замените.",
+  "k_more": "А ещё",
+  "h_more": "Всё нужное уже внутри.",
+  "cta": "Освободите место, начиная со следующего видео.",
+  "shots": [
+   {
+    "headline": "Качество то же, размер меньше",
+    "sub": "Сжатие · Проверка · Замена"
+   },
+   {
+    "headline": "Начните с видео, что съедают память",
+    "sub": "Сортировка по размеру · Оценка экономии"
+   },
+   {
+    "headline": "Продолжает, даже если выйти",
+    "sub": "Прогресс в Live Activity на экране блокировки"
+   },
+   {
+    "headline": "Сразу видно, сколько освободилось",
+    "sub": "Экономия за этот запуск"
+   },
+   {
+    "headline": "Оцените качество своими глазами",
+    "sub": "Ползунок оригинал ↔ результат"
+   },
+   {
+    "headline": "Замена только после проверки",
+    "sub": "Проверка целостности · Журнал восстановления"
+   },
+   {
+    "headline": "HDR и частота кадров сохранены",
+    "sub": "Сравнение характеристик"
+   },
+   {
+    "headline": "Всё в истории — сравните в любой момент",
+    "sub": "История · Экспорт"
+   }
+  ]
+ }
+}

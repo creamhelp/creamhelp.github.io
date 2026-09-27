@@ -189,6 +189,8 @@ PAGE = """<!DOCTYPE html>
   .app{{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:center;margin:0 0 28px;padding:30px;border-radius:24px;background:var(--surface);border:1px solid var(--border)}}
   .app.rev .vis{{order:-1}}
   .app .title{{display:flex;align-items:center;gap:12px;margin:0 0 6px}}
+  a.title{{color:var(--ink);text-decoration:none;width:fit-content}} a.title:hover h2{{text-decoration:underline}}
+  .app .title .go{{font-size:28px;font-weight:300;color:var(--ink-3);transition:transform .2s}} a.title:hover .go{{transform:translateX(4px)}}
   .app .title img{{width:44px;height:44px;border-radius:11px;box-shadow:0 2px 8px rgba(0,0,0,.18)}}
   .app h2{{margin:0;font-size:26px}}
   .app .tag{{font-weight:700;margin:0 0 12px}}
@@ -245,7 +247,7 @@ PAGE = """<!DOCTYPE html>
 
   <section class="app lean" id="leanvid">
     <div>
-      <div class="title"><img src="{pfx}assets/leanvid-icon.png" alt=""><h2>LeanVid</h2></div>
+      <a class="title" href="{lv}index.html"><img src="{pfx}assets/leanvid-icon.png" alt=""><h2>LeanVid</h2><span class="go">›</span></a>
       <p class="tag">{lv_tag}</p>
       <p>{lv_desc}</p>
       <p class="links"><a href="{app_store_lv}"><b>{store}</b></a><a href="{lv}index.html">{website}</a><a href="{lv}support.html">{support}</a><a href="{lv}privacy.html">{privacy}</a></p>
@@ -262,7 +264,7 @@ PAGE = """<!DOCTYPE html>
 
   <section class="app gram rev" id="gramcamera">
     <div>
-      <div class="title"><img src="{pfx}gramcamera/assets/icon.png" alt=""><h2>GramCamera</h2></div>
+      <a class="title" href="{gc}index.html"><img src="{pfx}gramcamera/assets/icon.png" alt=""><h2>GramCamera</h2><span class="go">›</span></a>
       <p class="tag">{gc_tag}</p>
       <p>{gc_desc}</p>
       <p class="links"><a href="{app_store_gc}"><b>{store}</b></a><a href="{gc}index.html">{website}</a><a href="{gc}support.html">{support}</a><a href="{gc}privacy.html">{privacy}</a></p>
@@ -275,7 +277,7 @@ PAGE = """<!DOCTYPE html>
 
   <section class="app enh" id="enhancevid">
     <div>
-      <div class="title"><img src="{pfx}enhancevid/assets/icon.png" alt=""><h2>EnhanceVid</h2></div>
+      <a class="title" href="{ev}index.html"><img src="{pfx}enhancevid/assets/icon.png" alt=""><h2>EnhanceVid</h2><span class="go">›</span></a>
       <p class="tag">{ev_tag}</p>
       <p>{ev_desc}</p>
       <p class="links"><a href="{app_store_ev}"><b>{store}</b></a><a href="{ev}index.html">{website}</a><a href="{ev}support.html">{support}</a><a href="{ev}privacy.html">{privacy}</a></p>

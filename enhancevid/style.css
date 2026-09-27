@@ -123,3 +123,6 @@ section.block > p{color:var(--ink-2);margin:0 0 26px}
   .frame{padding:10px}
 }
 @media (prefers-reduced-motion:reduce){ .track .ball{animation:none} }
+
+/* 한국어 제목은 낱말 단위로 줄을 바꾼다("줄이세/요." 방지). 중·일에 쓰면 줄이 안 바뀌어 한국어만. */
+:lang(ko) h1,:lang(ko) h2{word-break:keep-all}
