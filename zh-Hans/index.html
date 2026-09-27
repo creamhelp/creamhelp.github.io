@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Cream — 节省空间的小应用</title>
-<meta name="description" content="Cream 开发节省存储空间的小型 iOS 应用:LeanVid 在没有明显画质损失的前提下压缩视频,GramCamera 从拍摄开始就生成更小的照片和视频。">
+<title>Cream — 为照片和视频打造的小应用</title>
+<meta name="description" content="Cream 为照片和视频打造小巧的 iOS 应用：LeanVid 压缩视频，GramCamera 从拍摄起就更小，EnhanceVid 让视频更流畅、更清晰。">
 <link rel="canonical" href="https://creamhelp.github.io/zh-Hans/">
 <link rel="alternate" hreflang="x-default" href="https://creamhelp.github.io/">
 <link rel="alternate" hreflang="en" href="https://creamhelp.github.io/">
@@ -20,40 +20,129 @@
 <link rel="alternate" hreflang="ru" href="https://creamhelp.github.io/ru/">
 <link rel="stylesheet" href="../style.css">
 <style>
-  .apps { display: grid; gap: 16px; margin: 0 0 28px; }
-  .apps .card { margin: 0; }
-  .apps h2 { margin: 0 0 4px; font-size: 20px; }
-  .apps .tag { color: var(--ink-3); font-size: 14px; margin: 0 0 10px; }
-  .apps .links a { margin-right: 14px; }
-  .muted { color: var(--ink-3); font-size: 14px; font-weight: 400; }
+  /* Cream 첫 화면 — 공용 style.css(LeanVid 초록) 위에 중립 크림색을 덮고, 앱마다 제 색을 쓴다(2026-09-27) */
+  :root{ --bg:#F8F6F1; --surface:#FFFFFF; --ink:#1B1A17; --ink-2:#4B4842; --ink-3:#7A766E; --accent:#8A5A2B; --accent-2:#C08A4E; --border:#E7E2D8;
+    --lv:#0A5C3E; --lv-2:#2E9C77; --gc:#1E8E4E; --gc-2:#34C759; --ev:#5B45D6; --ev-2:#8A6CF0; }
+  @media (prefers-color-scheme: dark){ :root{ --bg:#121110; --surface:#1C1B19; --ink:#F1EEE8; --ink-2:#BDB7AC; --ink-3:#8E887D; --accent:#E0B27A; --accent-2:#C08A4E; --border:#2C2A27;
+    --lv:#3FBE8C; --lv-2:#2E9C77; --gc:#4CD97B; --gc-2:#2FB45C; --ev:#9B87FF; --ev-2:#7A62F0; } }
+  .wrap.wide{max-width:1040px}
+  .hero{text-align:center;margin:12px 0 64px}
+  .hero h1{font-size:46px;line-height:1.16;letter-spacing:-.02em;margin:0 0 16px}
+  .hero h1 em{font-style:normal;background:linear-gradient(120deg,var(--lv),var(--gc) 45%,var(--ev));-webkit-background-clip:text;background-clip:text;color:transparent}
+  .hero .lede{font-size:18px;max-width:640px;margin:0 auto 34px}
+  .icons{display:flex;justify-content:center;gap:28px;flex-wrap:wrap}
+  .icons a{display:flex;flex-direction:column;align-items:center;gap:10px;color:var(--ink);font-weight:700;font-size:14px;text-decoration:none}
+  .icons img{width:96px;height:96px;border-radius:22px;box-shadow:0 12px 30px rgba(0,0,0,.18);animation:float 4s ease-in-out infinite}
+  .icons a:nth-child(2) img{animation-delay:.6s} .icons a:nth-child(3) img{animation-delay:1.2s}
+  @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+  .app{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:center;margin:0 0 28px;padding:30px;border-radius:24px;background:var(--surface);border:1px solid var(--border)}
+  .app.rev .vis{order:-1}
+  .app .title{display:flex;align-items:center;gap:12px;margin:0 0 6px}
+  .app .title img{width:44px;height:44px;border-radius:11px;box-shadow:0 2px 8px rgba(0,0,0,.18)}
+  .app h2{margin:0;font-size:26px}
+  .app .tag{font-weight:700;margin:0 0 12px}
+  .app p{color:var(--ink-2);margin:0 0 14px}
+  .app .links{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:15px}
+  .app.lean .tag,.app.lean .links a{color:var(--lv)} .app.gram .tag,.app.gram .links a{color:var(--gc)} .app.enh .tag,.app.enh .links a{color:var(--ev)}
+  .vis{border-radius:18px;padding:22px;background:var(--bg);min-height:220px;display:flex;flex-direction:column;justify-content:center;gap:12px}
+  .row{display:flex;justify-content:space-between;align-items:baseline;gap:10px;font-size:13px;color:var(--ink-3)}
+  .row b{color:var(--ink);font-size:14px}
+  .bar{height:30px;border-radius:10px;background:color-mix(in srgb,var(--ink-3) 22%,var(--surface));overflow:hidden}
+  .fill{height:100%;width:var(--w);border-radius:10px;animation:shrink 3.4s ease-in-out infinite}
+  .lean .fill{background:linear-gradient(90deg,var(--lv),var(--lv-2))} .gram .fill{background:linear-gradient(90deg,var(--gc),var(--gc-2))}
+  @keyframes shrink{0%,15%{width:100%}55%,100%{width:var(--w)}}
+  .big{font-size:32px;font-weight:800;letter-spacing:-.02em;color:var(--lv)}
+  .gram .big{color:var(--gc)}
+  .note{font-size:12px;color:var(--ink-3)}
+  .cmp{position:relative;border-radius:14px;overflow:hidden;aspect-ratio:16/9;background:#000}
+  .cmp img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+  .cmp .b{animation:sweep 5s ease-in-out infinite}
+  .cmp .l{position:absolute;top:0;bottom:0;width:3px;margin-left:-1.5px;background:#fff;box-shadow:0 0 10px rgba(0,0,0,.4);animation:line 5s ease-in-out infinite}
+  @keyframes sweep{0%,100%{clip-path:inset(0 75% 0 0)}50%{clip-path:inset(0 25% 0 0)}}
+  @keyframes line{0%,100%{left:25%}50%{left:75%}}
+  .cmp .t{position:absolute;top:10px;padding:4px 9px;border-radius:999px;font-size:12px;font-weight:700;color:#fff;background:rgba(0,0,0,.55)}
+  .cmp .l2{left:10px} .cmp .r2{right:10px;background:rgba(91,69,214,.85)}
+  .chips{display:flex;gap:8px;flex-wrap:wrap}
+  .chips span{font-size:13px;font-weight:700;padding:6px 10px;border-radius:999px;background:color-mix(in srgb,var(--ev) 14%,transparent);color:var(--ev)}
+  .promise{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:48px 0}
+  .promise div{text-align:center;padding:22px;border-radius:18px;background:var(--surface);border:1px solid var(--border)}
+  .promise svg{width:30px;height:30px;fill:none;stroke:var(--accent);stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+  .promise b{display:block;margin:8px 0 4px}
+  .promise p{margin:0;font-size:14px;color:var(--ink-2)}
+  .mark{flex:none}
+  @media (max-width:760px){ header.site{flex-wrap:wrap;row-gap:10px} header.site nav{margin-left:0;width:100%;flex-wrap:wrap;gap:6px 16px} .hero h1{font-size:32px} .app{grid-template-columns:1fr;padding:20px} .app.rev .vis{order:0} .promise{grid-template-columns:1fr} .icons{gap:16px} .icons img{width:72px;height:72px} }
+  @media (prefers-reduced-motion:reduce){ *{animation:none!important} }
 </style>
 </head>
 <body>
-<div class="wrap">
+<div class="wrap wide">
   <header class="site">
     <div class="mark">C</div><div class="name">Cream</div>
-    <nav><a href="../leanvid/zh-Hans/index.html">LeanVid</a><a href="../gramcamera/zh-Hans/index.html">GramCamera</a><a href="mailto:creamhelp@gmail.com">联系我们</a></nav>
+    <nav><a href="../leanvid/zh-Hans/index.html">LeanVid</a><a href="../gramcamera/zh-Hans/index.html">GramCamera</a><a href="../enhancevid/zh-Hans/index.html">EnhanceVid</a><a href="mailto:creamhelp@gmail.com">联系我们</a></nav>
   </header>
   <div class="langs"><a href="../index.html">English</a> <a href="../ko/index.html">한국어</a> <a href="../ja/index.html">日本語</a> <span class="cur">简体中文</span> <a href="../zh-Hant/index.html">繁體中文</a> <a href="../es-ES/index.html">Español</a> <a href="../de-DE/index.html">Deutsch</a> <a href="../fr-FR/index.html">Français</a> <a href="../it/index.html">Italiano</a> <a href="../pt-BR/index.html">Português</a> <a href="../ru/index.html">Русский</a></div>
 
-  <h1>节省空间的小应用。</h1>
-  <p class="lede">Cream 围绕一个想法开发小而专注的 iOS 应用:照片和视频照常保留,占用的空间更少。不上传任何内容,一切都在你的设备上完成。</p>
+  <section class="hero">
+    <h1>为照片和视频打造的<br><em>小应用</em>。</h1>
+    <p class="lede">节省空间，提升画质。Cream 的所有应用都在设备上处理，不上传任何内容。</p>
+    <div class="icons">
+      <a href="#leanvid"><img src="../assets/leanvid-icon.png" alt="">LeanVid</a>
+      <a href="#gramcamera"><img src="../gramcamera/assets/icon.png" alt="">GramCamera</a>
+      <a href="#enhancevid"><img src="../enhancevid/assets/icon.png" alt="">EnhanceVid</a>
+    </div>
+  </section>
 
-  <div class="apps">
-    <section class="card" id="leanvid">
-      <h2>LeanVid</h2>
+  <section class="app lean" id="leanvid">
+    <div>
+      <div class="title"><img src="../assets/leanvid-icon.png" alt=""><h2>LeanVid</h2></div>
       <p class="tag">压缩视频,保留画质。</p>
       <p>只降低比特率来压缩照片图库和“文件”应用中的视频。分辨率、帧率、色彩和 HDR 保持不变,每个结果在替换原片之前都会经过验证。iPhone 无法播放的文件(MKV、WebM、AVI、WMV、FLV、MPG、VP9、AV1)也可由内置转换器转换。</p>
       <p class="links"><a href="https://apps.apple.com/app/id6796710561"><b>在 App Store 下载</b></a><a href="../leanvid/zh-Hans/index.html">网站</a><a href="../leanvid/zh-Hans/support.html">支持</a><a href="../leanvid/zh-Hans/privacy.html">隐私</a></p>
-    </section>
+    </div>
+    <div class="vis">
+      <div class="row"><b>原视频</b><span>1.24GB</span></div>
+      <div class="bar"><div class="fill" style="--w:100%;animation:none;background:color-mix(in srgb,var(--ink-3) 45%,var(--surface))"></div></div>
+      <div class="row"><b>LeanVid</b><span>99.4MB</span></div>
+      <div class="bar"><div class="fill" style="--w:8%"></div></div>
+      <div class="big">约小 92%</div>
+      <span class="note">我们的实测：一段 3 分 34 秒的屏幕录制。结果因视频而异。</span>
+    </div>
+  </section>
 
-    <section class="card" id="gramcamera">
-      <h2>GramCamera</h2>
+  <section class="app gram rev" id="gramcamera">
+    <div>
+      <div class="title"><img src="../gramcamera/assets/icon.png" alt=""><h2>GramCamera</h2></div>
       <p class="tag">同样的画面,更小的文件。</p>
       <p>以与系统相机相同的方式拍摄、但保存时更省容量的相机。在省容量、标准、最高之间选择,照片和视频照常存入系统“照片”应用,每次拍摄都能看到节省了多少。</p>
       <p class="links"><a href="https://apps.apple.com/app/id6804235227"><b>在 App Store 下载</b></a><a href="../gramcamera/zh-Hans/index.html">网站</a><a href="../gramcamera/zh-Hans/support.html">支持</a><a href="../gramcamera/zh-Hans/privacy.html">隐私</a></p>
-    </section>
-  </div>
+    </div>
+    <div class="vis">
+      <div class="row"><b>照片</b><span>3.7MB → 1.5MB · <b>约 60%</b></span></div>
+      <div class="bar"><div class="fill" style="--w:40%"></div></div>
+      <div class="row"><b>4K 视频</b><span>每分钟 169MB → 60MB · <b>64%</b></span></div>
+      <div class="bar"><div class="fill" style="--w:36%"></div></div>
+      <span class="note">相比系统相机减少的容量（估算值）</span>
+    </div>
+  </section>
+
+  <section class="app enh" id="enhancevid">
+    <div>
+      <div class="title"><img src="../enhancevid/assets/icon.png" alt=""><h2>EnhanceVid</h2></div>
+      <p class="tag">更流畅，更清晰</p>
+      <p>30fps 变 60fps，全高清变 4K。在 iPhone 上让视频更流畅、更清晰，原视频保持不变。</p>
+      <p class="links"><a href="https://apps.apple.com/app/id6816116747"><b>在 App Store 下载</b></a><a href="../enhancevid/zh-Hans/index.html">网站</a><a href="../enhancevid/zh-Hans/support.html">支持</a><a href="../enhancevid/zh-Hans/privacy.html">隐私</a></p>
+    </div>
+    <div class="vis">
+      <div class="cmp"><img src="../enhancevid/assets/after.jpg" alt=""><img class="b" src="../enhancevid/assets/before.jpg" alt=""><div class="l"></div><span class="t l2">原视频</span><span class="t r2">增强后</span></div>
+      <div class="chips"><span>30→60fps</span><span>全高清→4K</span><span>降噪</span></div>
+    </div>
+  </section>
+
+  <section class="promise">
+    <div><svg viewBox="0 0 24 24"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg><b>全部在设备上</b><p>所有处理都在你的 iPhone 上完成。</p></div>
+    <div><svg viewBox="0 0 24 24"><path d="M12 16V4M7 9l5-5 5 5"/><path d="M4 20h16"/><path d="M3 3l18 18"/></svg><b>不上传</b><p>照片和视频不会离开你的设备。</p></div>
+    <div><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c1-4 4-6 8-6s7 2 8 6"/><path d="M3 3l18 18"/></svg><b>无需账户</b><p>无需注册，无需登录。</p></div>
+  </section>
 
   <footer>© 2026 Cream · <a href="mailto:creamhelp@gmail.com">creamhelp@gmail.com</a></footer>
 </div>

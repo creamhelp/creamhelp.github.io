@@ -4,30 +4,81 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>GramCamera — Камера, экономящая место</title>
+<meta name="description" content="GramCamera снимает так же, как обычная камера, но сохраняет файлы меньшего размера. Размер снижается без заметной потери качества — того же места хватает намного дольше.">
+<link rel="icon" href="../assets/icon.png">
 <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-<div class="wrap">
+<div class="wrap wide">
   <header class="site">
-    <div class="mark">G</div><div class="name">GramCamera</div>
+    <img class="appicon" src="../assets/icon.png" alt=""><div class="name">GramCamera</div>
     <nav><a href="index.html">Главная</a><a href="support.html">Поддержка</a><a href="privacy.html">Конфиденциальность</a></nav>
   </header>
   <div class="langs"><a href="../en/index.html">English</a> <a href="../ko/index.html">한국어</a> <a href="../ja/index.html">日本語</a> <a href="../zh-Hans/index.html">简体中文</a> <a href="../zh-Hant/index.html">繁體中文</a> <a href="../es-ES/index.html">Español</a> <a href="../de-DE/index.html">Deutsch</a> <a href="../fr-FR/index.html">Français</a> <a href="../it/index.html">Italiano</a> <a href="../pt-BR/index.html">Português</a> <span class="cur">Русский</span></div>
 
-  <h1>Тот же кадр, меньше файл.</h1>
-  <p class="lede">GramCamera снимает так же, как обычная камера, но сохраняет файлы меньшего размера. Размер снижается без заметной потери качества — того же места хватает намного дольше.</p>
+  <section class="hero">
+    <div>
+      <h1>Тот же кадр, меньше файл.</h1>
+      <p class="lede">GramCamera снимает так же, как обычная камера, но сохраняет файлы меньшего размера. Размер снижается без заметной потери качества — того же места хватает намного дольше.</p>
+      <a class="store" href="https://apps.apple.com/app/id6804235227"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.37 12.64c-.02-2.2 1.8-3.26 1.88-3.31-1.02-1.5-2.61-1.7-3.18-1.72-1.35-.14-2.64.8-3.33.8-.69 0-1.74-.78-2.87-.76-1.47.02-2.83.86-3.59 2.18-1.53 2.66-.39 6.59 1.1 8.75.73 1.05 1.6 2.24 2.73 2.2 1.1-.04 1.51-.71 2.84-.71 1.32 0 1.7.71 2.86.69 1.18-.02 1.93-1.07 2.65-2.13.83-1.22 1.18-2.4 1.2-2.46-.03-.01-2.3-.88-2.33-3.5zM14.2 6.17c.6-.73 1.01-1.75.9-2.76-.87.04-1.92.58-2.54 1.31-.56.65-1.05 1.69-.92 2.68.97.08 1.96-.49 2.56-1.23z"/></svg>Загрузите в App Store</a>
+      <p class="fine">iOS 17 или новее · iPhone и iPad</p>
+    </div>
+    <div class="hero-shot"><div class="phone"><img src="../assets/ru/shot-camera.jpg" alt="Тот же кадр, меньше файл"></div></div>
+  </section>
 
-  <div class="card">
-    <ul>
-      <li><b>Вы решаете, сколько экономить</b> — Экономия, Стандарт или Максимум. В тонкой настройке задаётся целевой размер для каждого разрешения</li>
-      <li><b>Сразу в «Фото»</b> — Отдельной медиатеки нет. Снимки попадают в системное приложение «Фото»</li>
-      <li><b>Экономия видна</b> — У каждого снимка видно, насколько он меньше, чем у обычной камеры</li>
-      <li><b>Настоящая камера</b> — Фото, видео, замедленная съёмка, таймлапс, 4K 60 к/с, HDR-видео, пространственное аудио, объективы и макро</li>
-      <li><b>Всё остаётся на устройстве</b> — Снимки хранятся на устройстве и в медиатеке. Без учётной записи и входа</li>
-    </ul>
-  </div>
+  <section class="block">
+    <span class="kicker">Меньше, чем в обычной камере (оценка)</span>
+    <h2>Каждый снимок — примерно на 60% меньше места.</h2>
+    <div class="save">
+      <div class="srow">
+        <div class="shead"><b>Фото</b><span>3,7 МБ → 1,5 МБ</span><em>≈ 60 %</em></div>
+        <div class="sbar"><div class="sfill" style="--w:40%"></div></div>
+      </div>
+      <div class="srow">
+        <div class="shead"><b>Видео 4K</b><span>169 МБ → 60 МБ / мин</span><em>64%</em></div>
+        <div class="sbar"><div class="sfill" style="--w:36%"></div></div>
+      </div>
+      <div class="srow">
+        <div class="shead"><b>Видео FHD</b><span>60 МБ → 23 МБ / мин</span><em>62%</em></div>
+        <div class="sbar"><div class="sfill" style="--w:38%"></div></div>
+      </div>
+    </div>
+  </section>
 
-  <p><b><a href="https://apps.apple.com/app/id6804235227">Загрузите в App Store</a></b></p>
+  <section class="block">
+    <span class="kicker">Как это работает</span>
+    <h2>Выберите, снимайте, смотрите экономию.</h2>
+    <div class="shots">
+      <figure><div class="phone"><img src="../assets/ru/shot-presets.jpg" alt="Сколько экономить — решаете вы" loading="lazy"></div><figcaption>Сколько экономить — решаете вы<span>Отдельно для фото и видео</span></figcaption></figure>
+      <figure><div class="phone"><img src="../assets/ru/shot-album.jpg" alt="Сохраняется прямо в приложение «Фото»" loading="lazy"></div><figcaption>Сохраняется прямо в приложение «Фото»<span>Без скрытой копии внутри приложения</span></figcaption></figure>
+      <figure><div class="phone"><img src="../assets/ru/shot-tuning.jpg" alt="Задайте целевой размер для каждого разрешения" loading="lazy"></div><figcaption>Задайте целевой размер для каждого разрешения<span>Настройте каждый уровень отдельно</span></figcaption></figure>
+      <figure><div class="phone"><img src="../assets/ru/shot-recording.jpg" alt="4K 60 к/с · HDR пространственный звук · макро" loading="lazy"></div><figcaption>4K 60 к/с · HDR пространственный звук · макро<span>Всё, что нужно камере</span></figcaption></figure>
+    </div>
+  </section>
+
+  <section class="block">
+    <span class="kicker">А ещё</span>
+    <h2>Всё нужное уже внутри.</h2>
+    <div class="grid two">
+      <div class="feat"><div class="ic"><svg viewBox="0 0 24 24"><path d="M4 7h10M18 7h2M4 17h2M10 17h10"/><circle cx="16" cy="7" r="2"/><circle cx="8" cy="17" r="2"/></svg></div><b>Вы решаете, сколько экономить</b><p>Экономия, Стандарт или Максимум. В тонкой настройке задаётся целевой размер для каждого разрешения</p></div>
+      <div class="feat"><div class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="8" height="8" rx="2"/><rect x="13" y="3" width="8" height="8" rx="2"/><rect x="3" y="13" width="8" height="8" rx="2"/><rect x="13" y="13" width="8" height="8" rx="2"/></svg></div><b>Сразу в «Фото»</b><p>Отдельной медиатеки нет. Снимки попадают в системное приложение «Фото»</p></div>
+      <div class="feat"><div class="ic"><svg viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></div><b>Экономия видна</b><p>У каждого снимка видно, насколько он меньше, чем у обычной камеры</p></div>
+      <div class="feat"><div class="ic"><svg viewBox="0 0 24 24"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="4"/></svg></div><b>Настоящая камера</b><p>Фото, видео, замедленная съёмка, таймлапс, 4K 60 к/с, HDR-видео, пространственное аудио, объективы и макро</p></div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="privacy-band">
+      <div class="ic"><svg viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg></div>
+      <div><b>Всё остаётся на устройстве</b><p>Снимки хранятся на устройстве и в медиатеке. Без учётной записи и входа — <a href="privacy.html">Конфиденциальность</a></p></div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <img src="../assets/icon.png" alt="GramCamera">
+    <h2>Снимите следующее фото легче.</h2>
+    <a class="store" href="https://apps.apple.com/app/id6804235227"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.37 12.64c-.02-2.2 1.8-3.26 1.88-3.31-1.02-1.5-2.61-1.7-3.18-1.72-1.35-.14-2.64.8-3.33.8-.69 0-1.74-.78-2.87-.76-1.47.02-2.83.86-3.59 2.18-1.53 2.66-.39 6.59 1.1 8.75.73 1.05 1.6 2.24 2.73 2.2 1.1-.04 1.51-.71 2.84-.71 1.32 0 1.7.71 2.86.69 1.18-.02 1.93-1.07 2.65-2.13.83-1.22 1.18-2.4 1.2-2.46-.03-.01-2.3-.88-2.33-3.5zM14.2 6.17c.6-.73 1.01-1.75.9-2.76-.87.04-1.92.58-2.54 1.31-.56.65-1.05 1.69-.92 2.68.97.08 1.96-.49 2.56-1.23z"/></svg>Загрузите в App Store</a>
+  </section>
 
   <footer>© 2026 Cream · <a href="support.html">Поддержка</a> · <a href="privacy.html">Конфиденциальность</a></footer>
 </div>

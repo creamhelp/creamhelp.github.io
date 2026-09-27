@@ -111,6 +111,8 @@ section.block > p{color:var(--ink-2);margin:0 0 26px}
 .page-hero img{width:64px;height:64px;border-radius:16px}
 .page-hero h1{margin:0}
 @media (max-width:760px){
+  header.site{flex-wrap:wrap;row-gap:10px}
+  header.site nav{margin-left:0;width:100%;flex-wrap:wrap;gap:6px 16px}
   .hero{grid-template-columns:1fr;gap:32px}
   .hero h1{font-size:34px}
   .shots{grid-template-columns:repeat(4,60%);overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:8px}

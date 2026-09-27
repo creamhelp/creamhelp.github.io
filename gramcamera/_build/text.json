@@ -1,0 +1,882 @@
+{
+ "en": {
+  "title": "GramCamera — The camera that saves storage",
+  "desc": "GramCamera shoots the same way your stock camera does, but saves smaller files. It reduces file size without a visible drop in quality, so the same storage holds far more.",
+  "nav": [
+   "Home",
+   "Support",
+   "Privacy"
+  ],
+  "h1": "Same shot, smaller file.",
+  "lede": "GramCamera shoots the same way your stock camera does, but saves smaller files. It reduces file size without a visible drop in quality, so the same storage holds far more.",
+  "store": "Download on the App Store",
+  "fine": "iOS 17 or later · iPhone and iPad",
+  "feats": [
+   [
+    "You choose how much to save",
+    "Saver, Standard or Max. Fine Tuning lets you set the target size for each resolution"
+   ],
+   [
+    "Straight to the Photos app",
+    "No separate library. Your photos and videos go into the built-in Photos app"
+   ],
+   [
+    "It shows what you saved",
+    "Every capture keeps a comparison against what the stock camera would have produced"
+   ],
+   [
+    "A real camera",
+    "Photo, video, slow motion, time-lapse, 4K 60 fps, HDR video, Spatial Audio, lens switching and macro"
+   ],
+   [
+    "Stays on your device",
+    "Captures live on your device and in your photo library. No account, no sign-in"
+   ]
+  ],
+  "stats": {
+   "footer": "Smaller than the stock camera (estimated)",
+   "columns": [
+    {
+     "name": "Photo",
+     "pct": "~60%",
+     "detail": "3.7MB → 1.5MB"
+    },
+    {
+     "name": "4K video",
+     "pct": "64%",
+     "detail": "169MB → 60MB / min"
+    },
+    {
+     "name": "FHD video",
+     "pct": "62%",
+     "detail": "60MB → 23MB / min"
+    }
+   ]
+  },
+  "h_save": "Around 60% less space, shot after shot.",
+  "k_how": "How it works",
+  "h_how": "Pick, shoot, and see the saving.",
+  "k_more": "And more",
+  "h_more": "Everything you need, built in.",
+  "cta": "Take your next photo smaller.",
+  "steps": [
+   {
+    "headline": "How much to save is your choice",
+    "sub": "Applied separately to photos and video"
+   },
+   {
+    "headline": "Saved straight to the Photos app",
+    "sub": "No second copy hidden in the app"
+   },
+   {
+    "headline": "Set the target size for each resolution",
+    "sub": "Tune each preset separately"
+   },
+   {
+    "headline": "4K 60fps · HDR spatial audio · macro",
+    "sub": "Everything a camera should have"
+   }
+  ],
+  "hero_alt": "Same shot, smaller file"
+ },
+ "ko": {
+  "title": "GramCamera — 용량을 아끼는 카메라",
+  "desc": "GramCamera는 기본 카메라와 같은 방식으로 찍되, 저장할 때 용량을 아끼는 카메라입니다. 화질을 눈에 띄게 떨어뜨리지 않으면서 파일 크기를 줄여, 같은 저장 공간에 더 오래 담을 수 있게 합니다.",
+  "nav": [
+   "홈",
+   "지원",
+   "개인정보"
+  ],
+  "h1": "같은 장면, 더 작은 파일.",
+  "lede": "GramCamera는 기본 카메라와 같은 방식으로 찍되, 저장할 때 용량을 아끼는 카메라입니다. 화질을 눈에 띄게 떨어뜨리지 않으면서 파일 크기를 줄여, 같은 저장 공간에 더 오래 담을 수 있게 합니다.",
+  "store": "App Store에서 다운로드하기",
+  "fine": "iOS 17 이상 · iPhone 및 iPad",
+  "feats": [
+   [
+    "얼마나 아낄지 직접",
+    "절약 · 표준 · 최대 세 단계. 세부 튜닝에서 해상도별 목표 용량까지 조정할 수 있습니다"
+   ],
+   [
+    "사진 앱에 그대로",
+    "별도 보관함을 만들지 않습니다. 찍은 사진과 영상은 기본 사진 앱에 저장됩니다"
+   ],
+   [
+    "아낀 만큼 보여줍니다",
+    "촬영물마다 기본 카메라로 찍었을 때와 비교한 절약량을 확인할 수 있습니다"
+   ],
+   [
+    "카메라로서 갖출 것",
+    "사진 · 비디오 · 슬로모션 · 타임랩스, 4K 60fps, HDR 비디오, 공간 음향, 렌즈 전환과 접사"
+   ],
+   [
+    "기기 안에서",
+    "촬영물은 기기와 사진 보관함에만 남습니다. 계정도 로그인도 없습니다"
+   ]
+  ],
+  "stats": {
+   "footer": "기본 카메라 대비 줄어든 용량(추정치)",
+   "columns": [
+    {
+     "name": "사진",
+     "pct": "약 60%",
+     "detail": "3.7MB → 1.5MB"
+    },
+    {
+     "name": "4K 비디오",
+     "pct": "64%",
+     "detail": "분당 169MB → 60MB"
+    },
+    {
+     "name": "FHD 비디오",
+     "pct": "62%",
+     "detail": "분당 60MB → 23MB"
+    }
+   ]
+  },
+  "h_save": "찍을 때마다, 용량은 약 60% 덜.",
+  "k_how": "이렇게 씁니다",
+  "h_how": "고르고, 찍고, 아낀 만큼 확인.",
+  "k_more": "그리고",
+  "h_more": "필요한 건 다 들어 있습니다.",
+  "cta": "다음 사진부터 가볍게 찍어 보세요.",
+  "steps": [
+   {
+    "headline": "얼마나 아낄지 고르기만 하면 됩니다",
+    "sub": "사진과 비디오에 따로 적용됩니다"
+   },
+   {
+    "headline": "사진 앱에 그대로 저장",
+    "sub": "앱 안에 복사본을 따로 두지 않습니다"
+   },
+   {
+    "headline": "해상도별 목표 용량까지 직접 정합니다",
+    "sub": "프리셋마다 따로 조정"
+   },
+   {
+    "headline": "4K 60fps · HDR 공간 음향 · 접사",
+    "sub": "카메라로서 갖출 것은 갖췄습니다"
+   }
+  ],
+  "hero_alt": "같은 장면, 더 작은 파일"
+ },
+ "ja": {
+  "title": "GramCamera — 容量を節約するカメラ",
+  "desc": "GramCamera は標準カメラと同じように撮りながら、保存するときの容量を抑えるカメラです。画質を目に見えて落とさずにファイルを小さくするので、同じ空間により長く残せます。",
+  "nav": [
+   "ホーム",
+   "サポート",
+   "プライバシー"
+  ],
+  "h1": "同じ一枚を、もっと軽く。",
+  "lede": "GramCamera は標準カメラと同じように撮りながら、保存するときの容量を抑えるカメラです。画質を目に見えて落とさずにファイルを小さくするので、同じ空間により長く残せます。",
+  "store": "App Storeからダウンロード",
+  "fine": "iOS 17 以降 · iPhone および iPad",
+  "feats": [
+   [
+    "どれだけ節約するかを選べる",
+    "節約・標準・最大の3段階。詳細調整では解像度ごとの目標容量まで調整できます"
+   ],
+   [
+    "写真アプリにそのまま",
+    "独自のライブラリは作りません。撮影した写真と動画は標準の写真アプリに保存されます"
+   ],
+   [
+    "節約した分が見える",
+    "撮影ごとに、標準カメラで撮った場合と比べてどれだけ小さいかを確認できます"
+   ],
+   [
+    "カメラとして十分",
+    "写真・動画・スローモーション・タイムラプス、4K 60fps、HDR動画、空間オーディオ、レンズ切替とマクロ"
+   ],
+   [
+    "端末の中だけで",
+    "撮影物は端末と写真ライブラリにのみ残ります。アカウントもログインも不要です"
+   ]
+  ],
+  "stats": {
+   "footer": "標準カメラ比で減った容量（推定値）",
+   "columns": [
+    {
+     "name": "写真",
+     "pct": "約 60%",
+     "detail": "3.7MB → 1.5MB"
+    },
+    {
+     "name": "4K 動画",
+     "pct": "64%",
+     "detail": "1分あたり 169MB → 60MB"
+    },
+    {
+     "name": "FHD 動画",
+     "pct": "62%",
+     "detail": "1分あたり 60MB → 23MB"
+    }
+   ]
+  },
+  "h_save": "撮るたびに、容量は約60%少なく。",
+  "k_how": "使い方",
+  "h_how": "選んで、撮って、節約を確認。",
+  "k_more": "さらに",
+  "h_more": "必要なものは、ぜんぶ入り。",
+  "cta": "次の一枚から、軽く撮ろう。",
+  "steps": [
+   {
+    "headline": "どれだけ節約するか 選ぶだけ",
+    "sub": "写真と動画に別々に適用"
+   },
+   {
+    "headline": "写真アプリに そのまま保存",
+    "sub": "アプリ内に複製を持ちません"
+   },
+   {
+    "headline": "解像度ごとの目標容量まで 自分で設定",
+    "sub": "プリセットごとに個別調整"
+   },
+   {
+    "headline": "4K 60fps・HDR 空間オーディオ・マクロ",
+    "sub": "カメラとして必要なものは揃っています"
+   }
+  ],
+  "hero_alt": "同じ一枚を、 もっと軽く"
+ },
+ "zh-Hans": {
+  "title": "GramCamera — 更省容量的相机",
+  "desc": "GramCamera 以与系统相机相同的方式拍摄，但在保存时更省容量。在画质没有明显下降的前提下减小文件，同样的空间可以存得更久。",
+  "nav": [
+   "首页",
+   "支持",
+   "隐私"
+  ],
+  "h1": "同样的画面，更小的文件。",
+  "lede": "GramCamera 以与系统相机相同的方式拍摄，但在保存时更省容量。在画质没有明显下降的前提下减小文件，同样的空间可以存得更久。",
+  "store": "在 App Store 下载",
+  "fine": "iOS 17 或更高版本 · iPhone 与 iPad",
+  "feats": [
+   [
+    "省多少由你决定",
+    "省容量、标准、最高三档。在精细调整中还能设定每个分辨率的目标容量"
+   ],
+   [
+    "直接存进“照片”",
+    "不另建图库。拍摄的照片和视频直接保存到系统“照片”App"
+   ],
+   [
+    "省了多少看得见",
+    "每一次拍摄都能看到与系统相机相比省下了多少"
+   ],
+   [
+    "该有的都有",
+    "照片、视频、慢动作、延时摄影，4K 60fps，HDR 视频，空间音频，镜头切换与微距"
+   ],
+   [
+    "只留在设备上",
+    "拍摄内容只保存在设备和照片图库中。无需账号，无需登录"
+   ]
+  ],
+  "stats": {
+   "footer": "相比系统相机减少的容量（估算值）",
+   "columns": [
+    {
+     "name": "照片",
+     "pct": "约 60%",
+     "detail": "3.7MB → 1.5MB"
+    },
+    {
+     "name": "4K 视频",
+     "pct": "64%",
+     "detail": "每分钟 169MB → 60MB"
+    },
+    {
+     "name": "FHD 视频",
+     "pct": "62%",
+     "detail": "每分钟 60MB → 23MB"
+    }
+   ]
+  },
+  "h_save": "每次拍摄，空间少用约 60%。",
+  "k_how": "使用方法",
+  "h_how": "选好、拍摄、查看省了多少。",
+  "k_more": "还有",
+  "h_more": "所需功能，一应俱全。",
+  "cta": "从下一张照片开始，拍得更小。",
+  "steps": [
+   {
+    "headline": "省多少 由你选择",
+    "sub": "照片与视频分别设置"
+   },
+   {
+    "headline": "直接保存到 “照片”App",
+    "sub": "不在应用内另存副本"
+   },
+   {
+    "headline": "每种分辨率的目标大小 都能自己定",
+    "sub": "每档单独调整"
+   },
+   {
+    "headline": "4K 60fps · HDR 空间音频 · 微距",
+    "sub": "该有的相机功能都有"
+   }
+  ],
+  "hero_alt": "同样的画面， 更小的文件"
+ },
+ "zh-Hant": {
+  "title": "GramCamera — 更省容量的相機",
+  "desc": "GramCamera 以與系統相機相同的方式拍攝，但在儲存時更省容量。在畫質沒有明顯下降的前提下縮小檔案，同樣的空間可以存得更久。",
+  "nav": [
+   "首頁",
+   "支援",
+   "隱私"
+  ],
+  "h1": "同樣的畫面，更小的檔案。",
+  "lede": "GramCamera 以與系統相機相同的方式拍攝，但在儲存時更省容量。在畫質沒有明顯下降的前提下縮小檔案，同樣的空間可以存得更久。",
+  "store": "在 App Store 下載",
+  "fine": "iOS 17 或更新版本 · iPhone 與 iPad",
+  "feats": [
+   [
+    "省多少由你決定",
+    "省容量、標準、最高三段。在精細調整中還能設定每個解析度的目標容量"
+   ],
+   [
+    "直接存進「照片」",
+    "不另建圖庫。拍攝的照片和影片直接儲存到系統「照片」App"
+   ],
+   [
+    "省了多少看得見",
+    "每一次拍攝都能看到與系統相機相比省下了多少"
+   ],
+   [
+    "該有的都有",
+    "照片、影片、慢動作、縮時攝影，4K 60fps，HDR 影片，空間音訊，鏡頭切換與微距"
+   ],
+   [
+    "只留在裝置上",
+    "拍攝內容只儲存在裝置和照片圖庫中。無需帳號，無需登入"
+   ]
+  ],
+  "stats": {
+   "footer": "相比系統相機減少的容量（估算值）",
+   "columns": [
+    {
+     "name": "照片",
+     "pct": "約 60%",
+     "detail": "3.7MB → 1.5MB"
+    },
+    {
+     "name": "4K 影片",
+     "pct": "64%",
+     "detail": "每分鐘 169MB → 60MB"
+    },
+    {
+     "name": "FHD 影片",
+     "pct": "62%",
+     "detail": "每分鐘 60MB → 23MB"
+    }
+   ]
+  },
+  "h_save": "每次拍攝，空間少用約 60%。",
+  "k_how": "使用方式",
+  "h_how": "選好、拍攝、查看省下多少。",
+  "k_more": "還有",
+  "h_more": "需要的功能，一應俱全。",
+  "cta": "從下一張照片開始，拍得更小。",
+  "steps": [
+   {
+    "headline": "省多少 由你選擇",
+    "sub": "照片與影片分別設定"
+   },
+   {
+    "headline": "直接儲存到 「照片」App",
+    "sub": "不在 App 內另存副本"
+   },
+   {
+    "headline": "每種解析度的目標大小 都能自己定",
+    "sub": "每個等級單獨調整"
+   },
+   {
+    "headline": "4K 60fps · HDR 空間音訊 · 微距",
+    "sub": "該有的相機功能都有"
+   }
+  ],
+  "hero_alt": "同樣的畫面， 更小的檔案"
+ },
+ "es-ES": {
+  "title": "GramCamera — La cámara que ahorra espacio",
+  "desc": "GramCamera captura igual que la cámara del sistema, pero guarda archivos más pequeños. Reduce el tamaño sin una pérdida visible de calidad: el mismo almacenamiento cunde mucho más.",
+  "nav": [
+   "Inicio",
+   "Soporte",
+   "Privacidad"
+  ],
+  "h1": "La misma escena, un archivo menor.",
+  "lede": "GramCamera captura igual que la cámara del sistema, pero guarda archivos más pequeños. Reduce el tamaño sin una pérdida visible de calidad: el mismo almacenamiento cunde mucho más.",
+  "store": "Descárgalo en el App Store",
+  "fine": "iOS 17 o posterior · iPhone y iPad",
+  "feats": [
+   [
+    "Tú decides cuánto ahorrar",
+    "Ahorro, Estándar o Máximo. El ajuste fino define el tamaño objetivo por resolución"
+   ],
+   [
+    "Directo a la app Fotos",
+    "Sin fototeca aparte. Tus capturas van a la app Fotos del sistema"
+   ],
+   [
+    "Se ve lo que ahorras",
+    "Cada captura muestra cuánto más pequeña es frente a la cámara del sistema"
+   ],
+   [
+    "Una cámara de verdad",
+    "Foto, vídeo, cámara lenta, time-lapse, 4K 60 fps, vídeo HDR, audio espacial, lentes y macro"
+   ],
+   [
+    "Se queda en tu dispositivo",
+    "Las capturas viven en tu dispositivo y en tu fototeca. Sin cuenta ni inicio de sesión"
+   ]
+  ],
+  "stats": {
+   "footer": "Menos que la cámara del sistema (estimado)",
+   "columns": [
+    {
+     "name": "Foto",
+     "pct": "~60 %",
+     "detail": "3,7 MB → 1,5 MB"
+    },
+    {
+     "name": "Vídeo 4K",
+     "pct": "64%",
+     "detail": "169 MB → 60 MB / min"
+    },
+    {
+     "name": "Vídeo FHD",
+     "pct": "62%",
+     "detail": "60 MB → 23 MB / min"
+    }
+   ]
+  },
+  "h_save": "En cada toma, cerca de un 60 % menos de espacio.",
+  "k_how": "Cómo funciona",
+  "h_how": "Elige, dispara y mira lo que ahorras.",
+  "k_more": "Y además",
+  "h_more": "Todo lo que necesitas, incluido.",
+  "cta": "Haz tu próxima foto más ligera.",
+  "steps": [
+   {
+    "headline": "Cuánto ahorrar lo decides tú",
+    "sub": "Se aplica por separado a fotos y vídeos"
+   },
+   {
+    "headline": "Se guarda directo en Fotos",
+    "sub": "Sin copias ocultas en la app"
+   },
+   {
+    "headline": "Fija el tamaño objetivo de cada resolución",
+    "sub": "Ajusta cada nivel por separado"
+   },
+   {
+    "headline": "4K 60 fps · HDR audio espacial · macro",
+    "sub": "Todo lo que una cámara debe tener"
+   }
+  ],
+  "hero_alt": "La misma escena, un archivo menor"
+ },
+ "de-DE": {
+  "title": "GramCamera — Die Kamera, die Speicher spart",
+  "desc": "GramCamera fotografiert genauso wie die System-Kamera, sichert die Aufnahmen aber kleiner. Die Dateigröße sinkt ohne sichtbaren Qualitätsverlust — derselbe Speicher reicht deutlich länger.",
+  "nav": [
+   "Start",
+   "Support",
+   "Datenschutz"
+  ],
+  "h1": "Gleiches Motiv, kleinere Datei.",
+  "lede": "GramCamera fotografiert genauso wie die System-Kamera, sichert die Aufnahmen aber kleiner. Die Dateigröße sinkt ohne sichtbaren Qualitätsverlust — derselbe Speicher reicht deutlich länger.",
+  "store": "Laden im App Store",
+  "fine": "iOS 17 oder neuer · iPhone und iPad",
+  "feats": [
+   [
+    "Du bestimmst, wie viel gespart wird",
+    "Sparsam, Standard oder Maximum. In der Feinabstimmung legst du die Zielgröße je Auflösung selbst fest"
+   ],
+   [
+    "Direkt in die Fotos-App",
+    "Keine eigene Mediathek. Aufnahmen landen in der System-App „Fotos“"
+   ],
+   [
+    "Sichtbar gespart",
+    "Zu jeder Aufnahme siehst du, wie viel kleiner sie gegenüber der System-Kamera ist"
+   ],
+   [
+    "Eine echte Kamera",
+    "Foto, Video, Zeitlupe, Zeitraffer, 4K 60 fps, HDR-Video, Spatial Audio, Objektivwechsel und Makro"
+   ],
+   [
+    "Bleibt auf dem Gerät",
+    "Aufnahmen bleiben auf deinem Gerät und in deiner Mediathek. Kein Account, keine Anmeldung"
+   ]
+  ],
+  "stats": {
+   "footer": "Weniger als die System-Kamera (geschätzt)",
+   "columns": [
+    {
+     "name": "Foto",
+     "pct": "ca. 60 %",
+     "detail": "3,7 MB → 1,5 MB"
+    },
+    {
+     "name": "4K-Video",
+     "pct": "64%",
+     "detail": "169 MB → 60 MB / Min."
+    },
+    {
+     "name": "FHD-Video",
+     "pct": "62%",
+     "detail": "60 MB → 23 MB / Min."
+    }
+   ]
+  },
+  "h_save": "Bei jeder Aufnahme rund 60 % weniger Speicher.",
+  "k_how": "So funktioniert’s",
+  "h_how": "Wählen, aufnehmen, Ersparnis sehen.",
+  "k_more": "Und mehr",
+  "h_more": "Alles drin, was du brauchst.",
+  "cta": "Mach dein nächstes Foto kleiner.",
+  "steps": [
+   {
+    "headline": "Wie viel gespart wird, bestimmst du",
+    "sub": "Getrennt für Fotos und Videos"
+   },
+   {
+    "headline": "Direkt in der Fotos-App gespeichert",
+    "sub": "Keine zweite Kopie in der App"
+   },
+   {
+    "headline": "Zielgröße je Auflösung selbst festlegen",
+    "sub": "Jede Stufe einzeln abstimmen"
+   },
+   {
+    "headline": "4K 60fps · HDR Spatial Audio · Makro",
+    "sub": "Alles, was eine Kamera braucht"
+   }
+  ],
+  "hero_alt": "Gleiches Motiv, kleinere Datei"
+ },
+ "fr-FR": {
+  "title": "GramCamera — L'appareil photo qui économise",
+  "desc": "GramCamera photographie comme l'appareil d'origine, mais enregistre des fichiers plus légers. La taille baisse sans perte visible de qualité : le même stockage dure bien plus longtemps.",
+  "nav": [
+   "Accueil",
+   "Assistance",
+   "Confidentialité"
+  ],
+  "h1": "Même scène, fichier plus léger.",
+  "lede": "GramCamera photographie comme l'appareil d'origine, mais enregistre des fichiers plus légers. La taille baisse sans perte visible de qualité : le même stockage dure bien plus longtemps.",
+  "store": "Télécharger dans l’App Store",
+  "fine": "iOS 17 ou version ultérieure · iPhone et iPad",
+  "feats": [
+   [
+    "Vous choisissez l'économie",
+    "Économe, Standard ou Maximum. Le réglage fin fixe la taille cible par résolution"
+   ],
+   [
+    "Directement dans Photos",
+    "Aucune photothèque séparée. Vos prises vont dans l'app Photos du système"
+   ],
+   [
+    "L'économie est visible",
+    "Chaque prise indique combien elle est plus légère qu'avec l'appareil d'origine"
+   ],
+   [
+    "Un vrai appareil photo",
+    "Photo, vidéo, ralenti, time-lapse, 4K 60 i/s, vidéo HDR, audio spatial, objectifs et macro"
+   ],
+   [
+    "Tout reste sur l'appareil",
+    "Vos prises restent sur l'appareil et dans votre photothèque. Ni compte ni connexion"
+   ]
+  ],
+  "stats": {
+   "footer": "De moins que l'appareil d'origine (estimé)",
+   "columns": [
+    {
+     "name": "Photo",
+     "pct": "≈ 60 %",
+     "detail": "3,7 Mo → 1,5 Mo"
+    },
+    {
+     "name": "Vidéo 4K",
+     "pct": "64%",
+     "detail": "169 Mo → 60 Mo / min"
+    },
+    {
+     "name": "Vidéo FHD",
+     "pct": "62%",
+     "detail": "60 Mo → 23 Mo / min"
+    }
+   ]
+  },
+  "h_save": "À chaque prise, environ 60 % d’espace en moins.",
+  "k_how": "Comment ça marche",
+  "h_how": "Choisissez, photographiez, voyez l’économie.",
+  "k_more": "Et aussi",
+  "h_more": "Tout ce qu’il faut, intégré.",
+  "cta": "Prenez votre prochaine photo plus légère.",
+  "steps": [
+   {
+    "headline": "Vous choisissez combien économiser",
+    "sub": "Réglages distincts photo et vidéo"
+   },
+   {
+    "headline": "Enregistré direct dans Photos",
+    "sub": "Aucune copie cachée dans l'app"
+   },
+   {
+    "headline": "Définissez la taille cible pour chaque résolution",
+    "sub": "Réglez chaque niveau séparément"
+   },
+   {
+    "headline": "4K 60 i/s · HDR audio spatial · macro",
+    "sub": "Tout ce qu'un appareil photo doit avoir"
+   }
+  ],
+  "hero_alt": "Même scène, fichier plus léger"
+ },
+ "it": {
+  "title": "GramCamera — La fotocamera che risparmia spazio",
+  "desc": "GramCamera scatta come la fotocamera di sistema, ma salva file più leggeri. Riduce le dimensioni senza un calo visibile di qualità: lo stesso spazio dura molto di più.",
+  "nav": [
+   "Home",
+   "Assistenza",
+   "Privacy"
+  ],
+  "h1": "Stessa scena, file più piccolo.",
+  "lede": "GramCamera scatta come la fotocamera di sistema, ma salva file più leggeri. Riduce le dimensioni senza un calo visibile di qualità: lo stesso spazio dura molto di più.",
+  "store": "Scarica su App Store",
+  "fine": "iOS 17 o successivo · iPhone e iPad",
+  "feats": [
+   [
+    "Decidi tu quanto risparmiare",
+    "Risparmio, Standard o Massimo. La regolazione fine imposta la dimensione obiettivo per risoluzione"
+   ],
+   [
+    "Direttamente in Foto",
+    "Nessuna libreria separata. Gli scatti vanno nell'app Foto di sistema"
+   ],
+   [
+    "Il risparmio si vede",
+    "Ogni scatto mostra quanto è più piccolo rispetto alla fotocamera di sistema"
+   ],
+   [
+    "Una fotocamera vera",
+    "Foto, video, slow motion, time-lapse, 4K 60 fps, video HDR, audio spaziale, obiettivi e macro"
+   ],
+   [
+    "Resta sul dispositivo",
+    "Gli scatti restano sul dispositivo e nella tua libreria. Nessun account, nessun accesso"
+   ]
+  ],
+  "stats": {
+   "footer": "In meno rispetto alla fotocamera di sistema (stimato)",
+   "columns": [
+    {
+     "name": "Foto",
+     "pct": "circa 60%",
+     "detail": "3,7 MB → 1,5 MB"
+    },
+    {
+     "name": "Video 4K",
+     "pct": "64%",
+     "detail": "169 MB → 60 MB / min"
+    },
+    {
+     "name": "Video FHD",
+     "pct": "62%",
+     "detail": "60 MB → 23 MB / min"
+    }
+   ]
+  },
+  "h_save": "A ogni scatto, circa il 60% di spazio in meno.",
+  "k_how": "Come funziona",
+  "h_how": "Scegli, scatta, guarda quanto risparmi.",
+  "k_more": "E inoltre",
+  "h_more": "Tutto quello che serve, già dentro.",
+  "cta": "Scatta la prossima foto più leggera.",
+  "steps": [
+   {
+    "headline": "Quanto risparmiare lo decidi tu",
+    "sub": "Separato per foto e video"
+   },
+   {
+    "headline": "Salvato subito nell'app Foto",
+    "sub": "Nessuna copia nascosta nell'app"
+   },
+   {
+    "headline": "Imposta la dimensione per ogni risoluzione",
+    "sub": "Regola ogni livello separatamente"
+   },
+   {
+    "headline": "4K 60fps · HDR audio spaziale · macro",
+    "sub": "Tutto ciò che serve a una fotocamera"
+   }
+  ],
+  "hero_alt": "Stessa scena, file più piccolo"
+ },
+ "pt-BR": {
+  "title": "GramCamera — A câmera que economiza espaço",
+  "desc": "O GramCamera fotografa como a câmera do sistema, mas salva arquivos menores. Reduz o tamanho sem perda visível de qualidade: o mesmo armazenamento rende muito mais.",
+  "nav": [
+   "Início",
+   "Suporte",
+   "Privacidade"
+  ],
+  "h1": "A mesma cena, arquivo menor.",
+  "lede": "O GramCamera fotografa como a câmera do sistema, mas salva arquivos menores. Reduz o tamanho sem perda visível de qualidade: o mesmo armazenamento rende muito mais.",
+  "store": "Baixar na App Store",
+  "fine": "iOS 17 ou posterior · iPhone e iPad",
+  "feats": [
+   [
+    "Você decide quanto economizar",
+    "Economia, Padrão ou Máximo. O ajuste fino define o tamanho-alvo por resolução"
+   ],
+   [
+    "Direto no app Fotos",
+    "Sem fototeca separada. Suas capturas vão para o app Fotos do sistema"
+   ],
+   [
+    "Dá para ver o quanto economizou",
+    "Cada captura mostra o quanto ficou menor que na câmera do sistema"
+   ],
+   [
+    "Uma câmera de verdade",
+    "Foto, vídeo, câmera lenta, time-lapse, 4K 60 fps, vídeo HDR, áudio espacial, lentes e macro"
+   ],
+   [
+    "Fica no seu aparelho",
+    "As capturas ficam no aparelho e na sua fototeca. Sem conta, sem login"
+   ]
+  ],
+  "stats": {
+   "footer": "Menos que a câmera do sistema (estimado)",
+   "columns": [
+    {
+     "name": "Foto",
+     "pct": "~60%",
+     "detail": "3,7 MB → 1,5 MB"
+    },
+    {
+     "name": "Vídeo 4K",
+     "pct": "64%",
+     "detail": "169 MB → 60 MB / min"
+    },
+    {
+     "name": "Vídeo FHD",
+     "pct": "62%",
+     "detail": "60 MB → 23 MB / min"
+    }
+   ]
+  },
+  "h_save": "A cada foto, cerca de 60% menos espaço.",
+  "k_how": "Como funciona",
+  "h_how": "Escolha, fotografe e veja a economia.",
+  "k_more": "E mais",
+  "h_more": "Tudo de que você precisa, incluído.",
+  "cta": "Tire sua próxima foto mais leve.",
+  "steps": [
+   {
+    "headline": "Quanto economizar você decide",
+    "sub": "Aplicado a fotos e vídeos separadamente"
+   },
+   {
+    "headline": "Salvo direto no app Fotos",
+    "sub": "Sem cópia escondida no app"
+   },
+   {
+    "headline": "Defina o tamanho-alvo de cada resolução",
+    "sub": "Ajuste cada nível separadamente"
+   },
+   {
+    "headline": "4K 60fps · HDR áudio espacial · macro",
+    "sub": "Tudo que uma câmera precisa ter"
+   }
+  ],
+  "hero_alt": "A mesma cena, arquivo menor"
+ },
+ "ru": {
+  "title": "GramCamera — Камера, экономящая место",
+  "desc": "GramCamera снимает так же, как обычная камера, но сохраняет файлы меньшего размера. Размер снижается без заметной потери качества — того же места хватает намного дольше.",
+  "nav": [
+   "Главная",
+   "Поддержка",
+   "Конфиденциальность"
+  ],
+  "h1": "Тот же кадр, меньше файл.",
+  "lede": "GramCamera снимает так же, как обычная камера, но сохраняет файлы меньшего размера. Размер снижается без заметной потери качества — того же места хватает намного дольше.",
+  "store": "Загрузите в App Store",
+  "fine": "iOS 17 или новее · iPhone и iPad",
+  "feats": [
+   [
+    "Вы решаете, сколько экономить",
+    "Экономия, Стандарт или Максимум. В тонкой настройке задаётся целевой размер для каждого разрешения"
+   ],
+   [
+    "Сразу в «Фото»",
+    "Отдельной медиатеки нет. Снимки попадают в системное приложение «Фото»"
+   ],
+   [
+    "Экономия видна",
+    "У каждого снимка видно, насколько он меньше, чем у обычной камеры"
+   ],
+   [
+    "Настоящая камера",
+    "Фото, видео, замедленная съёмка, таймлапс, 4K 60 к/с, HDR-видео, пространственное аудио, объективы и макро"
+   ],
+   [
+    "Всё остаётся на устройстве",
+    "Снимки хранятся на устройстве и в медиатеке. Без учётной записи и входа"
+   ]
+  ],
+  "stats": {
+   "footer": "Меньше, чем в обычной камере (оценка)",
+   "columns": [
+    {
+     "name": "Фото",
+     "pct": "≈ 60 %",
+     "detail": "3,7 МБ → 1,5 МБ"
+    },
+    {
+     "name": "Видео 4K",
+     "pct": "64%",
+     "detail": "169 МБ → 60 МБ / мин"
+    },
+    {
+     "name": "Видео FHD",
+     "pct": "62%",
+     "detail": "60 МБ → 23 МБ / мин"
+    }
+   ]
+  },
+  "h_save": "Каждый снимок — примерно на 60% меньше места.",
+  "k_how": "Как это работает",
+  "h_how": "Выберите, снимайте, смотрите экономию.",
+  "k_more": "А ещё",
+  "h_more": "Всё нужное уже внутри.",
+  "cta": "Снимите следующее фото легче.",
+  "steps": [
+   {
+    "headline": "Сколько экономить — решаете вы",
+    "sub": "Отдельно для фото и видео"
+   },
+   {
+    "headline": "Сохраняется прямо в приложение «Фото»",
+    "sub": "Без скрытой копии внутри приложения"
+   },
+   {
+    "headline": "Задайте целевой размер для каждого разрешения",
+    "sub": "Настройте каждый уровень отдельно"
+   },
+   {
+    "headline": "4K 60 к/с · HDR пространственный звук · макро",
+    "sub": "Всё, что нужно камере"
+   }
+  ],
+  "hero_alt": "Тот же кадр, меньше файл"
+ }
+}
