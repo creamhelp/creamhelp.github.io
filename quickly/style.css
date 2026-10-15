@@ -1,0 +1,97 @@
+/* Quickly 사이트 스타일 — 같은 사이트의 다른 앱 페이지 틀에 앱의 파란색만 바꿨다 (2026-10-16) */
+:root{
+  --bg:#F5F7FC; --surface:#FFFFFF; --ink:#141A2A; --ink-2:#465068; --ink-3:#717A8F;
+  --accent:#2F6BFF; --accent-2:#5B8CFF; --border:#DFE5F2;
+  --radius:14px;
+}
+@media (prefers-color-scheme: dark){
+  :root{ --bg:#0C0F17; --surface:#151B2A; --ink:#ECEFF8; --ink-2:#AEB6CC; --ink-3:#818AA0;
+    --accent:#6F9BFF; --accent-2:#3F74F0; --border:#263044; }
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font:16px/1.65 -apple-system,BlinkMacSystemFont,"SF Pro Text","Apple SD Gothic Neo",system-ui,sans-serif;
+  -webkit-text-size-adjust:100%}
+.wrap{max-width:760px;margin:0 auto;padding:48px 24px 96px}
+header.site{display:flex;align-items:center;gap:14px;margin-bottom:40px}
+.mark{width:44px;height:44px;border-radius:11px;background:linear-gradient(150deg,var(--accent),var(--accent-2));
+  display:flex;align-items:center;justify-content:center;color:#fff;font-weight:800;font-size:20px}
+header.site .name{font-weight:700;font-size:18px}
+header.site nav{margin-left:auto;display:flex;gap:16px;font-size:14px}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+h1{font-size:32px;line-height:1.25;letter-spacing:-.015em;margin:0 0 8px}
+.lede{color:var(--ink-2);margin:0 0 32px}
+h2{font-size:20px;margin:36px 0 10px}
+p{margin:10px 0}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:20px 22px;margin:14px 0}
+details.card{padding:14px 22px}
+details.card summary{cursor:pointer;font-weight:600;padding:6px 0}
+details.card p{color:var(--ink-2)}
+.btn{display:inline-block;background:var(--accent);color:#fff;border-radius:999px;padding:10px 22px;font-weight:600}
+.btn:hover{text-decoration:none;opacity:.92}
+footer{margin-top:64px;color:var(--ink-3);font-size:13px;border-top:1px solid var(--border);padding-top:18px}
+.lang{font-size:13px;color:var(--ink-3)}
+.langs{margin:-26px 0 34px;display:flex;flex-wrap:wrap;gap:6px 14px;font-size:13px;color:var(--ink-3)}
+.langs a{color:var(--ink-3)}
+.langs .cur{color:var(--ink);font-weight:600}
+ul{padding-left:22px}
+li{margin:6px 0}
+
+/* ── 첫 페이지 부품 ───────────────────────────── */
+header.site .appicon{width:44px;height:44px;border-radius:11px;box-shadow:0 2px 8px rgba(0,0,0,.18)}
+.wide{max-width:1040px}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;margin:8px 0 72px}
+.hero h1{font-size:44px;line-height:1.18;letter-spacing:-.02em;margin:0 0 18px}
+.hero h1 em{font-style:normal;background:linear-gradient(120deg,var(--accent),var(--accent-2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero .lede{font-size:18px;margin-bottom:26px}
+.store{display:inline-flex;align-items:center;gap:10px;background:var(--ink);color:var(--bg);padding:14px 22px;border-radius:14px;font-weight:700;text-decoration:none}
+.store svg{width:22px;height:22px;fill:currentColor}
+/* 출시 전: 누를 수 없는 "App Store 출시 예정" 표시 (build.py 의 STORE = None) */
+.store.soon{background:transparent;color:var(--ink-2);border:1.5px dashed var(--ink-3);cursor:default}
+.fine{font-size:13px;color:var(--ink-3);margin-top:12px}
+.hero-shot{justify-self:center}
+.phone{width:260px;border-radius:40px;padding:10px;background:linear-gradient(160deg,#3b3a4a,#15141f);box-shadow:0 30px 60px rgba(20,50,140,.28)}
+.phone img{display:block;width:100%;border-radius:31px}
+section.block{margin:88px 0}
+.kicker{display:inline-block;font-size:13px;font-weight:700;letter-spacing:.06em;color:var(--accent);margin-bottom:10px}
+section.block h2{font-size:30px;line-height:1.25;margin:0 0 12px;letter-spacing:-.01em}
+section.block > p{color:var(--ink-2);margin:0 0 26px}
+/* 앱 화면 줄 */
+.shots{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.shots figure{margin:0;text-align:center}
+.shots .phone{width:100%;border-radius:30px;padding:7px}
+.shots .phone img{border-radius:24px}
+.shots figcaption{font-size:14px;font-weight:700;margin-top:12px}
+.shots figcaption span{display:block;font-weight:500;font-size:12px;color:var(--ink-3)}
+/* 기능 카드 */
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.feat{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:20px}
+.feat .ic{width:40px;height:40px;border-radius:12px;display:flex;align-items:center;justify-content:center;background:color-mix(in srgb,var(--accent) 14%,transparent);color:var(--accent);margin-bottom:12px}
+.feat .ic svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.feat b{display:block;margin-bottom:4px}
+.feat p{margin:0;font-size:14px;color:var(--ink-2)}
+.privacy-band{display:flex;gap:18px;align-items:center;border-radius:20px;padding:24px;background:linear-gradient(135deg,color-mix(in srgb,var(--accent) 14%,var(--surface)),var(--surface));border:1px solid var(--border)}
+.privacy-band .ic{flex:none;width:52px;height:52px;border-radius:16px;background:linear-gradient(135deg,var(--accent),var(--accent-2));display:flex;align-items:center;justify-content:center}
+.privacy-band svg{width:28px;height:28px;fill:none;stroke:#fff;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.privacy-band p{margin:4px 0 0;color:var(--ink-2)}
+.cta{text-align:center;margin:88px 0 40px}
+.cta img{width:88px;height:88px;border-radius:22px;box-shadow:0 10px 30px rgba(20,50,140,.25)}
+.cta h2{margin:18px 0 18px;font-size:28px}
+/* 지원·개인정보 머리 */
+.page-hero{display:flex;gap:16px;align-items:center;margin-bottom:8px}
+.page-hero img{width:64px;height:64px;border-radius:16px}
+.page-hero h1{margin:0}
+@media (max-width:760px){
+  header.site{flex-wrap:wrap;row-gap:10px}
+  header.site nav{margin-left:0;width:100%;flex-wrap:wrap;gap:6px 16px}
+  .hero{grid-template-columns:1fr;gap:32px}
+  .hero h1{font-size:34px}
+  .shots{grid-template-columns:repeat(4,60%);overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:8px}
+  .shots figure{scroll-snap-align:center}
+  .grid{grid-template-columns:1fr}
+}
+
+/* 한국어 제목은 낱말 단위로 줄을 바꾼다("줄이세/요." 방지). 중·일에 쓰면 줄이 안 바뀌어 한국어만. */
+:lang(ko) h1,:lang(ko) h2{word-break:keep-all}
+:lang(ko) p,:lang(ko) figcaption{word-break:keep-all}  /* 본문도 낱말 단위로 ("알/아서" 방지) */

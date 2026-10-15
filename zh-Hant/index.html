@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Cream — 為照片和影片打造的小 App</title>
-<meta name="description" content="Cream 為照片和影片打造小巧的 iOS App：LeanVid 壓縮影片，GramCamera 從拍攝起就更小，EnhanceVid 讓影片更流暢、更清晰。">
+<title>Cream — 為照片、影片和訊息打造的小 App</title>
+<meta name="description" content="Cream 打造小巧的 iOS App：LeanVid 壓縮影片，GramCamera 從拍攝起就更小，EnhanceVid 讓影片更流暢、更清晰，Quickly 把每天都在傳的訊息做成在鍵盤上填一填就能傳的範本。">
 <link rel="canonical" href="https://creamhelp.github.io/zh-Hant/">
 <link rel="alternate" hreflang="x-default" href="https://creamhelp.github.io/">
 <link rel="alternate" hreflang="en" href="https://creamhelp.github.io/">
@@ -22,18 +22,18 @@
 <style>
   /* Cream 첫 화면 — 공용 style.css(LeanVid 초록) 위에 중립 크림색을 덮고, 앱마다 제 색을 쓴다(2026-09-27) */
   :root{ --bg:#F8F6F1; --surface:#FFFFFF; --ink:#1B1A17; --ink-2:#4B4842; --ink-3:#7A766E; --accent:#8A5A2B; --accent-2:#C08A4E; --border:#E7E2D8;
-    --lv:#0A5C3E; --lv-2:#2E9C77; --gc:#1E8E4E; --gc-2:#34C759; --ev:#5B45D6; --ev-2:#8A6CF0; }
+    --lv:#0A5C3E; --lv-2:#2E9C77; --gc:#1E8E4E; --gc-2:#34C759; --ev:#5B45D6; --ev-2:#8A6CF0; --qk:#2F6BFF; --qk-2:#5B8CFF; }
   @media (prefers-color-scheme: dark){ :root{ --bg:#121110; --surface:#1C1B19; --ink:#F1EEE8; --ink-2:#BDB7AC; --ink-3:#8E887D; --accent:#E0B27A; --accent-2:#C08A4E; --border:#2C2A27;
-    --lv:#3FBE8C; --lv-2:#2E9C77; --gc:#4CD97B; --gc-2:#2FB45C; --ev:#9B87FF; --ev-2:#7A62F0; } }
+    --lv:#3FBE8C; --lv-2:#2E9C77; --gc:#4CD97B; --gc-2:#2FB45C; --ev:#9B87FF; --ev-2:#7A62F0; --qk:#6F9BFF; --qk-2:#3F74F0; } }
   .wrap.wide{max-width:1040px}
   .hero{text-align:center;margin:12px 0 64px}
   .hero h1{font-size:46px;line-height:1.16;letter-spacing:-.02em;margin:0 0 16px}
-  .hero h1 em{font-style:normal;background:linear-gradient(120deg,var(--lv),var(--gc) 45%,var(--ev));-webkit-background-clip:text;background-clip:text;color:transparent}
+  .hero h1 em{font-style:normal;background:linear-gradient(120deg,var(--lv),var(--gc) 35%,var(--ev) 70%,var(--qk));-webkit-background-clip:text;background-clip:text;color:transparent}
   .hero .lede{font-size:18px;max-width:640px;margin:0 auto 34px}
   .icons{display:flex;justify-content:center;gap:28px;flex-wrap:wrap}
   .icons a{display:flex;flex-direction:column;align-items:center;gap:10px;color:var(--ink);font-weight:700;font-size:14px;text-decoration:none}
   .icons img{width:96px;height:96px;border-radius:22px;box-shadow:0 12px 30px rgba(0,0,0,.18);animation:float 4s ease-in-out infinite}
-  .icons a:nth-child(2) img{animation-delay:.6s} .icons a:nth-child(3) img{animation-delay:1.2s}
+  .icons a:nth-child(2) img{animation-delay:.6s} .icons a:nth-child(3) img{animation-delay:1.2s} .icons a:nth-child(4) img{animation-delay:1.8s}
   @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
   .app{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:center;margin:0 0 28px;padding:30px;border-radius:24px;background:var(--surface);border:1px solid var(--border)}
   .app.rev .vis{order:-1}
@@ -45,7 +45,8 @@
   .app .tag{font-weight:700;margin:0 0 12px}
   .app p{color:var(--ink-2);margin:0 0 14px}
   .app .links{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:15px}
-  .app.lean .tag,.app.lean .links a{color:var(--lv)} .app.gram .tag,.app.gram .links a{color:var(--gc)} .app.enh .tag,.app.enh .links a{color:var(--ev)}
+  .app.lean .tag,.app.lean .links a{color:var(--lv)} .app.gram .tag,.app.gram .links a{color:var(--gc)} .app.enh .tag,.app.enh .links a{color:var(--ev)} .app.quick .tag,.app.quick .links a{color:var(--qk)}
+  .app .links .soon{color:var(--ink-3)}
   .vis{border-radius:18px;padding:22px;background:var(--bg);min-height:220px;display:flex;flex-direction:column;justify-content:center;gap:12px}
   .row{display:flex;justify-content:space-between;align-items:baseline;gap:10px;font-size:13px;color:var(--ink-3)}
   .row b{color:var(--ink);font-size:14px}
@@ -66,13 +67,20 @@
   .cmp .l2{left:10px} .cmp .r2{right:10px;background:rgba(91,69,214,.85)}
   .chips{display:flex;gap:8px;flex-wrap:wrap}
   .chips span{font-size:13px;font-weight:700;padding:6px 10px;border-radius:999px;background:color-mix(in srgb,var(--ev) 14%,transparent);color:var(--ev)}
+  .quick .chips span{background:color-mix(in srgb,var(--qk) 14%,transparent);color:var(--qk)}
+  .tpl{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:16px 18px}
+  .tpl b{display:block;font-size:13px;color:var(--ink-3);margin-bottom:6px}
+  .app .tpl p{margin:0;color:var(--ink);line-height:2}
+  .slot{display:inline-block;padding:0 8px;border-radius:7px;border:1.5px dashed var(--qk);color:var(--qk);font-weight:700;font-size:.92em;line-height:1.6;animation:slot 3.6s ease-in-out infinite}
+  .slot.s2{animation-delay:1.2s}
+  @keyframes slot{0%,30%,100%{background:transparent}45%,80%{background:color-mix(in srgb,var(--qk) 18%,transparent)}}
   .promise{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:48px 0}
   .promise div{text-align:center;padding:22px;border-radius:18px;background:var(--surface);border:1px solid var(--border)}
   .promise svg{width:30px;height:30px;fill:none;stroke:var(--accent);stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
   .promise b{display:block;margin:8px 0 4px}
   .promise p{margin:0;font-size:14px;color:var(--ink-2)}
   .mark{flex:none}
-  @media (max-width:760px){ header.site{flex-wrap:wrap;row-gap:10px} header.site nav{margin-left:0;width:100%;flex-wrap:wrap;gap:6px 16px} .hero h1{font-size:32px} .app{grid-template-columns:1fr;padding:20px} .app.rev .vis{order:0} .promise{grid-template-columns:1fr} .icons{gap:16px} .icons img{width:72px;height:72px} }
+  @media (max-width:760px){ header.site{flex-wrap:wrap;row-gap:10px} header.site nav{margin-left:0;width:100%;flex-wrap:wrap;gap:6px 16px} .hero h1{font-size:32px} .app{grid-template-columns:1fr;padding:20px} .app.rev .vis{order:0} .promise{grid-template-columns:1fr} .icons{gap:12px} .icons a{font-size:13px} .icons img{width:60px;height:60px} }
   @media (prefers-reduced-motion:reduce){ *{animation:none!important} }
 </style>
 </head>
@@ -80,17 +88,18 @@
 <div class="wrap wide">
   <header class="site">
     <div class="mark">C</div><div class="name">Cream</div>
-    <nav><a href="../leanvid/zh-Hant/index.html">LeanVid</a><a href="../gramcamera/zh-Hant/index.html">GramCamera</a><a href="../enhancevid/zh-Hant/index.html">EnhanceVid</a><a href="mailto:creamhelp@gmail.com">聯絡我們</a></nav>
+    <nav><a href="../leanvid/zh-Hant/index.html">LeanVid</a><a href="../gramcamera/zh-Hant/index.html">GramCamera</a><a href="../enhancevid/zh-Hant/index.html">EnhanceVid</a><a href="../quickly/zh-Hant/index.html">Quickly</a><a href="mailto:creamhelp@gmail.com">聯絡我們</a></nav>
   </header>
   <div class="langs"><a href="../index.html">English</a> <a href="../ko/index.html">한국어</a> <a href="../ja/index.html">日本語</a> <a href="../zh-Hans/index.html">简体中文</a> <span class="cur">繁體中文</span> <a href="../es-ES/index.html">Español</a> <a href="../de-DE/index.html">Deutsch</a> <a href="../fr-FR/index.html">Français</a> <a href="../it/index.html">Italiano</a> <a href="../pt-BR/index.html">Português</a> <a href="../ru/index.html">Русский</a></div>
 
   <section class="hero">
-    <h1>為照片和影片打造的<br><em>小 App</em>。</h1>
-    <p class="lede">節省空間，提升畫質。Cream 的所有 App 都在裝置上處理，不上傳任何內容。</p>
+    <h1>為照片、影片和訊息打造的<br><em>小 App</em>。</h1>
+    <p class="lede">節省空間，提升畫質，常傳的訊息更快傳出。照片、影片和訊息都不會上傳到 Cream，所有 App 都不需要帳號。</p>
     <div class="icons">
       <a href="#leanvid"><img src="../assets/leanvid-icon.png" alt="">LeanVid</a>
       <a href="#gramcamera"><img src="../gramcamera/assets/icon.png" alt="">GramCamera</a>
       <a href="#enhancevid"><img src="../enhancevid/assets/icon.png" alt="">EnhanceVid</a>
+      <a href="#quickly"><img src="../quickly/assets/icon.png" alt="">Quickly</a>
     </div>
   </section>
 
@@ -140,9 +149,22 @@
     </div>
   </section>
 
+  <section class="app quick rev" id="quickly">
+    <div>
+      <a class="title" href="../quickly/zh-Hant/index.html"><img src="../quickly/assets/icon.png" alt=""><h2>Quickly</h2><span class="go">›</span></a>
+      <p class="tag">AI 幫你寫的複製貼上鍵盤</p>
+      <p>寫一句話，AI 就幫你寫好每天都在傳的訊息。要傳的時候，在任何 App 裡從鍵盤填上姓名、日期和金額就好。</p>
+      <p class="links"><span class="soon"><b>即將在 App Store 推出</b></span><a href="../quickly/zh-Hant/index.html">網站</a><a href="../quickly/zh-Hant/support.html">支援</a><a href="../quickly/zh-Hant/privacy.html">隱私</a></p>
+    </div>
+    <div class="vis">
+      <div class="tpl"><b>預約前一天的提醒</b><p><span class="slot s1">顧客姓名</span> 您好，提醒您明天 <span class="slot s2">到店時間</span> 有預約，期待您的光臨。</p></div>
+      <div class="chips"><span>Apple Intelligence</span><span>任何 App 都能用</span><span>iCloud 同步</span></div>
+    </div>
+  </section>
+
   <section class="promise">
-    <div><svg viewBox="0 0 24 24"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg><b>全部在裝置上</b><p>所有處理都在你的 iPhone 上完成。</p></div>
-    <div><svg viewBox="0 0 24 24"><path d="M12 16V4M7 9l5-5 5 5"/><path d="M4 20h16"/><path d="M3 3l18 18"/></svg><b>不上傳</b><p>照片和影片不會離開你的裝置。</p></div>
+    <div><svg viewBox="0 0 24 24"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg><b>在裝置上處理</b><p>處理在你的 iPhone 上完成。</p></div>
+    <div><svg viewBox="0 0 24 24"><path d="M12 16V4M7 9l5-5 5 5"/><path d="M4 20h16"/><path d="M3 3l18 18"/></svg><b>不上傳給 Cream</b><p>照片、影片和訊息都不會上傳到 Cream。</p></div>
     <div><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c1-4 4-6 8-6s7 2 8 6"/><path d="M3 3l18 18"/></svg><b>無需帳號</b><p>無需註冊，無需登入。</p></div>
   </section>
 

@@ -14,6 +14,7 @@ BASE = "https://creamhelp.github.io/"
 APP_STORE_LEANVID = "https://apps.apple.com/app/id6796710561"
 APP_STORE_GRAMCAMERA = "https://apps.apple.com/app/id6804235227"
 APP_STORE_ENHANCEVID = "https://apps.apple.com/app/id6816116747"
+APP_STORE_QUICKLY = None  # 출시 전 — None 이면 링크 대신 "App Store 출시 예정"(quickly 문구 파일의 soon)을 보인다
 STORE_LABEL = {
     "": "Download on the App Store", "ko": "App Store에서 다운로드하기", "ja": "App Storeからダウンロード",
     "zh-Hans": "在 App Store 下载", "zh-Hant": "在 App Store 下載", "es-ES": "Descárgalo en el App Store",
@@ -173,18 +174,18 @@ PAGE = """<!DOCTYPE html>
 <style>
   /* Cream 첫 화면 — 공용 style.css(LeanVid 초록) 위에 중립 크림색을 덮고, 앱마다 제 색을 쓴다(2026-09-27) */
   :root{{ --bg:#F8F6F1; --surface:#FFFFFF; --ink:#1B1A17; --ink-2:#4B4842; --ink-3:#7A766E; --accent:#8A5A2B; --accent-2:#C08A4E; --border:#E7E2D8;
-    --lv:#0A5C3E; --lv-2:#2E9C77; --gc:#1E8E4E; --gc-2:#34C759; --ev:#5B45D6; --ev-2:#8A6CF0; }}
+    --lv:#0A5C3E; --lv-2:#2E9C77; --gc:#1E8E4E; --gc-2:#34C759; --ev:#5B45D6; --ev-2:#8A6CF0; --qk:#2F6BFF; --qk-2:#5B8CFF; }}
   @media (prefers-color-scheme: dark){{ :root{{ --bg:#121110; --surface:#1C1B19; --ink:#F1EEE8; --ink-2:#BDB7AC; --ink-3:#8E887D; --accent:#E0B27A; --accent-2:#C08A4E; --border:#2C2A27;
-    --lv:#3FBE8C; --lv-2:#2E9C77; --gc:#4CD97B; --gc-2:#2FB45C; --ev:#9B87FF; --ev-2:#7A62F0; }} }}
+    --lv:#3FBE8C; --lv-2:#2E9C77; --gc:#4CD97B; --gc-2:#2FB45C; --ev:#9B87FF; --ev-2:#7A62F0; --qk:#6F9BFF; --qk-2:#3F74F0; }} }}
   .wrap.wide{{max-width:1040px}}
   .hero{{text-align:center;margin:12px 0 64px}}
   .hero h1{{font-size:46px;line-height:1.16;letter-spacing:-.02em;margin:0 0 16px}}
-  .hero h1 em{{font-style:normal;background:linear-gradient(120deg,var(--lv),var(--gc) 45%,var(--ev));-webkit-background-clip:text;background-clip:text;color:transparent}}
+  .hero h1 em{{font-style:normal;background:linear-gradient(120deg,var(--lv),var(--gc) 35%,var(--ev) 70%,var(--qk));-webkit-background-clip:text;background-clip:text;color:transparent}}
   .hero .lede{{font-size:18px;max-width:640px;margin:0 auto 34px}}
   .icons{{display:flex;justify-content:center;gap:28px;flex-wrap:wrap}}
   .icons a{{display:flex;flex-direction:column;align-items:center;gap:10px;color:var(--ink);font-weight:700;font-size:14px;text-decoration:none}}
   .icons img{{width:96px;height:96px;border-radius:22px;box-shadow:0 12px 30px rgba(0,0,0,.18);animation:float 4s ease-in-out infinite}}
-  .icons a:nth-child(2) img{{animation-delay:.6s}} .icons a:nth-child(3) img{{animation-delay:1.2s}}
+  .icons a:nth-child(2) img{{animation-delay:.6s}} .icons a:nth-child(3) img{{animation-delay:1.2s}} .icons a:nth-child(4) img{{animation-delay:1.8s}}
   @keyframes float{{0%,100%{{transform:translateY(0)}}50%{{transform:translateY(-8px)}}}}
   .app{{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:center;margin:0 0 28px;padding:30px;border-radius:24px;background:var(--surface);border:1px solid var(--border)}}
   .app.rev .vis{{order:-1}}
@@ -196,7 +197,8 @@ PAGE = """<!DOCTYPE html>
   .app .tag{{font-weight:700;margin:0 0 12px}}
   .app p{{color:var(--ink-2);margin:0 0 14px}}
   .app .links{{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:15px}}
-  .app.lean .tag,.app.lean .links a{{color:var(--lv)}} .app.gram .tag,.app.gram .links a{{color:var(--gc)}} .app.enh .tag,.app.enh .links a{{color:var(--ev)}}
+  .app.lean .tag,.app.lean .links a{{color:var(--lv)}} .app.gram .tag,.app.gram .links a{{color:var(--gc)}} .app.enh .tag,.app.enh .links a{{color:var(--ev)}} .app.quick .tag,.app.quick .links a{{color:var(--qk)}}
+  .app .links .soon{{color:var(--ink-3)}}
   .vis{{border-radius:18px;padding:22px;background:var(--bg);min-height:220px;display:flex;flex-direction:column;justify-content:center;gap:12px}}
   .row{{display:flex;justify-content:space-between;align-items:baseline;gap:10px;font-size:13px;color:var(--ink-3)}}
   .row b{{color:var(--ink);font-size:14px}}
@@ -217,13 +219,20 @@ PAGE = """<!DOCTYPE html>
   .cmp .l2{{left:10px}} .cmp .r2{{right:10px;background:rgba(91,69,214,.85)}}
   .chips{{display:flex;gap:8px;flex-wrap:wrap}}
   .chips span{{font-size:13px;font-weight:700;padding:6px 10px;border-radius:999px;background:color-mix(in srgb,var(--ev) 14%,transparent);color:var(--ev)}}
+  .quick .chips span{{background:color-mix(in srgb,var(--qk) 14%,transparent);color:var(--qk)}}
+  .tpl{{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:16px 18px}}
+  .tpl b{{display:block;font-size:13px;color:var(--ink-3);margin-bottom:6px}}
+  .app .tpl p{{margin:0;color:var(--ink);line-height:2}}
+  .slot{{display:inline-block;padding:0 8px;border-radius:7px;border:1.5px dashed var(--qk);color:var(--qk);font-weight:700;font-size:.92em;line-height:1.6;animation:slot 3.6s ease-in-out infinite}}
+  .slot.s2{{animation-delay:1.2s}}
+  @keyframes slot{{0%,30%,100%{{background:transparent}}45%,80%{{background:color-mix(in srgb,var(--qk) 18%,transparent)}}}}
   .promise{{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:48px 0}}
   .promise div{{text-align:center;padding:22px;border-radius:18px;background:var(--surface);border:1px solid var(--border)}}
   .promise svg{{width:30px;height:30px;fill:none;stroke:var(--accent);stroke-width:2;stroke-linecap:round;stroke-linejoin:round}}
   .promise b{{display:block;margin:8px 0 4px}}
   .promise p{{margin:0;font-size:14px;color:var(--ink-2)}}
   .mark{{flex:none}}
-  @media (max-width:760px){{ header.site{{flex-wrap:wrap;row-gap:10px}} header.site nav{{margin-left:0;width:100%;flex-wrap:wrap;gap:6px 16px}} .hero h1{{font-size:32px}} .app{{grid-template-columns:1fr;padding:20px}} .app.rev .vis{{order:0}} .promise{{grid-template-columns:1fr}} .icons{{gap:16px}} .icons img{{width:72px;height:72px}} }}
+  @media (max-width:760px){{ header.site{{flex-wrap:wrap;row-gap:10px}} header.site nav{{margin-left:0;width:100%;flex-wrap:wrap;gap:6px 16px}} .hero h1{{font-size:32px}} .app{{grid-template-columns:1fr;padding:20px}} .app.rev .vis{{order:0}} .promise{{grid-template-columns:1fr}} .icons{{gap:12px}} .icons a{{font-size:13px}} .icons img{{width:60px;height:60px}} }}
   @media (prefers-reduced-motion:reduce){{ *{{animation:none!important}} }}
 </style>
 </head>
@@ -231,7 +240,7 @@ PAGE = """<!DOCTYPE html>
 <div class="wrap wide">
   <header class="site">
     <div class="mark">C</div><div class="name">Cream</div>
-    <nav><a href="{lv}index.html">LeanVid</a><a href="{gc}index.html">GramCamera</a><a href="{ev}index.html">EnhanceVid</a><a href="mailto:creamhelp@gmail.com">{contact}</a></nav>
+    <nav><a href="{lv}index.html">LeanVid</a><a href="{gc}index.html">GramCamera</a><a href="{ev}index.html">EnhanceVid</a><a href="{qk}index.html">Quickly</a><a href="mailto:creamhelp@gmail.com">{contact}</a></nav>
   </header>
   <div class="langs">{langs}</div>
 
@@ -242,6 +251,7 @@ PAGE = """<!DOCTYPE html>
       <a href="#leanvid"><img src="{pfx}assets/leanvid-icon.png" alt="">LeanVid</a>
       <a href="#gramcamera"><img src="{pfx}gramcamera/assets/icon.png" alt="">GramCamera</a>
       <a href="#enhancevid"><img src="{pfx}enhancevid/assets/icon.png" alt="">EnhanceVid</a>
+      <a href="#quickly"><img src="{pfx}quickly/assets/icon.png" alt="">Quickly</a>
     </div>
   </section>
 
@@ -285,6 +295,19 @@ PAGE = """<!DOCTYPE html>
     <div class="vis">
       <div class="cmp"><img src="{pfx}enhancevid/assets/after.jpg" alt=""><img class="b" src="{pfx}enhancevid/assets/before.jpg" alt=""><div class="l"></div><span class="t l2">{ev_before}</span><span class="t r2">{ev_after}</span></div>
       <div class="chips">{ev_chips}</div>
+    </div>
+  </section>
+
+  <section class="app quick rev" id="quickly">
+    <div>
+      <a class="title" href="{qk}index.html"><img src="{pfx}quickly/assets/icon.png" alt=""><h2>Quickly</h2><span class="go">›</span></a>
+      <p class="tag">{qk_tag}</p>
+      <p>{qk_desc}</p>
+      <p class="links">{qk_store}<a href="{qk}index.html">{website}</a><a href="{qk}support.html">{support}</a><a href="{qk}privacy.html">{privacy}</a></p>
+    </div>
+    <div class="vis">
+      <div class="tpl"><b>{qk_demo_title}</b><p>{qk_demo}</p></div>
+      <div class="chips">{qk_chips}</div>
     </div>
   </section>
 
@@ -332,12 +355,20 @@ def extras(d):
         rows.append(f'      <div class="row"><b>{e(c["name"])}</b><span>{e(c["detail"])} · <b>{e(c["pct"])}</b></span></div>\n'
                     f'      <div class="bar"><div class="fill" style="--w:{w}%"></div></div>')
     chips = [ev["k2"].split(" · ")[-1], ev["k1"].split(" · ")[-1], ev["feats"][0][0]]
+    spec = importlib.util.spec_from_file_location("qk", os.path.join(ROOT, "quickly", "_build", "i18n", loc.replace("-", "_") + ".py"))
+    m = importlib.util.module_from_spec(spec); spec.loader.exec_module(m); qk = m.S["index"]
+    qk_store = (f'<a href="{APP_STORE_QUICKLY}"><b>{e(STORE_LABEL[d])}</b></a>' if APP_STORE_QUICKLY
+                else f'<span class="soon"><b>{e(qk["soon"])}</b></span>')
+    parts = qk["demo"][1]  # 글 · 빈칸 · 글 · 빈칸 · 글
+    qk_demo = "".join(e(p) if i % 2 == 0 else f'<span class="slot s{i // 2 + 1}">{e(p)}</span>' for i, p in enumerate(parts))
     return dict(
         title=e(x["title"]), desc=e(x["desc"]), h1=x["h1"], lede=e(x["lede"]),
         lv_big=e(x["lv_big"]), lv_note=e(x["lv_note"]), original=e(ev["tags"][0]), ev_before=e(ev["tags"][0]), ev_after=e(ev["tags"][1]),
         gc_rows="\n".join(rows), gc_note=e(gc["stats"]["footer"]),
         ev_tag=e(ev["title"].split(" — ", 1)[1]), ev_desc=e(ev["desc"]),
         ev_chips="".join(f"<span>{e(c)}</span>" for c in chips),
+        qk_tag=e(qk["title"].split(" — ", 1)[1]), qk_desc=e(qk["desc"]), qk_store=qk_store,
+        qk_demo_title=e(qk["demo"][0]), qk_demo=qk_demo, qk_chips="".join(f"<span>{e(c)}</span>" for c in qk["chips"]),
         p1b=e(x["promise"][0][0]), p1p=e(x["promise"][0][1]), p2b=e(x["promise"][1][0]), p2p=e(x["promise"][1][1]),
         p3b=e(x["promise"][2][0]), p3p=e(x["promise"][2][1]),
     )
@@ -362,10 +393,11 @@ def main():
         gc_dir = "en" if d == "" else d
         lv = f"{pfx}leanvid/" if d == "" else f"{pfx}leanvid/{d}/"
         ev = f"{pfx}enhancevid/" if d == "" else f"{pfx}enhancevid/{d}/"
+        qk = f"{pfx}quickly/" if d == "" else f"{pfx}quickly/{d}/"
         t = {**t, **extras(d)}
         html = PAGE.format(
             lang=lang, canonical=page_url(d), alternates=alternates, pfx=pfx,
-            langs=" ".join(langs), lv=lv, ev=ev, app_store_ev=APP_STORE_ENHANCEVID, gc=f"{pfx}gramcamera/{gc_dir}/",
+            langs=" ".join(langs), lv=lv, ev=ev, qk=qk, app_store_ev=APP_STORE_ENHANCEVID, gc=f"{pfx}gramcamera/{gc_dir}/",
             app_store_lv=APP_STORE_LEANVID, app_store_gc=APP_STORE_GRAMCAMERA, store=STORE_LABEL[d], **t,
         )
         outdir = ROOT if d == "" else os.path.join(ROOT, d)
